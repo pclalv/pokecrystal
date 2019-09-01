@@ -287,7 +287,9 @@ OWFlash:
 .CheckUseFlash:
 ; Flash
 	ld de, ENGINE_ZEPHYRBADGE
+.ckir_BEFORE_CHECK_ZEPHYRBADGE::
 	farcall CheckBadge
+.ckir_AFTER_CHECK_ZEPHYRBADGE::
 	jr c, .nozephyrbadge
 	push hl
 	farcall SpecialAerodactylChamber
@@ -352,8 +354,14 @@ SurfFunction:
 	dw .AlreadySurfing
 
 .TrySurf:
+	;; it seems like it'll be difficult to understand this code
+	;; and implement a terse fix that merely bypasses the Fog Badge
+	;; check.
+	;; hack idea: change FOGBADGE to ZEPHYRBADGE
 	ld de, ENGINE_FOGBADGE
+.ckir_BEFORE_CHECK_FOGBADGE::
 	call CheckBadge
+.ckir_AFTER_CHECK_FOGBADGE::
 	jr c, .asm_c956
 	ld hl, wBikeFlags
 	bit BIKEFLAGS_ALWAYS_ON_BIKE_F, [hl]
@@ -567,7 +575,9 @@ FlyFunction:
 .TryFly:
 ; Fly
 	ld de, ENGINE_STORMBADGE
+.ckir_BEFORE_CHECK_STORMBADGE::
 	call CheckBadge
+.ckir_AFTER_CHECK_STORMBADGE::
 	jr c, .nostormbadge
 	call GetMapEnvironment
 	call CheckOutdoorMap
@@ -718,7 +728,9 @@ TryWaterfallOW::
 	call CheckPartyMove
 	jr c, .failed
 	ld de, ENGINE_RISINGBADGE
+.ckir_BEFORE_CHECK_RISINGBADGE::
 	call CheckEngineFlag
+.ckir_AFTER_CHECK_RISINGBADGE::
 	jr c, .failed
 	call CheckMapCanWaterfall
 	jr c, .failed
@@ -981,7 +993,9 @@ StrengthFunction:
 .TryStrength:
 ; Strength
 	ld de, ENGINE_PLAINBADGE
+.ckir_BEFORE_CHECK_PLAINBADGE::
 	call CheckBadge
+.ckir_AFTER_CHECK_PLAINBADGE::
 	jr c, .Failed
 	jr .UseStrength
 
@@ -1120,7 +1134,9 @@ Jumptable_cdae:
 
 .TryWhirlpool:
 	ld de, ENGINE_GLACIERBADGE
+.ckir_BEFORE_CHECK_GLACIERBADGE::
 	call CheckBadge
+.ckir_AFTER_CHECK_GLACIERBADGE::
 	jr c, .noglacierbadge
 	call TryWhirlpoolMenu
 	jr c, .failed
@@ -1796,7 +1812,9 @@ TryCutOW::
 	jr c, .cant_cut
 
 	ld de, ENGINE_HIVEBADGE
+.ckir_BEFORE_CHECK_HIVEBADGE::
 	call CheckEngineFlag
+.ckir_AFTER_CHECK_HIVEBADGE::
 	jr c, .cant_cut
 
 	ld a, BANK(AskCutScript)
