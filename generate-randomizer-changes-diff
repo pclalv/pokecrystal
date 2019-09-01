@@ -1,0 +1,42 @@
+#!/usr/bin/env ruby
+
+require 'json'
+require 'pry-byebug'
+
+VERSION = ENV.fetch("VERSION", "pokecrystal")
+
+raise "Invalid version: #{VERSION}" unless %w(pokecrystal pokecrystal11).include?(VERSION)
+
+BLACKLISTED_LABELS = %w(
+  SurfFunction.ckir_BEFORE_CHECK_FOGBADGE
+  TryCutOW.ckir_BEFORE_CHECK_HIVEBADGE
+  FlyFunction.ckir_BEFORE_CHECK_STORMBADGE
+)
+
+randomizer_labels_json  = JSON.load(File.read("#{VERSION}-randomizer-labels-label-details.json")).
+  sort_by { |h| h['name'] }
+randomizer_changes_json = JSON.load(File.read("#{VERSION}-randomizer-changes-label-details.json")).
+  sort_by { |h| h['name'] }
+
+diff = randomizer_labels_json.
+  zip(randomizer_changes_json).
+  filter { |rl, rc| rl != rc }.
+  map do |rl, rc|
+    raise <<~EOF unless rl['name'] == rc['name'] && rl['address_range'] == rc['address_range']
+      #{rl['name']} != #{rc['name']}
+      #{rl['address_range']} != #{rc['address_range']}
+    EOF
+
+    {
+    :name => rl['name'],
+    :address_range => rl['address_range'],
+      :integer_values => {
+        :old => rl['integer_values'].split(" ").map(&method(:Integer)),
+        :new => rc['integer_values'].split(" ").map(&method(:Integer)),
+      },
+    }
+  end.
+  reject { |d| BLACKLISTED_LABELS.include?(d['name']) }.
+  to_json
+
+File.write("#{VERSION}-randomizer-changes-diff.json", diff)

@@ -1,0 +1,31 @@
+#!/usr/bin/env ruby
+
+# Diff two binary files, byte by byte.
+
+require 'json'
+
+ORIGINAL_FILE = ENV.fetch("ORIGINAL_FILE")
+MODIFIED_FILE = ENV.fetch("MODIFIED_FILE")
+
+original_file = File.open(ORIGINAL_FILE, "rb") { |f| f.read }.each_byte.to_a
+modified_file = File.open(MODIFIED_FILE, "rb") { |f| f.read }.each_byte.to_a
+
+# require 'pry'; binding.pry
+
+raise <<~ERROR unless original_file.length == modified_file.length
+  original file and modified file are different lengths! 
+  original_file.length: #{original_file.length}
+  modified_file.length: #{modified_file.length}
+ERROR
+
+diff = []
+
+original_file.zip(modified_file).each_with_index do |(original_value, modified_value), idx|
+  diff << {
+    :index => idx,
+    :original_value => original_value,
+    :modified_value => modified_value,
+  } if original_value != modified_value
+end
+
+puts diff.to_json
