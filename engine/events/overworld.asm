@@ -348,14 +348,8 @@ SurfFunction:
 	ret
 
 .Jumptable:
-	;; i think we should try to overwrite .TrySurf with .DoSurf
-	;; here, so that Surfing is always possible.
-.pclalv_BEFORE_TRY_SURF::
 	dw .TrySurf
-.pclalv_AFTER_TRY_SURF::
-.pclalv_BEFORE_DO_SURF::
 	dw .DoSurf
-.pclalv_AFTER_DO_SURF::
 	dw .FailSurf
 	dw .AlreadySurfing
 
