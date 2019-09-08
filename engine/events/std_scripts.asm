@@ -608,6 +608,8 @@ InitializeEventsScript:
 
 	;; however, is this really important? it seems like the player
 	;; should always be able to find that item...
+
+	;; TODO: fly there and investigate.
 	
 	setevent EVENT_CERULEAN_GYM_ROCKET
 .ckir_AFTER_SETEVENT_EVENT_CERULEAN_GYM_ROCKET::
