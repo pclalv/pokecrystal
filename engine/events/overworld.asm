@@ -657,7 +657,9 @@ WaterfallFunction:
 .TryWaterfall:
 ; Waterfall
 	ld de, ENGINE_RISINGBADGE
+.ckir_BEFORE_CHECK_RISINGBADGE::
 	farcall CheckBadge
+.ckir_AFTER_CHECK_RISINGBADGE::
 	ld a, $80
 	ret c
 	call CheckMapCanWaterfall
@@ -728,9 +730,9 @@ TryWaterfallOW::
 	call CheckPartyMove
 	jr c, .failed
 	ld de, ENGINE_RISINGBADGE
-.ckir_BEFORE_CHECK_RISINGBADGE::
+.ckir_BEFORE_OW_CHECK_RISINGBADGE::
 	call CheckEngineFlag
-.ckir_AFTER_CHECK_RISINGBADGE::
+.ckir_AFTER_OW_CHECK_RISINGBADGE::
 	jr c, .failed
 	call CheckMapCanWaterfall
 	jr c, .failed
