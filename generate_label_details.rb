@@ -57,19 +57,7 @@ def main
       .map do |label|
         post_label = label.gsub("ckir_BEFORE", "ckir_AFTER")
         address_range = label_addresses[label]...label_addresses[post_label]
-        key_item =
-          if label.include?("RECV_")
-            label.split("RECV_").last
-          elsif label.include?("CHECK_")
-            label.split("CHECK_").last
-          elsif label.include?("SET_")
-            label.split("SET_").last
-          elsif label.include?("IFEQUAL_")
-            label.split("IFEQUAL_").last
-          else
-            label
-          end
-        [key_item, address_range]
+        [label, address_range]
       end
 
   key_item_details =
