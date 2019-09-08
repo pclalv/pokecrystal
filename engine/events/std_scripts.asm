@@ -599,7 +599,18 @@ InitializeEventsScript:
 	variablesprite SPRITE_COPYCAT, SPRITE_LASS
 	variablesprite SPRITE_JANINE_IMPERSONATOR, SPRITE_LASS
 	setevent EVENT_FOUND_MACHINE_PART_IN_CERULEAN_GYM
+.ckir_BEFORE_SETEVENT_EVENT_CERULEAN_GYM_ROCKET::
+	;; change to clear event so that we can allow the Cerulean Gym
+	;; item to be collected without talking to the Manager. without
+	;; this change, if the player talks to the Manager for the first
+	;; time with the MACHINE PART then they'll never be able to meet
+	;; the Team Rocket guy in the Cerulean Gym.
+
+	;; however, is this really important? it seems like the player
+	;; should always be able to find that item...
+	
 	setevent EVENT_CERULEAN_GYM_ROCKET
+.ckir_AFTER_SETEVENT_EVENT_CERULEAN_GYM_ROCKET::
 	setevent EVENT_ROUTE_24_ROCKET
 	setevent EVENT_ROUTE_25_MISTY_BOYFRIEND
 	setevent EVENT_TRAINERS_IN_CERULEAN_GYM
