@@ -16,7 +16,9 @@ SaffronMagnetTrainStation_MapScripts:
 SaffronMagnetTrainStationOfficerScript:
 	faceplayer
 	opentext
+.ckir_BEFORE_CHECKEVENT_EVENT_RESTORED_POWER_TO_KANTO::
 	checkevent EVENT_RESTORED_POWER_TO_KANTO
+.ckir_AFTER_CHECKEVENT_EVENT_RESTORED_POWER_TO_KANTO::
 	iftrue .MagnetTrainToGoldenrod
 	writetext SaffronMagnetTrainStationOfficerTrainIsntOperatingText
 	waitbutton
