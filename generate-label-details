@@ -5,9 +5,10 @@ require "pry-byebug"
 
 BANK_SIZE = Integer("4000", 16)
 
-ROM_FILE = "./pokecrystal.gbc"
-DEFAULT_SYM_FILE = "./pokecrystal.sym"
-OUT_FILE = "./pokecrystal-label-details.json"
+ROM_FILE = ENV.fetch("ROM_FILE", "./pokecrystal.gbc")
+ROM_FILE_BASENAME = File.basename(ROM_FILE, File.extname(ROM_FILE))
+SYM_FILE = "#{ROM_FILE_BASENAME}.sym"
+OUT_FILE = "#{ROM_FILE_BASENAME}-label-deatils.json"
 
 HIDDEN_ITEMS = ["MACHINE_PART"]
 ITEM_BALLS = %w(COIN_CASE HM_WATERFALL)
@@ -20,10 +21,6 @@ CHECK_EVENT = %w(EVENT_RESTORED_POWER_TO_KANTO SAFFRON_EVENT_RESTORED_POWER_TO_K
 SET_EVENT = %w(EVENT_ROUTE_30_YOUNGSTER_JOEY EVENT_ROUTE_30_BATTLE EVENT_OLIVINE_PORT_SPRITES_AFTER_HALL_OF_FAME)
 IF_EQUAL_WEEKDAY = %w(WEEKDAY_SATURDAY WEEKDAY_SUNDAY WEEKDAY_TUESDAY WEEKDAY_WEDNESDAY WEEKDAY_THURSDAY)
 
-def sym_file
-  ARGV[0] || DEFAULT_SYM_FILE
-end
-
 def rom
   @rom ||= IO.binread(ROM_FILE)
 end
@@ -34,7 +31,7 @@ end
 
 def label_hex_addresses
   File
-    .read(sym_file)
+    .read(SYM_FILE)
     .split("\n")
     .select { |l| l.include?("ckir") }
     .map { |line| line.split(" ") }
@@ -73,7 +70,7 @@ def main
 
   File.write(OUT_FILE, key_item_details.to_json)
 
-  puts "generated #{OUT_FILE}"
+  STDERR.puts "generated #{OUT_FILE}"
 end
 
 main
