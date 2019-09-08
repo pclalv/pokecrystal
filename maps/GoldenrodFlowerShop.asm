@@ -13,7 +13,7 @@ FlowerShopTeacherScript:
 	;; isn't screwed if they defeat Sudowoodo before visiting the
 	;; Flower Shop.
 
-	checkevent EVENT_FOUGHT_SUDOWOODO
+	checkevent EVENT_PLAYERS_HOUSE_MOM_2
 .ckir_AFTER_CHECKEVENT_EVENT_FOUGHT_SUDOWOODO::
 	iftrue .Lalala
 	checkevent EVENT_GOT_SQUIRTBOTTLE
