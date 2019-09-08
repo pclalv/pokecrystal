@@ -8,8 +8,14 @@ GoldenrodFlowerShop_MapScripts:
 	db 0 ; callbacks
 
 FlowerShopTeacherScript:
+.ckir_BEFORE_CHECKEVENT_EVENT_FOUGHT_SUDOWOODO::
+	;; replace this block of code with NOPs so that the player
+	;; isn't screwed if they defeat Sudowoodo before visiting the
+	;; Flower Shop.
+
 	checkevent EVENT_FOUGHT_SUDOWOODO
 	iftrue .Lalala
+.ckir_AFTER_CHECKEVENT_EVENT_FOUGHT_SUDOWOODO::
 	checkevent EVENT_GOT_SQUIRTBOTTLE
 	iftrue .GotSquirtbottle
 	checkevent EVENT_MET_FLORIA
