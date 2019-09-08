@@ -160,19 +160,19 @@ OlivinePortSailorAfterHOFScript:
 	readvar VAR_WEEKDAY
 	;; change all of these .NextShip* pointers to .FirstTime so that the player can ride on any day.
 .ckir_BEFORE_IFEQUAL_WEEKDAY_SUNDAY::
-	ifequal SUNDAY, .NextShipMonday
+	ifequal SUNDAY, .FirstTime
 .ckir_AFTER_IFEQUAL_WEEKDAY_SUNDAY::
 .ckir_BEFORE_IFEQUAL_WEEKDAY_SATURDAY::
-	ifequal SATURDAY, .NextShipMonday
+	ifequal SATURDAY, .FirstTime
 .ckir_AFTER_IFEQUAL_WEEKDAY_SATURDAY::
 .ckir_BEFORE_IFEQUAL_WEEKDAY_TUESDAY::
-	ifequal TUESDAY, .NextShipFriday
+	ifequal TUESDAY, .FirstTime
 .ckir_AFTER_IFEQUAL_WEEKDAY_TUESDAY::
 .ckir_BEFORE_IFEQUAL_WEEKDAY_WEDNESDAY::
-	ifequal WEDNESDAY, .NextShipFriday
+	ifequal WEDNESDAY, .FirstTime
 .ckir_AFTER_IFEQUAL_WEEKDAY_WEDNESDAY::
 .ckir_BEFORE_IFEQUAL_WEEKDAY_THURSDAY::
-	ifequal THURSDAY, .NextShipFriday
+	ifequal THURSDAY, .FirstTime
 .ckir_AFTER_IFEQUAL_WEEKDAY_THURSDAY::
 .FirstTime:
 	writetext UnknownText_0x74a9c
