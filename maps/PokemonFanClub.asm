@@ -64,7 +64,15 @@ PokemonFanClubClefairyGuyScript:
 
 .FoundClefairyDoll:
 	writetext PokemonFanClubClefairyGuyMakingDoWithADollIFoundText
+.ckir_BEFORE_CHECKEVENT_EVENT_MET_COPYCAT_FOUND_OUT_ABOUT_LOST_ITEM::
+	;; replaced with EVENT_RESTORED_POWER_TO_KANTO in randomizer
+	;; so that this item can be gottena at any point after fixing
+	;; the Power Plant.
+
+	;; if we didn't make this change, then any player that gives the real
+	;; LOST ITEM to the Copycat may be prevented from getting this item.
 	checkevent EVENT_MET_COPYCAT_FOUND_OUT_ABOUT_LOST_ITEM
+.ckir_AFTER_CHECKEVENT_EVENT_MET_COPYCAT_FOUND_OUT_ABOUT_LOST_ITEM::
 	iftrue .MetCopycat
 	waitbutton
 	closetext
