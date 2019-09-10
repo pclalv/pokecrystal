@@ -19,12 +19,14 @@ FlowerShopTeacherScript:
 	checkevent EVENT_GOT_SQUIRTBOTTLE
 	iftrue .GotSquirtbottle
 .ckir_BEFORE_CHECKEVENT_EVENT_MET_FLORIA::
-	checkevent EVENT_MET_FLORIA
+	;; we don't strictly need to disarm this, but we might as well
+	;; for player's quality of life
+	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
 .ckir_AFTER_CHECKEVENT_EVENT_MET_FLORIA::
 	iffalse .HaventMetFloria
 .ckir_BEFORE_CHECKEVENT_EVENT_TALKED_TO_FLORIA_AT_FLOWER_SHOP::
-	;; we also need to disarm this so that we can make it down to the verbosegiveiem call
-	checkevent EVENT_TALKED_TO_FLORIA_AT_FLOWER_SHOP
+	;; ditto above
+	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
 .ckir_AFTER_CHECKEVENT_EVENT_TALKED_TO_FLORIA_AT_FLOWER_SHOP::
 	iffalse .Lalala
 	checkflag ENGINE_PLAINBADGE
