@@ -69,7 +69,9 @@ CherrygroveCityGuideGent:
 	buttonsound
 	getstring STRING_BUFFER_4, .mapcardname
 	scall .JumpstdReceiveItem
+.ckir_BEFORE_SETFLAG_ENGINE_MAP_CARD::
 	setflag ENGINE_MAP_CARD
+.ckir_AFTER_SETFLAG_ENGINE_MAP_CARD::
 	writetext GotMapCardText
 	buttonsound
 	writetext GuideGentPokegearText
