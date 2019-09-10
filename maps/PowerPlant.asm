@@ -134,7 +134,9 @@ PowerPlantGymGuy4Script:
 PowerPlantManager:
 	faceplayer
 	opentext
+.ckir_BEFORE_CHECKEVENT_EVENT_RETURNED_MACHINE_PART::
 	checkevent EVENT_RETURNED_MACHINE_PART
+.ckir_AFTER_CHECKEVENT_EVENT_RETURNED_MACHINE_PART::
 	iftrue .ReturnedMachinePart
 	checkitem MACHINE_PART
 	iftrue .FoundMachinePart
