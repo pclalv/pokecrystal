@@ -8,7 +8,7 @@ BANK_SIZE = Integer("4000", 16)
 ROM_FILE = ENV.fetch("ROM_FILE", "./pokecrystal.gbc")
 ROM_FILE_BASENAME = File.basename(ROM_FILE, File.extname(ROM_FILE))
 SYM_FILE = "#{ROM_FILE_BASENAME}.sym"
-OUT_FILE = "#{ROM_FILE_BASENAME}-label-deatils.json"
+OUT_FILE = "#{ROM_FILE_BASENAME}-label-details.json"
 
 HIDDEN_ITEMS = ["MACHINE_PART"]
 ITEM_BALLS = %w(COIN_CASE HM_WATERFALL)
