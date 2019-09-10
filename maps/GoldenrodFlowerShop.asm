@@ -63,6 +63,7 @@ FlowerShopFloriaScript:
 	faceplayer
 	opentext
 	;; need to fix this too so that the player can alwyas talk to Floria
+	;; actually, fuck it. we'll make the minimum changes, and this won't be one of them
 .ckir_BEFORE_FLORIA_CHECKEVENT_EVENT_FOUGHT_SUDOWOODO::
 	checkevent EVENT_FOUGHT_SUDOWOODO
 .ckir_AFTER_FLORIA_CHECKEVENT_EVENT_FOUGHT_SUDOWOODO::
