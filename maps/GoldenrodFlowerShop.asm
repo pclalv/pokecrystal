@@ -22,7 +22,10 @@ FlowerShopTeacherScript:
 	checkevent EVENT_MET_FLORIA
 .ckir_AFTER_CHECKEVENT_EVENT_MET_FLORIA::
 	iffalse .HaventMetFloria
+.ckir_BEFORE_CHECKEVENT_EVENT_TALKED_TO_FLORIA_AT_FLOWER_SHOP::
+	;; we also need to disarm this so that we can make it down to the verbosegiveiem call
 	checkevent EVENT_TALKED_TO_FLORIA_AT_FLOWER_SHOP
+.ckir_AFTER_CHECKEVENT_EVENT_TALKED_TO_FLORIA_AT_FLOWER_SHOP::
 	iffalse .Lalala
 	checkflag ENGINE_PLAINBADGE
 	iffalse .NoPlainBadge
