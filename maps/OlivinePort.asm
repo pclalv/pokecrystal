@@ -418,8 +418,8 @@ OlivinePort_MapEvents:
 
 	;; the goal here is to make the port always appear in the post-Hall-of-Fame state
 
-	;; EVENT_OLIVINE_PORT_SPRITES_BEFORE_HALL_OF_FAME -> EVENT_GOT_A_POKEMON_FROM_ELM ;; an event that is always set very early on
-	;; EVENT_OLIVINE_PORT_SPRITES_AFTER_HALL_OF_FAME -> EVENT_PLAYERS_HOUSE_MOM_2 ;; an event that is always cleared very early on
+	;; EVENT_OLIVINE_PORT_SPRITES_BEFORE_HALL_OF_FAME -> EVENT_GOT_A_POKEMON_FROM_ELM ;; TRUTHY! an event that is always set very early on
+	;; EVENT_OLIVINE_PORT_SPRITES_AFTER_HALL_OF_FAME -> EVENT_PLAYERS_HOUSE_MOM_2 ;; FALSEY! an event that is always cleared very early on
 	db 7 ; object events
 	object_event  7, 23, SPRITE_SAILOR, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OlivinePortSailorAtGangwayScript, EVENT_OLIVINE_PORT_SAILOR_AT_GANGWAY
 .ckir_BEFORE_OBJECT_EVENT_EVENT_OLIVINE_PORT_SPRITES_BEFORE_HALL_OF_FAME_0::
