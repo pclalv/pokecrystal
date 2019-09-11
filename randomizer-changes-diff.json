@@ -1,0 +1,534 @@
+[
+    {
+        "integer_values": {
+            "new": [
+                49,
+                200,
+                6,
+                9,
+                143,
+                83
+            ],
+            "old": [
+                49,
+                42,
+                0,
+                9,
+                143,
+                83
+            ]
+        },
+        "address_range": {
+            "end": 349027,
+            "begin": 349021
+        },
+        "name": "FlowerShopTeacherScript.ckir_BEFORE_CHECKEVENT_EVENT_FOUGHT_SUDOWOODO"
+    },
+    {
+        "integer_values": {
+            "new": [
+                49,
+                26,
+                0
+            ],
+            "old": [
+                49,
+                185,
+                0
+            ]
+        },
+        "address_range": {
+            "end": 349036,
+            "begin": 349033
+        },
+        "name": "FlowerShopTeacherScript.ckir_BEFORE_CHECKEVENT_EVENT_MET_FLORIA"
+    },
+    {
+        "integer_values": {
+            "new": [
+                49,
+                26,
+                0
+            ],
+            "old": [
+                49,
+                186,
+                0
+            ]
+        },
+        "address_range": {
+            "end": 349042,
+            "begin": 349039
+        },
+        "name": "FlowerShopTeacherScript.ckir_BEFORE_CHECKEVENT_EVENT_TALKED_TO_FLORIA_AT_FLOWER_SHOP"
+    },
+    {
+        "integer_values": {
+            "new": [
+                0,
+                0,
+                0
+            ],
+            "old": [
+                205,
+                49,
+                71
+            ]
+        },
+        "address_range": {
+            "end": 51800,
+            "begin": 51797
+        },
+        "name": "FlyFunction.ckir_BEFORE_CHECK_STORMBADGE"
+    },
+    {
+        "integer_values": {
+            "new": [
+                49,
+                26,
+                0
+            ],
+            "old": [
+                49,
+                205,
+                0
+            ]
+        },
+        "address_range": {
+            "end": 348401,
+            "begin": 348398
+        },
+        "name": "GoldenrodMagnetTrainStationOfficerScript.ckir_BEFORE_CHECKEVENT_EVENT_RESTORED_POWER_TO_KANTO"
+    },
+    {
+        "integer_values": {
+            "new": [
+                6,
+                0,
+                192,
+                73
+            ],
+            "old": [
+                6,
+                0,
+                242,
+                73
+            ]
+        },
+        "address_range": {
+            "end": 477616,
+            "begin": 477612
+        },
+        "name": "OlivinePortSailorAfterHOFScript.ckir_BEFORE_IFEQUAL_WEEKDAY_SUNDAY"
+    },
+    {
+        "integer_values": {
+            "new": [
+                6,
+                4,
+                192,
+                73
+            ],
+            "old": [
+                6,
+                4,
+                248,
+                73
+            ]
+        },
+        "address_range": {
+            "end": 477632,
+            "begin": 477628
+        },
+        "name": "OlivinePortSailorAfterHOFScript.ckir_BEFORE_IFEQUAL_WEEKDAY_THURSDAY"
+    },
+    {
+        "integer_values": {
+            "new": [
+                6,
+                2,
+                192,
+                73
+            ],
+            "old": [
+                6,
+                2,
+                248,
+                73
+            ]
+        },
+        "address_range": {
+            "end": 477624,
+            "begin": 477620
+        },
+        "name": "OlivinePortSailorAfterHOFScript.ckir_BEFORE_IFEQUAL_WEEKDAY_TUESDAY"
+    },
+    {
+        "integer_values": {
+            "new": [
+                73,
+                19,
+                11,
+                7,
+                0,
+                255,
+                255,
+                0,
+                0,
+                254,
+                73,
+                26,
+                0
+            ],
+            "old": [
+                73,
+                19,
+                11,
+                7,
+                0,
+                255,
+                255,
+                0,
+                0,
+                254,
+                73,
+                55,
+                7
+            ]
+        },
+        "address_range": {
+            "end": 478543,
+            "begin": 478530
+        },
+        "name": "OlivinePort_MapEvents.ckir_BEFORE_OBJECT_EVENT_EVENT_OLIVINE_PORT_SPRITES_BEFORE_HALL_OF_FAME_0"
+    },
+    {
+        "integer_values": {
+            "new": [
+                59,
+                18,
+                8,
+                7,
+                0,
+                255,
+                255,
+                0,
+                0,
+                1,
+                74,
+                26,
+                0
+            ],
+            "old": [
+                59,
+                18,
+                8,
+                7,
+                0,
+                255,
+                255,
+                0,
+                0,
+                1,
+                74,
+                55,
+                7
+            ]
+        },
+        "address_range": {
+            "end": 478569,
+            "begin": 478556
+        },
+        "name": "OlivinePort_MapEvents.ckir_BEFORE_OBJECT_EVENT_EVENT_OLIVINE_PORT_SPRITES_BEFORE_HALL_OF_FAME_1"
+    },
+    {
+        "integer_values": {
+            "new": [
+                59,
+                18,
+                17,
+                7,
+                0,
+                255,
+                255,
+                0,
+                0,
+                12,
+                74,
+                26,
+                0
+            ],
+            "old": [
+                59,
+                18,
+                17,
+                7,
+                0,
+                255,
+                255,
+                0,
+                0,
+                12,
+                74,
+                55,
+                7
+            ]
+        },
+        "address_range": {
+            "end": 478582,
+            "begin": 478569
+        },
+        "name": "OlivinePort_MapEvents.ckir_BEFORE_OBJECT_EVENT_EVENT_OLIVINE_PORT_SPRITES_BEFORE_HALL_OF_FAME_2"
+    },
+    {
+        "integer_values": {
+            "new": [
+                36,
+                19,
+                15,
+                6,
+                0,
+                255,
+                255,
+                0,
+                0,
+                34,
+                74,
+                200,
+                6
+            ],
+            "old": [
+                36,
+                19,
+                15,
+                6,
+                0,
+                255,
+                255,
+                0,
+                0,
+                34,
+                74,
+                56,
+                7
+            ]
+        },
+        "address_range": {
+            "end": 478608,
+            "begin": 478595
+        },
+        "name": "OlivinePort_MapEvents.ckir_BEFORE_OBJECT_EVENT_EVENT_OLIVINE_PORT_SPRITES_BEFORE_HALL_OF_FAME_3"
+    },
+    {
+        "integer_values": {
+            "new": [
+                49,
+                205,
+                0
+            ],
+            "old": [
+                49,
+                207,
+                0
+            ]
+        },
+        "address_range": {
+            "end": 1644606,
+            "begin": 1644603
+        },
+        "name": "PokemonFanClubClefairyGuyScript.ckir_BEFORE_CHECKEVENT_EVENT_MET_COPYCAT_FOUND_OUT_ABOUT_LOST_ITEM"
+    },
+    {
+        "integer_values": {
+            "new": [
+                49,
+                200,
+                6
+            ],
+            "old": [
+                49,
+                201,
+                0
+            ]
+        },
+        "address_range": {
+            "end": 1609322,
+            "begin": 1609319
+        },
+        "name": "PowerPlantManager.ckir_BEFORE_CHECKEVENT_EVENT_RETURNED_MACHINE_PART"
+    },
+    {
+        "integer_values": {
+            "new": [
+                76,
+                28,
+                9,
+                6,
+                0,
+                255,
+                255,
+                128,
+                0,
+                239,
+                38,
+                26,
+                0
+            ],
+            "old": [
+                76,
+                28,
+                9,
+                6,
+                0,
+                255,
+                255,
+                128,
+                0,
+                239,
+                38,
+                20,
+                7
+            ]
+        },
+        "address_range": {
+            "end": 1711307,
+            "begin": 1711294
+        },
+        "name": "Route30_MapEvents.ckir_BEFORE_OBJECT_EVENT_MONSTER_EVENT_ROUTE_30_BATTLE_0"
+    },
+    {
+        "integer_values": {
+            "new": [
+                76,
+                29,
+                9,
+                7,
+                0,
+                255,
+                255,
+                144,
+                0,
+                239,
+                38,
+                26,
+                0
+            ],
+            "old": [
+                76,
+                29,
+                9,
+                7,
+                0,
+                255,
+                255,
+                144,
+                0,
+                239,
+                38,
+                20,
+                7
+            ]
+        },
+        "address_range": {
+            "end": 1711320,
+            "begin": 1711307
+        },
+        "name": "Route30_MapEvents.ckir_BEFORE_OBJECT_EVENT_MONSTER_EVENT_ROUTE_30_BATTLE_1"
+    },
+    {
+        "integer_values": {
+            "new": [
+                39,
+                30,
+                9,
+                7,
+                0,
+                255,
+                255,
+                144,
+                0,
+                115,
+                86,
+                26,
+                0
+            ],
+            "old": [
+                39,
+                30,
+                9,
+                7,
+                0,
+                255,
+                255,
+                144,
+                0,
+                115,
+                86,
+                20,
+                7
+            ]
+        },
+        "address_range": {
+            "end": 1711242,
+            "begin": 1711229
+        },
+        "name": "Route30_MapEvents.ckir_BEFORE_OBJECT_EVENT_YOUNGSTER_EVENT_ROUTE_30_BATTLE"
+    },
+    {
+        "integer_values": {
+            "new": [
+                49,
+                26,
+                0
+            ],
+            "old": [
+                49,
+                205,
+                0
+            ]
+        },
+        "address_range": {
+            "end": 1615907,
+            "begin": 1615904
+        },
+        "name": "SaffronMagnetTrainStationOfficerScript.ckir_BEFORE_CHECKEVENT_EVENT_RESTORED_POWER_TO_KANTO"
+    },
+    {
+        "integer_values": {
+            "new": [
+                0,
+                0,
+                0
+            ],
+            "old": [
+                205,
+                49,
+                71
+            ]
+        },
+        "address_range": {
+            "end": 51496,
+            "begin": 51493
+        },
+        "name": "SurfFunction.ckir_BEFORE_CHECK_FOGBADGE"
+    },
+    {
+        "integer_values": {
+            "new": [
+                0,
+                0,
+                0
+            ],
+            "old": [
+                205,
+                33,
+                71
+            ]
+        },
+        "address_range": {
+            "end": 53651,
+            "begin": 53648
+        },
+        "name": "TryCutOW.ckir_BEFORE_CHECK_HIVEBADGE"
+    }
+]
