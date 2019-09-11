@@ -14,8 +14,8 @@ FlowerShopTeacherScript:
 	;; Flower Shop.
 
 	checkevent EVENT_FOUGHT_SUDOWOODO
-	iftrue .Lalala
 .ckir_AFTER_CHECKEVENT_EVENT_FOUGHT_SUDOWOODO::
+	iftrue .Lalala
 	checkevent EVENT_GOT_SQUIRTBOTTLE
 	iftrue .GotSquirtbottle
 .ckir_BEFORE_CHECKEVENT_EVENT_MET_FLORIA::
