@@ -19,13 +19,13 @@ FlowerShopTeacherScript:
 	checkevent EVENT_GOT_SQUIRTBOTTLE
 	iftrue .GotSquirtbottle
 .ckir_BEFORE_CHECKEVENT_EVENT_MET_FLORIA::
-	;; we don't strictly need to disarm this, but we might as well
-	;; for player's quality of life
-	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
+	;; we don't strictly need to disarm this. might we as well
+	;; for the player's quality of life?
+	checkevent EVENT_MET_FLORIA
 .ckir_AFTER_CHECKEVENT_EVENT_MET_FLORIA::
 	iffalse .HaventMetFloria
 .ckir_BEFORE_CHECKEVENT_EVENT_TALKED_TO_FLORIA_AT_FLOWER_SHOP::
-	;; ditto above
+	;; ditto above, but for real this time
 	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
 .ckir_AFTER_CHECKEVENT_EVENT_TALKED_TO_FLORIA_AT_FLOWER_SHOP::
 	iffalse .Lalala
