@@ -4,44 +4,19 @@
             "new": [
                 49,
                 200,
-                6,
-                9,
-                143,
-                83
+                6
             ],
             "old": [
                 49,
                 42,
-                0,
-                9,
-                143,
-                83
+                0
             ]
         },
         "address_range": {
-            "end": 349027,
+            "end": 349024,
             "begin": 349021
         },
         "name": "FlowerShopTeacherScript.ckir_BEFORE_CHECKEVENT_EVENT_FOUGHT_SUDOWOODO"
-    },
-    {
-        "integer_values": {
-            "new": [
-                49,
-                26,
-                0
-            ],
-            "old": [
-                49,
-                185,
-                0
-            ]
-        },
-        "address_range": {
-            "end": 349036,
-            "begin": 349033
-        },
-        "name": "FlowerShopTeacherScript.ckir_BEFORE_CHECKEVENT_EVENT_MET_FLORIA"
     },
     {
         "integer_values": {
@@ -99,6 +74,27 @@
             "begin": 348398
         },
         "name": "GoldenrodMagnetTrainStationOfficerScript.ckir_BEFORE_CHECKEVENT_EVENT_RESTORED_POWER_TO_KANTO"
+    },
+    {
+        "integer_values": {
+            "new": [
+                6,
+                6,
+                192,
+                73
+            ],
+            "old": [
+                6,
+                6,
+                242,
+                73
+            ]
+        },
+        "address_range": {
+            "end": 477620,
+            "begin": 477616
+        },
+        "name": "OlivinePortSailorAfterHOFScript.ckir_BEFORE_IFEQUAL_WEEKDAY_SATURDAY"
     },
     {
         "integer_values": {
@@ -162,6 +158,27 @@
             "begin": 477620
         },
         "name": "OlivinePortSailorAfterHOFScript.ckir_BEFORE_IFEQUAL_WEEKDAY_TUESDAY"
+    },
+    {
+        "integer_values": {
+            "new": [
+                6,
+                3,
+                192,
+                73
+            ],
+            "old": [
+                6,
+                3,
+                248,
+                73
+            ]
+        },
+        "address_range": {
+            "end": 477628,
+            "begin": 477624
+        },
+        "name": "OlivinePortSailorAfterHOFScript.ckir_BEFORE_IFEQUAL_WEEKDAY_WEDNESDAY"
     },
     {
         "integer_values": {
