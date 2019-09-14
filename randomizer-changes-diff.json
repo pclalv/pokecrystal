@@ -166,6 +166,84 @@
             "new": [
                 73,
                 19,
+                10,
+                9,
+                0,
+                255,
+                255,
+                0,
+                0,
+                156,
+                73,
+                200,
+                6
+            ],
+            "old": [
+                73,
+                19,
+                10,
+                9,
+                0,
+                255,
+                255,
+                0,
+                0,
+                156,
+                73,
+                56,
+                7
+            ]
+        },
+        "address_range": {
+            "end": 478556,
+            "begin": 478543
+        },
+        "name": "OlivinePort_MapEvents.ckir_BEFORE_OBJECT_EVENT_EVENT_OLIVINE_PORT_SPRITES_AFTER_HALL_OF_FAME_0"
+    },
+    {
+        "integer_values": {
+            "new": [
+                39,
+                19,
+                8,
+                6,
+                0,
+                255,
+                255,
+                0,
+                0,
+                23,
+                74,
+                200,
+                6
+            ],
+            "old": [
+                39,
+                19,
+                8,
+                6,
+                0,
+                255,
+                255,
+                0,
+                0,
+                23,
+                74,
+                56,
+                7
+            ]
+        },
+        "address_range": {
+            "end": 478595,
+            "begin": 478582
+        },
+        "name": "OlivinePort_MapEvents.ckir_BEFORE_OBJECT_EVENT_EVENT_OLIVINE_PORT_SPRITES_AFTER_HALL_OF_FAME_1"
+    },
+    {
+        "integer_values": {
+            "new": [
+                73,
+                19,
                 11,
                 7,
                 0,
