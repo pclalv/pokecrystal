@@ -40,25 +40,6 @@
     {
         "integer_values": {
             "new": [
-                0,
-                0,
-                0
-            ],
-            "old": [
-                205,
-                49,
-                71
-            ]
-        },
-        "address_range": {
-            "end": 51800,
-            "begin": 51797
-        },
-        "name": "FlyFunction.ckir_BEFORE_CHECK_STORMBADGE"
-    },
-    {
-        "integer_values": {
-            "new": [
                 49,
                 26,
                 0
@@ -509,43 +490,5 @@
             "begin": 1615904
         },
         "name": "SaffronMagnetTrainStationOfficerScript.ckir_BEFORE_CHECKEVENT_EVENT_RESTORED_POWER_TO_KANTO"
-    },
-    {
-        "integer_values": {
-            "new": [
-                0,
-                0,
-                0
-            ],
-            "old": [
-                205,
-                49,
-                71
-            ]
-        },
-        "address_range": {
-            "end": 51496,
-            "begin": 51493
-        },
-        "name": "SurfFunction.ckir_BEFORE_CHECK_FOGBADGE"
-    },
-    {
-        "integer_values": {
-            "new": [
-                0,
-                0,
-                0
-            ],
-            "old": [
-                205,
-                33,
-                71
-            ]
-        },
-        "address_range": {
-            "end": 53651,
-            "begin": 53648
-        },
-        "name": "TryCutOW.ckir_BEFORE_CHECK_HIVEBADGE"
     }
 ]
