@@ -61,9 +61,9 @@ FlowerShopFloriaScript:
 	faceplayer
 	opentext
 	;; need to fix this too so that the player can alwyas talk to Floria
-.ckir_FLORIA_BEFORE_CHECKEVENT_EVENT_FOUGHT_SUDOWOODO::
+.ckir_BEFORE_FLORIA_CHECKEVENT_EVENT_FOUGHT_SUDOWOODO::
 	checkevent EVENT_FOUGHT_SUDOWOODO
-.ckir_FLORIA_AFTER_CHECKEVENT_EVENT_FOUGHT_SUDOWOODO::
+.ckir_AFTER_FLORIA_CHECKEVENT_EVENT_FOUGHT_SUDOWOODO::
 	iftrue .FoughtSudowoodo
 	checkevent EVENT_GOT_SQUIRTBOTTLE
 	iftrue .GotSquirtbottle
