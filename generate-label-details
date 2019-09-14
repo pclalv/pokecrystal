@@ -50,7 +50,7 @@ def main
   key_item_address_ranges =
     label_addresses
       .keys
-      .reject { |label| label.include?("AFTER") }
+      .reject { |label| label.include?("ckir_AFTER") }
       .map do |label|
         post_label = label.gsub("ckir_BEFORE", "ckir_AFTER")
         address_range = label_addresses[label]...label_addresses[post_label]
