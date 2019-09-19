@@ -94,7 +94,7 @@ GoldenrodUndergroundWarehouseTMSleepTalk:
 
 GoldenrodUndergroundWarehouseUltraBall:
 .ckir_BEFORE_ITEMBALL_ULTRABALL::
-	itemball ULTRA_BALL
+	itemball CARD_KEY
 .ckir_AFTER_ITEMBALL_ULTRABALL::
 
 GruntM24SeenText:
@@ -232,6 +232,12 @@ GoldenrodUndergroundWarehouse_MapEvents:
 ;;; commit this to randomizer-labels and explore the possibilty of
 ;;; replacing this with an itemball containing CARD_KEY that
 ;;; conditionally appears after Team Rock is defeated
+
+;;; actually, what we REALLY need to make the Underground key item item ball work is an event flag that we can safely toggle.
+;;; consider: i could use EVENT_PLAYERS_HOUSE_MOM_2, but it's not safe
+;;; to toggle that because Mom would disappear. i care much less
+;;; about this Super Nerd, so we'll use this flag to control the
+;;; itemball appearance and disappearance. hence, when the Underground Basement key item item ball is collected, the Blackthorn Gym Super Nerd will disappear.
 .ckir_BEFORE_OBJECT_EVENT_ULTRABALL::
-	object_event  2,  1, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, GoldenrodUndergroundWarehouseUltraBall, EVENT_GOLDENROD_UNDERGROUND_WAREHOUSE_ULTRA_BALL
+	object_event  13,  8, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, GoldenrodUndergroundWarehouseUltraBall, EVENT_BLACKTHORN_CITY_SUPER_NERD_DOES_NOT_BLOCK_GYM
 .ckir_AFTER_OBJECT_EVENT_ULTRABALL::
