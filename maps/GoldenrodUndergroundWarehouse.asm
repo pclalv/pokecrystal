@@ -93,7 +93,9 @@ GoldenrodUndergroundWarehouseTMSleepTalk:
 	itemball TM_SLEEP_TALK
 
 GoldenrodUndergroundWarehouseUltraBall:
+.ckir_BEFORE_ITEMBALL_ULTRABALL::
 	itemball ULTRA_BALL
+.ckir_AFTER_ITEMBALL_ULTRABALL::
 
 GruntM24SeenText:
 	text "How did you get"
@@ -227,4 +229,9 @@ GoldenrodUndergroundWarehouse_MapEvents:
 	object_event 12,  8, SPRITE_GENTLEMAN, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, GoldenrodUndergroundWarehouseDirectorScript, EVENT_RADIO_TOWER_ROCKET_TAKEOVER
 	object_event 18, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, GoldenrodUndergroundWarehouseMaxEther, EVENT_GOLDENROD_UNDERGROUND_WAREHOUSE_MAX_ETHER
 	object_event 13,  9, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, GoldenrodUndergroundWarehouseTMSleepTalk, EVENT_GOLDENROD_UNDERGROUND_WAREHOUSE_TM_SLEEP_TALK
+;;; commit this to randomizer-labels and explore the possibilty of
+;;; replacing this with an itemball containing CARD_KEY that
+;;; conditionally appears after Team Rock is defeated
+.ckir_BEFORE_OBJECT_EVENT_ULTRABALL::
 	object_event  2,  1, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, GoldenrodUndergroundWarehouseUltraBall, EVENT_GOLDENROD_UNDERGROUND_WAREHOUSE_ULTRA_BALL
+.ckir_AFTER_OBJECT_EVENT_ULTRABALL::

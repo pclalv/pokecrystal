@@ -57,7 +57,10 @@ MahoganyGym_NoRoomForIcyWind:
 	closetext
 	end
 
+;;; find out how many bytes this is
+;;; i'm intersted in adding this code to all of the other gyms.
 MahoganyGymActivateRockets:
+.ckir_BEFORE_MahoganyGymActivateRockets::
 	ifequal 7, .RadioTowerRockets
 	ifequal 6, .GoldenrodRockets
 	end
@@ -67,6 +70,7 @@ MahoganyGymActivateRockets:
 
 .RadioTowerRockets:
 	jumpstd radiotowerrockets
+.ckir_AFTER_MahoganyGymActivateRockets::
 
 TrainerSkierRoxanne:
 	trainer SKIER, ROXANNE, EVENT_BEAT_SKIER_ROXANNE, SkierRoxanneSeenText, SkierRoxanneBeatenText, 0, .Script

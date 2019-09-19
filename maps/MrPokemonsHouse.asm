@@ -186,7 +186,10 @@ MrPokemonIntroText2:
 
 MrPokemonsHouse_GotEggText:
 	text "<PLAYER> received"
+;;; see about updating this text.
+.ckir_BEFORE_GOT_EGG_TEXT::
 	line "MYSTERY EGG."
+.ckir_AFTER_GOT_EGG_TEXT::
 	done
 
 MrPokemonIntroText3:
