@@ -208,7 +208,9 @@ TotodilePokeBallScript:
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	buttonsound
+.ckir_BEFORE_givepoke_TOTODILE::
 	givepoke TOTODILE, 5, BERRY
+.ckir_AFTER_givepoke_TOTODILE::
 	closetext
 	applymovement PLAYER, AfterTotodileMovement
 	sjump ElmDirectionsScript
