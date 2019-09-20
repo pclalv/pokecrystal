@@ -59,6 +59,62 @@
     {
         "integer_values": {
             "new": [
+                127,
+                1
+            ],
+            "old": [
+                2,
+                1
+            ]
+        },
+        "address_range": {
+            "end": 514538,
+            "begin": 514536
+        },
+        "name": "GoldenrodUndergroundWarehouseUltraBall.ckir_BEFORE_ITEMBALL_ULTRABALL"
+    },
+    {
+        "integer_values": {
+            "new": [
+                84,
+                12,
+                17,
+                1,
+                0,
+                255,
+                255,
+                1,
+                0,
+                232,
+                89,
+                228,
+                6
+            ],
+            "old": [
+                84,
+                5,
+                6,
+                1,
+                0,
+                255,
+                255,
+                1,
+                0,
+                232,
+                89,
+                85,
+                6
+            ]
+        },
+        "address_range": {
+            "end": 515572,
+            "begin": 515559
+        },
+        "name": "GoldenrodUndergroundWarehouse_MapEvents.ckir_BEFORE_OBJECT_EVENT_ULTRABALL"
+    },
+    {
+        "integer_values": {
+            "new": [
                 6,
                 6,
                 192,
