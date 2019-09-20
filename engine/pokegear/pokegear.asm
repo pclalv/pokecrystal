@@ -2125,7 +2125,9 @@ FlyMapScroll:
 	ld [hl], a
 .NotAtEndYet:
 	inc [hl]
+.ckir_BEFORE_NotAtEndYet_CheckIfVisitedFlypoint::
 	call CheckIfVisitedFlypoint
+.ckir_AFTER_NotAtEndYet_CheckIfVisitedFlypoint::
 	jr z, .ScrollNext
 	jr .Finally
 
@@ -2139,7 +2141,9 @@ FlyMapScroll:
 	ld [hl], a
 .NotAtStartYet:
 	dec [hl]
+.ckir_BEFORE_NotAtStartYet_CheckIfVisitedFlypoint::
 	call CheckIfVisitedFlypoint
+.ckir_AFTER_NotAtStartYet_CheckIfVisitedFlypoint::
 	jr z, .ScrollPrev
 .Finally:
 	call TownMapBubble
@@ -2242,7 +2246,9 @@ CheckIfVisitedFlypoint:
 	ld de, Flypoints + 1
 	add hl, de
 	ld c, [hl]
+.ckir_BEFORE_HasVisitedSpawn::
 	call HasVisitedSpawn
+.ckir_AFTER_HasVisitedSpawn::
 	pop hl
 	pop de
 	pop bc
@@ -2311,7 +2317,9 @@ FlyMap:
 ; visited and its flypoint enabled.
 	push af
 	ld c, SPAWN_INDIGO
+.ckir_BEFORE_KantoFlyMap_HasVisitedSpawn::
 	call HasVisitedSpawn
+.ckir_AFTER_KantoFlyMap_HasVisitedSpawn::
 	and a
 	jr z, .NoKanto
 ; Kanto's map is only loaded if we've visited Indigo Plateau
