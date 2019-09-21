@@ -86,19 +86,19 @@ VermilionPortWalkUpToShipScript:
 	opentext
 	readvar VAR_WEEKDAY
 .ckir_BEFORE_ifequal_MONDAY::
-	ifequal MONDAY, .NextShipWednesday
+	ifequal MONDAY, .TryBoard
 .ckir_AFTER_ifequal_MONDAY::
 .ckir_BEFORE_ifequal_TUESDAY::
-	ifequal TUESDAY, .NextShipWednesday
+	ifequal TUESDAY, .TryBoard
 .ckir_AFTER_ifequal_TUESDAY::
 .ckir_BEFORE_ifequal_THURSDAY::
-	ifequal THURSDAY, .NextShipSunday
+	ifequal THURSDAY, .TryBoard
 .ckir_AFTER_ifequal_THURSDAY::
 .ckir_BEFORE_ifequal_FRIDAY::
-	ifequal FRIDAY, .NextShipSunday
+	ifequal FRIDAY, .TryBoard
 .ckir_AFTER_ifequal_FRIDAY::
 .ckir_BEFORE_ifequal_SATURDAY::
-	ifequal SATURDAY, .NextShipSunday
+	ifequal SATURDAY, .TryBoard
 .ckir_AFTER_ifequal_SATURDAY::
 	writetext UnknownText_0x74f4d
 	yesorno
