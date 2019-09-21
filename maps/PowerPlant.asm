@@ -135,7 +135,10 @@ PowerPlantManager:
 	faceplayer
 	opentext
 .ckir_BEFORE_CHECKEVENT_EVENT_RETURNED_MACHINE_PART::
-	checkevent EVENT_RETURNED_MACHINE_PART
+	;; ensure that this check always returns false so that the
+	;; player can always talk to the Manager and activate the Celadon
+	;; Gym item
+	checkevent EVENT_PLAYERS_HOUSE_MOM_2
 .ckir_AFTER_CHECKEVENT_EVENT_RETURNED_MACHINE_PART::
 	iftrue .ReturnedMachinePart
 	checkitem MACHINE_PART
