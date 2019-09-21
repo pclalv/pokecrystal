@@ -663,5 +663,110 @@
             "begin": 1615904
         },
         "name": "SaffronMagnetTrainStationOfficerScript.ckir_BEFORE_CHECKEVENT_EVENT_RESTORED_POWER_TO_KANTO"
+    },
+    {
+        "integer_values": {
+            "new": [
+                6,
+                5,
+                80,
+                78
+            ],
+            "old": [
+                6,
+                5,
+                124,
+                78
+            ]
+        },
+        "address_range": {
+            "end": 478789,
+            "begin": 478785
+        },
+        "name": "VermilionPortWalkUpToShipScript.ckir_BEFORE_ifequal_FRIDAY"
+    },
+    {
+        "integer_values": {
+            "new": [
+                6,
+                1,
+                80,
+                78
+            ],
+            "old": [
+                6,
+                1,
+                114,
+                78
+            ]
+        },
+        "address_range": {
+            "end": 478777,
+            "begin": 478773
+        },
+        "name": "VermilionPortWalkUpToShipScript.ckir_BEFORE_ifequal_MONDAY"
+    },
+    {
+        "integer_values": {
+            "new": [
+                6,
+                6,
+                80,
+                78
+            ],
+            "old": [
+                6,
+                6,
+                124,
+                78
+            ]
+        },
+        "address_range": {
+            "end": 478793,
+            "begin": 478789
+        },
+        "name": "VermilionPortWalkUpToShipScript.ckir_BEFORE_ifequal_SATURDAY"
+    },
+    {
+        "integer_values": {
+            "new": [
+                6,
+                4,
+                80,
+                78
+            ],
+            "old": [
+                6,
+                4,
+                124,
+                78
+            ]
+        },
+        "address_range": {
+            "end": 478785,
+            "begin": 478781
+        },
+        "name": "VermilionPortWalkUpToShipScript.ckir_BEFORE_ifequal_THURSDAY"
+    },
+    {
+        "integer_values": {
+            "new": [
+                6,
+                2,
+                80,
+                78
+            ],
+            "old": [
+                6,
+                2,
+                114,
+                78
+            ]
+        },
+        "address_range": {
+            "end": 478781,
+            "begin": 478777
+        },
+        "name": "VermilionPortWalkUpToShipScript.ckir_BEFORE_ifequal_TUESDAY"
     }
 ]
