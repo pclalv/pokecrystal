@@ -83,11 +83,21 @@ OlivinePortWalkUpToShipScript:
 	checkevent EVENT_FAST_SHIP_FIRST_TIME
 	iffalse .FirstTime
 	readvar VAR_WEEKDAY
+.ckir_BEFORE_ifequal_SUNDAY::
 	ifequal SUNDAY, .NextShipMonday
+.ckir_AFTER_ifequal_SUNDAY::
+.ckir_BEFORE_ifequal_SATURDAY::
 	ifequal SATURDAY, .NextShipMonday
+.ckir_AFTER_ifequal_SATURDAY::
+.ckir_BEFORE_ifequal_TUESDAY::
 	ifequal TUESDAY, .NextShipFriday
+.ckir_AFTER_ifequal_TUESDAY::
+.ckir_BEFORE_ifequal_WEDNESDAY::
 	ifequal WEDNESDAY, .NextShipFriday
+.ckir_AFTER_ifequal_WEDNESDAY::
+.ckir_BEFORE_ifequal_THURSDAY::
 	ifequal THURSDAY, .NextShipFriday
+.ckir_AFTER_ifequal_THURSDAY::
 .FirstTime:
 	writetext UnknownText_0x74a9c
 	yesorno
