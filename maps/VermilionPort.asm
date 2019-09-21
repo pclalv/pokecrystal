@@ -85,14 +85,25 @@ VermilionPortWalkUpToShipScript:
 	turnobject PLAYER, LEFT
 	opentext
 	readvar VAR_WEEKDAY
+.ckir_BEFORE_ifequal_MONDAY::
 	ifequal MONDAY, .NextShipWednesday
+.ckir_AFTER_ifequal_MONDAY::
+.ckir_BEFORE_ifequal_TUESDAY::
 	ifequal TUESDAY, .NextShipWednesday
+.ckir_AFTER_ifequal_TUESDAY::
+.ckir_BEFORE_ifequal_THURSDAY::
 	ifequal THURSDAY, .NextShipSunday
+.ckir_AFTER_ifequal_THURSDAY::
+.ckir_BEFORE_ifequal_FRIDAY::
 	ifequal FRIDAY, .NextShipSunday
+.ckir_AFTER_ifequal_FRIDAY::
+.ckir_BEFORE_ifequal_SATURDAY::
 	ifequal SATURDAY, .NextShipSunday
+.ckir_AFTER_ifequal_SATURDAY::
 	writetext UnknownText_0x74f4d
 	yesorno
 	iffalse VermilionPortNotRidingMoveAwayScript
+.TryBoard:
 	writetext UnknownText_0x74f8b
 	buttonsound
 	checkitem S_S_TICKET
