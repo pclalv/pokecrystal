@@ -3,15 +3,19 @@
 require 'json'
 require 'pry-byebug'
 
+VERSION = ENV.fetch("VERSION", "pokecrystal")
+
+raise "Invalid version: #{VERSION}" unless %w(pokecrystal pokecrystal11).include?(VERSION)
+
 BLACKLISTED_LABELS = %w(
   SurfFunction.ckir_BEFORE_CHECK_FOGBADGE
   TryCutOW.ckir_BEFORE_CHECK_HIVEBADGE
   FlyFunction.ckir_BEFORE_CHECK_STORMBADGE
 )
 
-randomizer_labels_json  = JSON.load(File.read("pokecrystal-randomizer-labels-label-details.json")).
+randomizer_labels_json  = JSON.load(File.read("#{VERSION}-randomizer-labels-label-details.json")).
   sort_by { |h| h['name'] }
-randomizer_changes_json = JSON.load(File.read("pokecrystal-randomizer-changes-label-details.json")).
+randomizer_changes_json = JSON.load(File.read("#{VERSION}-randomizer-changes-label-details.json")).
   sort_by { |h| h['name'] }
 
 diff = randomizer_labels_json.
@@ -35,4 +39,4 @@ diff = randomizer_labels_json.
   reject { |d| BLACKLISTED_LABELS.include?(d['name']) }.
   to_json
 
-File.write("randomizer-changes-diff.json", diff)
+File.write("#{VERSION}-randomizer-changes-diff.json", diff)
