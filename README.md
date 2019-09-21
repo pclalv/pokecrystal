@@ -1,46 +1,18 @@
-# Pokémon Crystal [![Build Status][travis-badge]][travis]
+# See [crystal-key-item-randomizer](https://github.com/pclalv/crystal-key-item-randomizer).
 
-This is a disassembly of Pokémon Crystal.
+The `randomizer-labels` branch builds the same ROM as the `master`
+branch but contains additional labels/exported symbols that have been
+useful in the development of the randomizer. 
 
-It builds the following ROMs:
+The `randomizer-changes` branch is based off of `randomizer-labels`
+but has some code modified (such that all byte values corresponding to
+unmodified code _always line up_ - we cannot be shifting bytes
+around). The modifications pertain to changes particular to the
+randomizer, such as allowing early Kanto transit.
 
-- Pokemon - Crystal Version (UE) (V1.0) [C][!].gbc `sha1: f4cd194bdee0d04ca4eac29e09b8e4e9d818c133`
-- Pokemon - Crystal Version (UE) (V1.1) [C][!].gbc `sha1: f2f52230b536214ef7c9924f483392993e226cfb`
-- Pokemon - Crystal Version (A) [C][!].gbc `sha1: a0fc810f1d4e124434f7be2c989ab5b5892ddf36`
+Both branches are built and diffed in order to determine the address
+ranges that we need to target, the original values appearing inthose
+address ranges and the values that should be inserted by the
+randomizer.
 
-To set up the repository, see [INSTALL.md](INSTALL.md).
-
-## See also
-
-- [**FAQ**](FAQ.md)
-- [**Documentation**][docs]
-- [**Wiki**][wiki] (includes [tutorials][tutorials])
-- **Discord:** [pret][discord]
-- **IRC:** [freenode#pret][irc]
-
-Other disassembly projects:
-
-- [**Pokémon Red/Blue**][pokered]
-- [**Pokémon Yellow**][pokeyellow]
-- [**Pokémon Gold**][pokegold]
-- [**Pokémon Pinball**][pokepinball]
-- [**Pokémon TCG**][poketcg]
-- [**Pokémon Ruby**][pokeruby]
-- [**Pokémon Fire Red**][pokefirered]
-- [**Pokémon Emerald**][pokeemerald]
-
-[pokered]: https://github.com/pret/pokered
-[pokeyellow]: https://github.com/pret/pokeyellow
-[pokegold]: https://github.com/pret/pokegold
-[pokepinball]: https://github.com/pret/pokepinball
-[poketcg]: https://github.com/pret/poketcg
-[pokeruby]: https://github.com/pret/pokeruby
-[pokefirered]: https://github.com/pret/pokefirered
-[pokeemerald]: https://github.com/pret/pokeemerald
-[docs]: https://pret.github.io/pokecrystal/
-[wiki]: https://github.com/pret/pokecrystal/wiki
-[tutorials]: https://github.com/pret/pokecrystal/wiki/Tutorials
-[discord]: https://discord.gg/6EuWgX9
-[irc]: https://kiwiirc.com/client/irc.freenode.net/?#pret
-[travis]: https://travis-ci.org/pret/pokecrystal
-[travis-badge]: https://travis-ci.org/pret/pokecrystal.svg?branch=master
+In general, this technique is useful in developing the randomizer.
