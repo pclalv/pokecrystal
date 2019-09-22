@@ -19,11 +19,13 @@ CianwoodPharmacist:
 	iffalse .Mart
 	writetext PharmacistGiveSecretpotionText
 	buttonsound
+.ckir_BEFORE_giveitem_SECRETPOTION::
 	giveitem SECRETPOTION
 	writetext ReceivedSecretpotionText
 	playsound SFX_KEY_ITEM
 	waitsfx
 	itemnotify
+.ckir_AFTER_giveitem_SECRETPOTION::
 	setevent EVENT_GOT_SECRETPOTION_FROM_PHARMACY
 	writetext PharmacistDescribeSecretpotionText
 	waitbutton

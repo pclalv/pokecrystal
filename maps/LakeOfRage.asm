@@ -92,12 +92,14 @@ RedGyarados:
 .NotBeaten:
 	reloadmapafterbattle
 	opentext
+.ckir_BEFORE_giveitem_RED_SCALE::
 	giveitem RED_SCALE
 	waitsfx
 	writetext UnknownText_0x703df
 	playsound SFX_ITEM
 	waitsfx
 	itemnotify
+.ckir_AFTER_giveitem_RED_SCALE::
 	closetext
 	setscene 0 ; Lake of Rage does not have a scene variable
 	appear LAKEOFRAGE_LANCE

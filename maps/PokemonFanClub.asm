@@ -83,6 +83,7 @@ PokemonFanClubClefairyGuyScript:
 	writetext PokemonFanClubClefairyGuyTakeThisDollBackToGirlText
 	buttonsound
 	waitsfx
+.ckir_BEFORE_giveitem_LOST_ITEM::
 	giveitem LOST_ITEM
 	iffalse .NoRoom
 	disappear POKEMONFANCLUB_FAIRY
@@ -90,6 +91,7 @@ PokemonFanClubClefairyGuyScript:
 	playsound SFX_KEY_ITEM
 	waitsfx
 	itemnotify
+.ckir_AFTER_giveitem_LOST_ITEM::
 	setevent EVENT_GOT_LOST_ITEM_FROM_FAN_CLUB
 	closetext
 	end

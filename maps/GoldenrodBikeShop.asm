@@ -20,11 +20,13 @@ GoldenrodBikeShopClerkScript:
 	writetext GoldenrodBikeShopClerkAgreedText
 	buttonsound
 	waitsfx
+.ckir_BEFORE_giveitem_BICYCLE::
 	giveitem BICYCLE
 	writetext BorrowedABicycleText
 	playsound SFX_KEY_ITEM
 	waitsfx
 	itemnotify
+.ckir_AFTER_giveitem_BICYCLE::
 	setflag ENGINE_BIKE_SHOP_CALL_ENABLED
 	setevent EVENT_GOT_BICYCLE
 .GotBicycle:
