@@ -105,7 +105,9 @@ DanceTheaterSurfGuy:
 .GetSurf:
 	writetext SurfGuyLikeADanceText
 	buttonsound
+.ckir_BEFORE_verbosegiveitem_HM_SURF::
 	verbosegiveitem HM_SURF
+.ckir_AFTER_verbosegiveitem_HM_SURF::
 	setevent EVENT_GOT_HM03_SURF
 	writetext SurfGuySurfExplanationText
 	waitbutton
