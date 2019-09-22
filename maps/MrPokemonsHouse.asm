@@ -29,11 +29,15 @@ MrPokemonsHouse_MapScripts:
 	buttonsound
 	waitsfx
 .ckir_BEFORE_giveitem_MYSTERY_EGG::
-	giveitem MYSTERY_EGG
-	writetext MrPokemonsHouse_GotEggText
-	playsound SFX_KEY_ITEM
-	waitsfx
-	itemnotify
+	verbosegiveitem MYSTERY_EGG
+	nop
+	nop
+	nop
+	nop
+	nop
+	nop
+	nop
+	nop
 .ckir_AFTER_giveitem_MYSTERY_EGG::
 	setevent EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON
 	blackoutmod CHERRYGROVE_CITY
