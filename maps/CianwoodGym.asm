@@ -47,8 +47,10 @@ CianwoodGymChuckScript:
 	playsound SFX_GET_BADGE
 	waitsfx
 	setflag ENGINE_STORMBADGE
+.ckir_BEFORE_readvar_VAR_BADGES::
 	readvar VAR_BADGES
 	scall CianwoodGymActivateRockets
+.ckir_AFTER_readvar_VAR_BADGES::
 .FightDone:
 	checkevent EVENT_GOT_TM01_DYNAMICPUNCH
 	iftrue .AlreadyGotTM
@@ -73,6 +75,7 @@ CianwoodGymChuckScript:
 	closetext
 	end
 
+ckir_BEFORE_CianwoodGymActivateRockets::
 CianwoodGymActivateRockets:
 	ifequal 7, .RadioTowerRockets
 	ifequal 6, .GoldenrodRockets
@@ -83,6 +86,7 @@ CianwoodGymActivateRockets:
 
 .RadioTowerRockets:
 	jumpstd radiotowerrockets
+ckir_AFTER_CianwoodGymActivateRockets::
 
 TrainerBlackbeltYoshi:
 	trainer BLACKBELT_T, YOSHI, EVENT_BEAT_BLACKBELT_YOSHI, BlackbeltYoshiSeenText, BlackbeltYoshiBeatenText, 0, .Script
