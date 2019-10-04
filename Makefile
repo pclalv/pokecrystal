@@ -66,10 +66,10 @@ tools:
 
 
 RGBASMFLAGS = -L -Weverything
-$(crystal_obj):    RGBASMFLAGS +=
+$(crystal_obj):    RGBASMFLAGS += -E
 
 rgbdscheck.o: rgbdscheck.asm
-	$(RGBASM) -o $@ $<
+	$(RGBASM) -E -o $@ $<
 
 # The dep rules have to be explicit or else missing files won't be reported.
 # As a side effect, they're evaluated immediately instead of when the rule is invoked.
@@ -245,7 +245,7 @@ gfx/mobile/stadium2_n64.2bpp: tools/gfx += --trim-whitespace
 
 %.dimensions: %.png
 	tools/png_dimensions $< $@
-	
+
 %.ini: %.gbc %.sym
 	$(PYTHON3) genrandoini.py $^ $@
 	echo "MD5Hash="$(shell md5sum $< | cut -d' ' -f1) >> $@
