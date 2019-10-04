@@ -32,7 +32,9 @@ GrampsScript_0x18c00f:
 	iftrue UnknownScript_0x18c023
 	writetext UnknownText_0x18c0c6
 	buttonsound
+.ckir_BEFORE_verbosegiveitem_SILVER_WING:
 	verbosegiveitem SILVER_WING
+.ckir_AFTER_verbosegiveitem_SILVER_WING:
 	setevent EVENT_GOT_SILVER_WING
 	closetext
 	end

@@ -79,7 +79,9 @@ UnknownScript_0x191844:
 	writetext UnknownText_0x191c5a
 	buttonsound
 	waitsfx
+.ckir_BEFORE_giveitem_LOST_ITEM:
 	giveitem LOST_ITEM
+.ckir_AFTER_giveitem_LOST_ITEM:
 	iffalse UnknownScript_0x191865
 	disappear POKEMONFANCLUB_FAIRY
 	writetext UnknownText_0x191d0a

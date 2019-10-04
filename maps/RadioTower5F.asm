@@ -47,7 +47,9 @@ FakeDirectorScript:
 	opentext
 	writetext FakeDirectorTextAfter
 	buttonsound
+.ckir_BEFORE_verbosegiveitem_BASEMENT_KEY:
 	verbosegiveitem BASEMENT_KEY
+.ckir_AFTER_verbosegiveitem_BASEMENT_KEY:
 	closetext
 	dotrigger $1
 	setevent EVENT_BEAT_ROCKET_EXECUTIVEM_3
@@ -124,7 +126,9 @@ RadioTower5FRocketBossTrigger:
 	opentext
 	writetext RadioTower5FDirectorThankYouText
 	buttonsound
+.ckir_BEFORE_verbosegiveitem_CLEAR_BELL:
 	verbosegiveitem CLEAR_BELL
+.ckir_AFTER_verbosegiveitem_CLEAR_BELL:
 	writetext RadioTower5FDirectorDescribeClearBellText
 	waitbutton
 	closetext

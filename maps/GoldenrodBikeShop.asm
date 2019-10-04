@@ -22,7 +22,9 @@ ClerkScript_0x54750:
 	writetext UnknownText_0x547f8
 	buttonsound
 	waitsfx
+.ckir_BEFORE_giveitem_BICYCLE:
 	giveitem BICYCLE
+.ckir_AFTER_giveitem_BICYCLE:
 	writetext UnknownText_0x54848
 	playsound SFX_KEY_ITEM
 	waitsfx

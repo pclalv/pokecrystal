@@ -17,7 +17,9 @@ SailorScript_0x9c8c1:
 	iftrue UnknownScript_0x9c8d3
 	writetext UnknownText_0x9c8df
 	buttonsound
+.ckir_BEFORE_verbosegiveitem_HM_STRENGTH:
 	verbosegiveitem HM_STRENGTH
+.ckir_AFTER_verbosegiveitem_HM_STRENGTH:
 	setevent EVENT_GOT_HM04_STRENGTH
 UnknownScript_0x9c8d3:
 	writetext UnknownText_0x9c965

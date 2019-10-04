@@ -32,7 +32,9 @@ MrPokemonsHouse_MapScriptHeader:
 	writetext MrPokemonIntroText2
 	buttonsound
 	waitsfx
+.ckir_BEFORE_giveitem_MYSTERY_EGG:
 	giveitem MYSTERY_EGG
+.ckir_AFTER_giveitem_MYSTERY_EGG:
 	writetext MrPokemonsHouse_GotEggText
 	playsound SFX_KEY_ITEM
 	waitsfx

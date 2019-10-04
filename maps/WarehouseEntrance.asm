@@ -408,7 +408,9 @@ WarehouseEntranceScript_ShopClosed:
 	end
 
 WarehouseEntranceCoinCase:
+.ckir_BEFORE_itemball_COIN_CASE:
 	itemball COIN_CASE
+.ckir_AFTER_itemball_COIN_CASE:
 
 MapWarehouseEntranceSignpost1Script:
 	jumptext UnknownText_0x7c91a

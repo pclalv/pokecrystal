@@ -164,7 +164,9 @@ UnknownScript_0x5d800:
 	writetext UnknownText_0x5dcf4
 	buttonsound
 	setevent EVENT_MET_BUENA
+.ckir_BEFORE_verbosegiveitem_BLUE_CARD:
 	verbosegiveitem BLUE_CARD
+.ckir_AFTER_verbosegiveitem_BLUE_CARD:
 UnknownScript_0x5d80a:
 	writetext UnknownText_0x5de10
 	waitbutton

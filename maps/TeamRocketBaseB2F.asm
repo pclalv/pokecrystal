@@ -304,7 +304,9 @@ UnknownScript_0x6d184:
 	opentext
 	writetext UnknownText_0x6d809
 	buttonsound
+.ckir_BEFORE_verbosegiveitem_HM_WHIRLPOOL:
 	verbosegiveitem HM_WHIRLPOOL
+.ckir_AFTER_verbosegiveitem_HM_WHIRLPOOL:
 	setevent EVENT_GOT_HM06_WHIRLPOOL
 	writetext UnknownText_0x6d8f8
 	waitbutton

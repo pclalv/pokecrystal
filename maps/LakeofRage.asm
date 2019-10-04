@@ -187,7 +187,9 @@ Randomizer_RedGyaradosSpecies::
 UnknownScript_0x7007a:
 	reloadmapafterbattle
 	opentext
+.ckir_BEFORE_giveitem_RED_SCALE:
 	giveitem RED_SCALE
+.ckir_AFTER_giveitem_RED_SCALE:
 	waitsfx
 	writetext UnknownText_0x703df
 	playsound SFX_ITEM

@@ -78,7 +78,9 @@ GentlemanScript_0x7d9bf:
 	iftrue UnknownScript_0x7d9de
 	writetext UnknownText_0x7dbc6
 	buttonsound
+.ckir_BEFORE_verbosegiveitem_CARD_KEY:
 	verbosegiveitem CARD_KEY
+.ckir_AFTER_verbosegiveitem_CARD_KEY:
 	setevent EVENT_RECEIVED_CARD_KEY
 	setevent EVENT_WAREHOUSE_LAYOUT_1
 	clearevent EVENT_WAREHOUSE_LAYOUT_2

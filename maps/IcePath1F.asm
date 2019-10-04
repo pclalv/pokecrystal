@@ -11,7 +11,9 @@ IcePath1F_MapScriptHeader:
 	db 0
 
 IcePath1FHMWaterfall:
+.ckir_BEFORE_itemball_HM_WATERFALL:
 	itemball HM_WATERFALL
+.ckir_AFTER_itemball_HM_WATERFALL:
 
 IcePath1FPPUp:
 	itemball PP_UP

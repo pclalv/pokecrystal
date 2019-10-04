@@ -354,7 +354,9 @@ IlexForestCharcoalMasterScript:
 	iftrue .AlreadyGotCut
 	writetext Text_CharcoalMasterIntro
 	buttonsound
+.ckir_BEFORE_verbosegiveitem_HM_CUT:
 	verbosegiveitem HM_CUT
+.ckir_AFTER_verbosegiveitem_HM_CUT:
 	setevent EVENT_GOT_HM01_CUT
 	writetext Text_CharcoalMasterOutro
 	waitbutton

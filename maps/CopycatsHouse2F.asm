@@ -126,7 +126,9 @@ Copycat:
 .Part14
 	writetext UnknownText_0x18b1e2
 	buttonsound
+.ckir_BEFORE_verbosegiveitem_PASS:
 	verbosegiveitem PASS
+.ckir_AFTER_verbosegiveitem_PASS:
 	iffalse .Part22
 	setevent EVENT_GOT_PASS_FROM_COPYCAT
 	writetext UnknownText_0x18b214
