@@ -186,8 +186,8 @@ NeighborScript:
 	spriteface KRISSHOUSE1F_POKEFAN_F, RIGHT
 	end
 
-TVScript:
-	jumptext TVText
+PlayerTVScript:
+	jumptext PlayerTVText
 
 StoveScript:
 	jumptext StoveText
@@ -376,7 +376,7 @@ FridgeText:
 	line "tasty LEMONADE!"
 	done
 
-TVText:
+PlayerTVText:
 	text "There's a movie on"
 	line "TV: Stars dot the"
 
@@ -407,7 +407,7 @@ KrissHouse1F_MapEventHeader:
 	signpost 1, 0, SIGNPOST_READ, StoveScript
 	signpost 1, 1, SIGNPOST_READ, SinkScript
 	signpost 1, 2, SIGNPOST_READ, FridgeScript
-	signpost 1, 4, SIGNPOST_READ, TVScript
+	signpost 1, 4, SIGNPOST_READ, PlayerTVScript
 
 .PersonEvents:
 	db 5

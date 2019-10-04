@@ -46,7 +46,7 @@ clean:
 
 %.o: dep = $(shell $(includes) $(@D)/$*.asm)
 %.o: %.asm $$(dep)
-	$(ASM) -o $@ $<
+	$(ASM) -E -o $@ $<
 
 crystal-speedchoice.gbc: $(crystal_obj) crystal-speedchoice.link
 	$(LD) -n crystal-speedchoice.sym -m crystal-speedchoice.map -l crystal-speedchoice.link -o $@ $(crystal_obj)

@@ -802,7 +802,9 @@ GetPlayerOrMonPalettePointer: ; 974b
 	ret
 
 .male
-	ld hl, PlayerPalette
+	;; hack to work around this weird error i get when i invoke rgbasm with `-E`:
+	;; /usr/local/bin/rgblink: Symbol 'PlayerPalette' defined more than once
+	ld hl, ThePlayerPalette
 	ret
 ; 9764
 

@@ -577,7 +577,7 @@ ret_96f76: ; 96f76
 
 GiveItemScript: ; 96f77
 	callasm ret_96f76
-	writetext ReceivedItemText
+	writetext .ReceivedItemText
 	iffalse .Full
 	waitsfx
 	specialsound
@@ -591,7 +591,7 @@ GiveItemScript: ; 96f77
 	end
 ; 96f89
 
-ReceivedItemText: ; 96f89
+.ReceivedItemText: ; 96f89
 	text_jump UnknownText_0x1c4719
 	db "@"
 ; 96f8e
