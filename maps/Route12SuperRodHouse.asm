@@ -16,7 +16,9 @@ Route12SuperRodHouseFishingGuruScript:
 	iffalse .Refused
 	writetext GiveSuperRodText
 	promptbutton
+.ckir_BEFORE_verbosegiveitem_SUPER_ROD:
 	verbosegiveitem SUPER_ROD
+.ckir_AFTER_verbosegiveitem_SUPER_ROD:
 	iffalse .NoRoom
 	setevent EVENT_GOT_SUPER_ROD
 .GotSuperRod:

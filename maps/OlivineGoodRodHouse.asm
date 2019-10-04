@@ -16,7 +16,9 @@ GoodRodGuru:
 	iffalse .DontWantIt
 	writetext GiveGoodRodText
 	promptbutton
+.ckir_BEFORE_verbosegiveitem_GOOD_ROD:
 	verbosegiveitem GOOD_ROD
+.ckir_AFTER_verbosegiveitem_GOOD_ROD:
 	writetext GaveGoodRodText
 	waitbutton
 	closetext

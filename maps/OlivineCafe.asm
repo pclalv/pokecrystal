@@ -15,7 +15,9 @@ OlivineCafeStrengthSailorScript:
 	iftrue .GotStrength
 	writetext OlivineCafeStrengthSailorText
 	promptbutton
+.ckir_BEFORE_verbosegiveitem_HM_STRENGTH:
 	verbosegiveitem HM_STRENGTH
+.ckir_AFTER_verbosegiveitem_HM_STRENGTH:
 	setevent EVENT_GOT_HM04_STRENGTH
 .GotStrength:
 	writetext OlivineCafeStrengthSailorText_GotStrength

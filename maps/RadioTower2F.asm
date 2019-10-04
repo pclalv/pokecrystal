@@ -163,7 +163,9 @@ Buena:
 	writetext RadioTower2FBuenaShowIntroductionText
 	promptbutton
 	setevent EVENT_MET_BUENA
+.ckir_BEFORE_verbosegiveitem_BLUE_CARD:
 	verbosegiveitem BLUE_CARD
+.ckir_AFTER_verbosegiveitem_BLUE_CARD:
 .TuneIn:
 	writetext RadioTower2FBuenaTuneInToMyShowText
 	waitbutton

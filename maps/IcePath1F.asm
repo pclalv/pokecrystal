@@ -9,7 +9,9 @@ IcePath1F_MapScripts:
 	db 0 ; callbacks
 
 IcePath1FHMWaterfall:
+.ckir_BEFORE_itemball_HM_WATERFALL:
 	itemball HM_WATERFALL
+.ckir_AFTER_itemball_HM_WATERFALL:
 
 IcePath1FPPUp:
 	itemball PP_UP

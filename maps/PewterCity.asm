@@ -28,7 +28,9 @@ PewterCityGrampsScript:
 	iftrue .GotSilverWing
 	writetext PewterCityGrampsText
 	promptbutton
+.ckir_BEFORE_verbosegiveitem_SILVER_WING:
 	verbosegiveitem SILVER_WING
+.ckir_AFTER_verbosegiveitem_SILVER_WING:
 	setevent EVENT_GOT_SILVER_WING
 	closetext
 	end

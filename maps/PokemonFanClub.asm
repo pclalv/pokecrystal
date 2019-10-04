@@ -77,7 +77,9 @@ PokemonFanClubClefairyGuyScript:
 	writetext PokemonFanClubClefairyGuyTakeThisDollBackToGirlText
 	promptbutton
 	waitsfx
+.ckir_BEFORE_giveitem_LOST_ITEM:
 	giveitem LOST_ITEM
+.ckir_AFTER_giveitem_LOST_ITEM:
 	iffalse .NoRoom
 	disappear POKEMONFANCLUB_FAIRY
 	writetext PokemonFanClubPlayerReceivedDollText

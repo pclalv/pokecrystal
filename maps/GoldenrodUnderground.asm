@@ -404,7 +404,9 @@ GoldenrodUndergroundScript_ShopClosed:
 	end
 
 GoldenrodUndergroundCoinCase:
+.ckir_BEFORE_itemball_COIN_CASE:
 	itemball COIN_CASE
+.ckir_AFTER_itemball_COIN_CASE:
 
 GoldenrodUndergroundNoEntrySign:
 	jumptext GoldenrodUndergroundNoEntryText

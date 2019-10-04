@@ -17,7 +17,9 @@ EcruteakItemfinderGuy:
 	iffalse .no
 	writetext EcruteakItemfinderTrueSpiritText
 	promptbutton
+.ckir_BEFORE_verbosegiveitem_ITEMFINDER:
 	verbosegiveitem ITEMFINDER
+.ckir_AFTER_verbosegiveitem_ITEMFINDER:
 	setevent EVENT_GOT_ITEMFINDER
 .itemfinder:
 	writetext ItemfinderExplanationText

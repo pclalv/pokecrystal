@@ -422,7 +422,9 @@ ElmGiveMasterBallScript:
 ElmGiveTicketScript:
 	writetext ElmGiveTicketText1
 	promptbutton
+.ckir_BEFORE_verbosegiveitem_S_S_TICKET:
 	verbosegiveitem S_S_TICKET
+.ckir_AFTER_verbosegiveitem_S_S_TICKET:
 	setevent EVENT_GOT_SS_TICKET_FROM_ELM
 	writetext ElmGiveTicketText2
 	waitbutton

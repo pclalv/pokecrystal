@@ -180,7 +180,9 @@ Randomizer_RedGyaradosSpecies::
 .NotBeaten:
 	reloadmapafterbattle
 	opentext
+.ckir_BEFORE_giveitem_RED_SCALE:
 	giveitem RED_SCALE
+.ckir_AFTER_giveitem_RED_SCALE:
 	waitsfx
 	writetext LakeOfRageGotRedScaleText
 	playsound SFX_ITEM

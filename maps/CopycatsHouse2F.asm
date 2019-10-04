@@ -121,7 +121,9 @@ Copycat:
 .GivePass:
 	writetext CopycatText_GivePass
 	promptbutton
+.ckir_BEFORE_verbosegiveitem_PASS:
 	verbosegiveitem PASS
+.ckir_AFTER_verbosegiveitem_PASS:
 	iffalse .Cancel
 	setevent EVENT_GOT_PASS_FROM_COPYCAT
 	writetext CopycatText_ExplainPass

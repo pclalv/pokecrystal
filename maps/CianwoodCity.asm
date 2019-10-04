@@ -97,7 +97,9 @@ CianwoodCityChucksWife:
 .BeatChuck:
 	writetext ChucksWifeGiveHMText
 	promptbutton
+.ckir_BEFORE_verbosegiveitem_HM_FLY:
 	verbosegiveitem HM_FLY
+.ckir_AFTER_verbosegiveitem_HM_FLY:
 	iffalse .Done
 	setevent EVENT_GOT_HM02_FLY
 	writetext ChucksWifeFlySpeechText

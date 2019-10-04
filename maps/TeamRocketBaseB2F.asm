@@ -297,7 +297,9 @@ RocketBaseElectrodeScript:
 	opentext
 	writetext RocketBaseLanceElectrodeDoneText
 	promptbutton
+.ckir_BEFORE_verbosegiveitem_HM_WHIRLPOOL:
 	verbosegiveitem HM_WHIRLPOOL
+.ckir_AFTER_verbosegiveitem_HM_WHIRLPOOL:
 	setevent EVENT_GOT_HM06_WHIRLPOOL
 	writetext RocketBaseLanceWhirlpoolText
 	waitbutton

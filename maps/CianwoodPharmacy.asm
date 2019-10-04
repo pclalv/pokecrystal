@@ -19,7 +19,9 @@ CianwoodPharmacist:
 	iffalse .Mart
 	writetext PharmacistGiveSecretpotionText
 	promptbutton
+.ckir_BEFORE_giveitem_SECRETPOTION:
 	giveitem SECRETPOTION
+.ckir_AFTER_giveitem_SECRETPOTION:
 	writetext ReceivedSecretpotionText
 	playsound SFX_KEY_ITEM
 	waitsfx
