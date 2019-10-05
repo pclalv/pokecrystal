@@ -67,7 +67,7 @@ PokemonFanClubClefairyGuyScript:
 .FoundClefairyDoll:
 	writetext PokemonFanClubClefairyGuyMakingDoWithADollIFoundText
 .ckir_BEFORE_checkevent_EVENT_MET_COPYCAT_FOUND_OUT_ABOUT_LOST_ITEM:
-	checkevent EVENT_MET_COPYCAT_FOUND_OUT_ABOUT_LOST_ITEM
+	checkevent EVENT_RESTORED_POWER_TO_KANTO
 .ckir_AFTER_checkevent_EVENT_MET_COPYCAT_FOUND_OUT_ABOUT_LOST_ITEM:
 	iftrue .MetCopycat
 	waitbutton
