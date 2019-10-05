@@ -88,19 +88,19 @@ UnknownScript_0x7491f:
 	iffalse UnknownScript_0x7494e
 	checkcode VAR_WEEKDAY
 .ckir_BEFORE_ifequal_SUNDAY:
-	if_equal SUNDAY, UnknownScript_0x74977
+	if_equal SUNDAY, UnknownScript_0x7494e
 .ckir_AFTER_ifequal_SUNDAY:
 .ckir_BEFORE_ifequal_SATURDAY:
-	if_equal SATURDAY, UnknownScript_0x74977
+	if_equal SATURDAY, UnknownScript_0x7494e
 .ckir_AFTER_ifequal_SATURDAY:
 .ckir_BEFORE_ifequal_TUESDAY:
-	if_equal TUESDAY, UnknownScript_0x74981
+	if_equal TUESDAY, UnknownScript_0x7494e
 .ckir_AFTER_ifequal_TUESDAY:
 .ckir_BEFORE_ifequal_WEDNESDAY:
-	if_equal WEDNESDAY, UnknownScript_0x74981
+	if_equal WEDNESDAY, UnknownScript_0x7494e
 .ckir_AFTER_ifequal_WEDNESDAY:
 .ckir_BEFORE_ifequal_THURSDAY:
-	if_equal THURSDAY, UnknownScript_0x74981
+	if_equal THURSDAY, UnknownScript_0x7494e
 .ckir_AFTER_ifequal_THURSDAY:
 UnknownScript_0x7494e:
 	writetext UnknownText_0x74a9c
@@ -163,19 +163,19 @@ SailorScript_0x7499c:
 	iffalse UnknownScript_0x749c0
 	checkcode VAR_WEEKDAY
 .ckir_BEFORE_ifequal_SUNDAY:
-	if_equal SUNDAY, UnknownScript_0x749f2
+	if_equal SUNDAY, UnknownScript_0x749c0
 .ckir_AFTER_ifequal_SUNDAY:
 .ckir_BEFORE_ifequal_SATURDAY:
-	if_equal SATURDAY, UnknownScript_0x749f2
+	if_equal SATURDAY, UnknownScript_0x749c0
 .ckir_AFTER_ifequal_SATURDAY:
 .ckir_BEFORE_ifequal_TUESDAY:
-	if_equal TUESDAY, UnknownScript_0x749f8
+	if_equal TUESDAY, UnknownScript_0x749c0
 .ckir_AFTER_ifequal_TUESDAY:
 .ckir_BEFORE_ifequal_WEDNESDAY:
-	if_equal WEDNESDAY, UnknownScript_0x749f8
+	if_equal WEDNESDAY, UnknownScript_0x749c0
 .ckir_AFTER_ifequal_WEDNESDAY:
 .ckir_BEFORE_ifequal_THURSDAY:
-	if_equal THURSDAY, UnknownScript_0x749f8
+	if_equal THURSDAY, UnknownScript_0x749c0
 .ckir_AFTER_ifequal_THURSDAY:
 UnknownScript_0x749c0:
 	writetext UnknownText_0x74a9c
