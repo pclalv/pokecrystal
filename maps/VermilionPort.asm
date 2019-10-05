@@ -109,6 +109,7 @@ UnknownScript_0x74e20:
 	writetext UnknownText_0x74f4d
 	yesorno
 	iffalse UnknownScript_0x74e8d
+.TryBoard:
 	writetext UnknownText_0x74f8b
 	buttonsound
 	checkitem S_S_TICKET
@@ -181,6 +182,7 @@ SailorScript_0x74e97:
 	writetext UnknownText_0x74f4d
 	yesorno
 	iffalse UnknownScript_0x74e87
+.TryBoard:
 	writetext UnknownText_0x74f8b
 	buttonsound
 	checkitem S_S_TICKET
