@@ -83,11 +83,21 @@ OlivinePortWalkUpToShipScript:
 	checkevent EVENT_FAST_SHIP_FIRST_TIME
 	iffalse .FirstTime
 	readvar VAR_WEEKDAY
+.ckir_BEFORE_ifequal_SUNDAY:
 	ifequal SUNDAY, .NextShipMonday
+.ckir_AFTER_ifequal_SUNDAY:
+.ckir_BEFORE_ifequal_SATURDAY:
 	ifequal SATURDAY, .NextShipMonday
+.ckir_AFTER_ifequal_SATURDAY:
+.ckir_BEFORE_ifequal_TUESDAY:
 	ifequal TUESDAY, .NextShipFriday
+.ckir_AFTER_ifequal_TUESDAY:
+.ckir_BEFORE_ifequal_WEDNESDAY:
 	ifequal WEDNESDAY, .NextShipFriday
+.ckir_AFTER_ifequal_WEDNESDAY:
+.ckir_BEFORE_ifequal_THURSDAY:
 	ifequal THURSDAY, .NextShipFriday
+.ckir_AFTER_ifequal_THURSDAY:
 .FirstTime:
 	writetext OlivinePortAskBoardText
 	yesorno
@@ -148,11 +158,21 @@ OlivinePortSailorAfterHOFScript:
 	checkevent EVENT_FAST_SHIP_FIRST_TIME
 	iffalse .FirstTime
 	readvar VAR_WEEKDAY
+.ckir_BEFORE_ifequal_SUNDAY:
 	ifequal SUNDAY, .NextShipMonday
+.ckir_AFTER_ifequal_SUNDAY:
+.ckir_BEFORE_ifequal_SATURDAY:
 	ifequal SATURDAY, .NextShipMonday
+.ckir_AFTER_ifequal_SATURDAY:
+.ckir_BEFORE_ifequal_TUESDAY:
 	ifequal TUESDAY, .NextShipFriday
+.ckir_AFTER_ifequal_TUESDAY:
+.ckir_BEFORE_ifequal_WEDNESDAY:
 	ifequal WEDNESDAY, .NextShipFriday
+.ckir_AFTER_ifequal_WEDNESDAY:
+.ckir_BEFORE_ifequal_THURSDAY:
 	ifequal THURSDAY, .NextShipFriday
+.ckir_AFTER_ifequal_THURSDAY:
 .FirstTime:
 	writetext OlivinePortAskBoardText
 	yesorno
@@ -397,9 +417,21 @@ OlivinePort_MapEvents:
 
 	db 7 ; object events
 	object_event  7, 23, SPRITE_SAILOR, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OlivinePortSailorAtGangwayScript, EVENT_OLIVINE_PORT_SAILOR_AT_GANGWAY
+.ckir_BEFORE_object_event_EVENT_OLIVINE_PORT_SPRITES_BEFORE_HALL_OF_FAME_0:
 	object_event  7, 15, SPRITE_SAILOR, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OlivinePortSailorBeforeHOFScript, EVENT_OLIVINE_PORT_SPRITES_BEFORE_HALL_OF_FAME
+.ckir_AFTER_object_event_EVENT_OLIVINE_PORT_SPRITES_BEFORE_HALL_OF_FAME_0:
+.ckir_BEFORE_object_event_EVENT_OLIVINE_PORT_SPRITES_AFTER_HALL_OF_FAME_0:
 	object_event  6, 15, SPRITE_SAILOR, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OlivinePortSailorAfterHOFScript, EVENT_OLIVINE_PORT_SPRITES_AFTER_HALL_OF_FAME
+.ckir_AFTER_object_event_EVENT_OLIVINE_PORT_SPRITES_AFTER_HALL_OF_FAME_0:
+.ckir_BEFORE_object_event_EVENT_OLIVINE_PORT_SPRITES_BEFORE_HALL_OF_FAME_1:
 	object_event  4, 14, SPRITE_FISHING_GURU, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OlivinePortFishingGuru1Script, EVENT_OLIVINE_PORT_SPRITES_BEFORE_HALL_OF_FAME
+.ckir_AFTER_object_event_EVENT_OLIVINE_PORT_SPRITES_BEFORE_HALL_OF_FAME_1:
+.ckir_BEFORE_object_event_EVENT_OLIVINE_PORT_SPRITES_BEFORE_HALL_OF_FAME_2:
 	object_event 13, 14, SPRITE_FISHING_GURU, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OlivinePortFishingGuru2Script, EVENT_OLIVINE_PORT_SPRITES_BEFORE_HALL_OF_FAME
+.ckir_AFTER_object_event_EVENT_OLIVINE_PORT_SPRITES_BEFORE_HALL_OF_FAME_2:
+.ckir_BEFORE_object_event_EVENT_OLIVINE_PORT_SPRITES_AFTER_HALL_OF_FAME_1:
 	object_event  4, 15, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OlivinePortYoungsterScript, EVENT_OLIVINE_PORT_SPRITES_AFTER_HALL_OF_FAME
+.ckir_AFTER_object_event_EVENT_OLIVINE_PORT_SPRITES_AFTER_HALL_OF_FAME_1:
+.ckir_BEFORE_object_event_EVENT_OLIVINE_PORT_SPRITES_BEFORE_HALL_OF_FAME_3:
 	object_event 11, 15, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OlivinePortCooltrainerFScript, EVENT_OLIVINE_PORT_SPRITES_AFTER_HALL_OF_FAME
+.ckir_AFTER_object_event_EVENT_OLIVINE_PORT_SPRITES_BEFORE_HALL_OF_FAME_3:
