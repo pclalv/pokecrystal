@@ -84,19 +84,19 @@ OlivinePortWalkUpToShipScript:
 	iffalse .FirstTime
 	readvar VAR_WEEKDAY
 .ckir_BEFORE_ifequal_SUNDAY:
-	ifequal SUNDAY, .NextShipMonday
+	ifequal SUNDAY, .FirstTime
 .ckir_AFTER_ifequal_SUNDAY:
 .ckir_BEFORE_ifequal_SATURDAY:
-	ifequal SATURDAY, .NextShipMonday
+	ifequal SATURDAY, .FirstTime
 .ckir_AFTER_ifequal_SATURDAY:
 .ckir_BEFORE_ifequal_TUESDAY:
-	ifequal TUESDAY, .NextShipFriday
+	ifequal TUESDAY, .FirstTime
 .ckir_AFTER_ifequal_TUESDAY:
 .ckir_BEFORE_ifequal_WEDNESDAY:
-	ifequal WEDNESDAY, .NextShipFriday
+	ifequal WEDNESDAY, .FirstTime
 .ckir_AFTER_ifequal_WEDNESDAY:
 .ckir_BEFORE_ifequal_THURSDAY:
-	ifequal THURSDAY, .NextShipFriday
+	ifequal THURSDAY, .FirstTime
 .ckir_AFTER_ifequal_THURSDAY:
 .FirstTime:
 	writetext OlivinePortAskBoardText
@@ -159,19 +159,19 @@ OlivinePortSailorAfterHOFScript:
 	iffalse .FirstTime
 	readvar VAR_WEEKDAY
 .ckir_BEFORE_ifequal_SUNDAY:
-	ifequal SUNDAY, .NextShipMonday
+	ifequal SUNDAY, .FirstTime
 .ckir_AFTER_ifequal_SUNDAY:
 .ckir_BEFORE_ifequal_SATURDAY:
-	ifequal SATURDAY, .NextShipMonday
+	ifequal SATURDAY, .FirstTime
 .ckir_AFTER_ifequal_SATURDAY:
 .ckir_BEFORE_ifequal_TUESDAY:
-	ifequal TUESDAY, .NextShipFriday
+	ifequal TUESDAY, .FirstTime
 .ckir_AFTER_ifequal_TUESDAY:
 .ckir_BEFORE_ifequal_WEDNESDAY:
-	ifequal WEDNESDAY, .NextShipFriday
+	ifequal WEDNESDAY, .FirstTime
 .ckir_AFTER_ifequal_WEDNESDAY:
 .ckir_BEFORE_ifequal_THURSDAY:
-	ifequal THURSDAY, .NextShipFriday
+	ifequal THURSDAY, .FirstTime
 .ckir_AFTER_ifequal_THURSDAY:
 .FirstTime:
 	writetext OlivinePortAskBoardText
