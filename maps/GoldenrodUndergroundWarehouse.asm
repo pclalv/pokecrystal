@@ -95,7 +95,9 @@ GoldenrodUndergroundWarehouseTMSleepTalk:
 	itemball TM_SLEEP_TALK
 
 GoldenrodUndergroundWarehouseUltraBall:
+.ckir_BEFORE_itemball_ULTRABALL:
 	itemball ULTRA_BALL
+.ckir_AFTER_itemball_ULTRABALL:
 
 GruntM24SeenText:
 	text "How did you get"
@@ -229,4 +231,6 @@ GoldenrodUndergroundWarehouse_MapEvents:
 	object_event 12,  8, SPRITE_GENTLEMAN, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, GoldenrodUndergroundWarehouseDirectorScript, EVENT_RADIO_TOWER_ROCKET_TAKEOVER
 	object_event 18, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, GoldenrodUndergroundWarehouseMaxEther, EVENT_GOLDENROD_UNDERGROUND_WAREHOUSE_MAX_ETHER
 	object_event 13,  9, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, GoldenrodUndergroundWarehouseTMSleepTalk, EVENT_GOLDENROD_UNDERGROUND_WAREHOUSE_TM_SLEEP_TALK
+.ckir_BEFORE_object_event_EVENT_GOLDENROD_UNDERGROUND_WAREHOUSE_ULTRA_BALL:
 	object_event  2,  1, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, GoldenrodUndergroundWarehouseUltraBall, EVENT_GOLDENROD_UNDERGROUND_WAREHOUSE_ULTRA_BALL
+.ckir_AFTER_object_event_EVENT_GOLDENROD_UNDERGROUND_WAREHOUSE_ULTRA_BALL:
