@@ -91,11 +91,21 @@ UnknownScript_0x74e20:
 	spriteface PLAYER, LEFT
 	opentext
 	checkcode VAR_WEEKDAY
+.ckir_BEFORE_ifequal_MONDAY:
 	if_equal MONDAY, UnknownScript_0x74e72
+.ckir_AFTER_ifequal_MONDAY:
+.ckir_BEFORE_ifequal_TUESDAY:
 	if_equal TUESDAY, UnknownScript_0x74e72
+.ckir_AFTER_ifequal_TUESDAY:
+.ckir_BEFORE_ifequal_THURSDAY:
 	if_equal THURSDAY, UnknownScript_0x74e7c
+.ckir_AFTER_ifequal_THURSDAY:
+.ckir_BEFORE_ifequal_FRIDAY:
 	if_equal FRIDAY, UnknownScript_0x74e7c
+.ckir_AFTER_ifequal_FRIDAY:
+.ckir_BEFORE_ifequal_SATURDAY:
 	if_equal SATURDAY, UnknownScript_0x74e7c
+.ckir_AFTER_ifequal_SATURDAY:
 	writetext UnknownText_0x74f4d
 	yesorno
 	iffalse UnknownScript_0x74e8d
@@ -153,11 +163,21 @@ SailorScript_0x74e97:
 	checkevent EVENT_GAVE_KURT_APRICORNS
 	iftrue UnknownScript_0x74e1a
 	checkcode VAR_WEEKDAY
+.ckir_BEFORE_ifequal_MONDAY:
 	if_equal MONDAY, UnknownScript_0x74eda
+.ckir_AFTER_ifequal_MONDAY:
+.ckir_BEFORE_ifequal_TUESDAY:
 	if_equal TUESDAY, UnknownScript_0x74eda
+.ckir_AFTER_ifequal_TUESDAY:
+.ckir_BEFORE_ifequal_THURSDAY:
 	if_equal THURSDAY, UnknownScript_0x74ee0
+.ckir_AFTER_ifequal_THURSDAY:
+.ckir_BEFORE_ifequal_FRIDAY:
 	if_equal FRIDAY, UnknownScript_0x74ee0
+.ckir_AFTER_ifequal_FRIDAY:
+.ckir_BEFORE_ifequal_SATURDAY:
 	if_equal SATURDAY, UnknownScript_0x74ee0
+.ckir_AFTER_ifequal_SATURDAY:
 	writetext UnknownText_0x74f4d
 	yesorno
 	iffalse UnknownScript_0x74e87
