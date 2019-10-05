@@ -17,7 +17,7 @@ SaffronMagnetTrainStationOfficerScript:
 	faceplayer
 	opentext
 .ckir_BEFORE_checkevent_EVENT_RESTORED_POWER_TO_KANTO:
-	checkevent EVENT_RESTORED_POWER_TO_KANTO
+	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
 .ckir_AFTER_checkevent_EVENT_RESTORED_POWER_TO_KANTO:
 	iftrue .MagnetTrainToGoldenrod
 	checkpermaoptions EARLY_KANTO
