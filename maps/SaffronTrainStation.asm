@@ -20,7 +20,9 @@ SaffronTrainStation_MapScriptHeader:
 OfficerScript_0x18a81e:
 	faceplayer
 	opentext
+.ckir_BEFORE_CHECKEVENT_EVENT_RESTORED_POWER_TO_KANTO:
 	checkevent EVENT_RESTORED_POWER_TO_KANTO
+.ckir_AFTER_CHECKEVENT_EVENT_RESTORED_POWER_TO_KANTO:
 	iftrue .MagnetTrainToGoldenrod
 	check_permaoptions EARLY_KANTO
 	iftrue .MagnetTrainToGoldenrod
