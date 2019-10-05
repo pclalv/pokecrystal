@@ -10,13 +10,20 @@ GoldenrodFlowerShop_MapScriptHeader:
 	db 0
 
 FlowerShopTeacherScript:
+.ckir_BEFORE_CHECKEVENT_EVENT_FOUGHT_SUDOWOODO:
+	;; don't screw the player if they defeat sudowoodo before
+	;; visiting the flower shop.
 	checkevent EVENT_FOUGHT_SUDOWOODO
+.ckir_AFTER_CHECKEVENT_EVENT_FOUGHT_SUDOWOODO:
 	iftrue .Lalala
 	checkevent EVENT_GOT_SQUIRTBOTTLE
 	iftrue .GotSquirtbottle
 	checkevent EVENT_MET_FLORIA
 	iffalse .HaventMetFloria
+.ckir_BEFORE_CHECKEVENT_EVENT_TALKED_TO_FLORIA_AT_FLOWER_SHOP:
+	;; it shouldn't matter whether the player talks to Floria or not.
 	checkevent EVENT_TALKED_TO_FLORIA_AT_FLOWER_SHOP
+.ckir_AFTER_CHECKEVENT_EVENT_TALKED_TO_FLORIA_AT_FLOWER_SHOP:
 	iffalse .Lalala
 	checkflag ENGINE_PLAINBADGE
 	iffalse .NoPlainBadge
