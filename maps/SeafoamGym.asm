@@ -29,8 +29,10 @@ SeafoamGymBlaineScript:
 	setevent EVENT_BEAT_BLAINE
 	opentext
 	writetext ReceivedVolcanoBadgeText
+.ckir_BEFORE_playsound_SFX_GET_BADGE::
 	playsound SFX_GET_BADGE
 	waitsfx
+.ckir_AFTER_playsound_SFX_GET_BADGE::
 	setflag ENGINE_VOLCANOBADGE
 	writetext BlaineAfterBattleText
 	waitbutton

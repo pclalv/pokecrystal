@@ -24,8 +24,10 @@ PewterGymBrockScript:
 	setevent EVENT_BEAT_CAMPER_JERRY
 	opentext
 	writetext ReceivedBoulderBadgeText
+.ckir_BEFORE_playsound_SFX_GET_BADGE::
 	playsound SFX_GET_BADGE
 	waitsfx
+.ckir_AFTER_playsound_SFX_GET_BADGE::
 	setflag ENGINE_BOULDERBADGE
 	writetext BrockBoulderBadgeText
 	waitbutton

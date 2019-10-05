@@ -30,8 +30,10 @@ SaffronGymSabrinaScript:
 	setevent EVENT_BEAT_PSYCHIC_JARED
 	opentext
 	writetext ReceivedMarshBadgeText
+.ckir_BEFORE_playsound_SFX_GET_BADGE::
 	playsound SFX_GET_BADGE
 	waitsfx
+.ckir_AFTER_playsound_SFX_GET_BADGE::
 	setflag ENGINE_MARSHBADGE
 	writetext SabrinaMarshBadgeText
 	waitbutton

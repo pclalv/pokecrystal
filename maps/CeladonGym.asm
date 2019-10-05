@@ -30,8 +30,10 @@ CeladonGymErikaScript:
 	setevent EVENT_BEAT_TWINS_JO_AND_ZOE
 	opentext
 	writetext PlayerReceivedRainbowBadgeText
+.ckir_BEFORE_playsound_SFX_GET_BADGE::
 	playsound SFX_GET_BADGE
 	waitsfx
+.ckir_AFTER_playsound_SFX_GET_BADGE::
 	setflag ENGINE_RAINBOWBADGE
 .FightDone:
 	checkevent EVENT_GOT_TM19_GIGA_DRAIN

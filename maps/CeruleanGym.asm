@@ -74,8 +74,10 @@ CeruleanGymMistyScript:
 	setevent EVENT_BEAT_SWIMMERM_PARKER
 	opentext
 	writetext ReceivedCascadeBadgeText
+.ckir_BEFORE_playsound_SFX_GET_BADGE::
 	playsound SFX_GET_BADGE
 	waitsfx
+.ckir_AFTER_playsound_SFX_GET_BADGE::
 	setflag ENGINE_CASCADEBADGE
 .FightDone:
 	writetext MistyFightDoneText

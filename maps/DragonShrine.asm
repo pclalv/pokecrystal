@@ -159,8 +159,10 @@ DragonShrine_MapScripts:
 	writetext DragonShrineHereRisingBadgeText
 	waitbutton
 	setflag ENGINE_RISINGBADGE
+.ckir_BEFORE_playsound_SFX_GET_BADGE::
 	playsound SFX_GET_BADGE
 	waitsfx
+.ckir_AFTER_playsound_SFX_GET_BADGE::
 	special RestartMapMusic
 	specialphonecall SPECIALCALL_MASTERBALL
 	setscene SCENE_FINISHED

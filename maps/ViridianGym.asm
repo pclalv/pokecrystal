@@ -22,8 +22,10 @@ ViridianGymBlueScript:
 	setevent EVENT_BEAT_BLUE
 	opentext
 	writetext Text_ReceivedEarthBadge
+.ckir_BEFORE_playsound_SFX_GET_BADGE::
 	playsound SFX_GET_BADGE
 	waitsfx
+.ckir_AFTER_playsound_SFX_GET_BADGE::
 	setflag ENGINE_EARTHBADGE
 	writetext LeaderBlueAfterText
 	waitbutton
