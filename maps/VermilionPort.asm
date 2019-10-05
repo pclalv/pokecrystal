@@ -92,19 +92,19 @@ UnknownScript_0x74e20:
 	opentext
 	checkcode VAR_WEEKDAY
 .ckir_BEFORE_ifequal_MONDAY:
-	if_equal MONDAY, UnknownScript_0x74e72
+	if_equal MONDAY, .TryBoard
 .ckir_AFTER_ifequal_MONDAY:
 .ckir_BEFORE_ifequal_TUESDAY:
-	if_equal TUESDAY, UnknownScript_0x74e72
+	if_equal TUESDAY, .TryBoard
 .ckir_AFTER_ifequal_TUESDAY:
 .ckir_BEFORE_ifequal_THURSDAY:
-	if_equal THURSDAY, UnknownScript_0x74e7c
+	if_equal THURSDAY, .TryBoard
 .ckir_AFTER_ifequal_THURSDAY:
 .ckir_BEFORE_ifequal_FRIDAY:
-	if_equal FRIDAY, UnknownScript_0x74e7c
+	if_equal FRIDAY, .TryBoard
 .ckir_AFTER_ifequal_FRIDAY:
 .ckir_BEFORE_ifequal_SATURDAY:
-	if_equal SATURDAY, UnknownScript_0x74e7c
+	if_equal SATURDAY, .TryBoard
 .ckir_AFTER_ifequal_SATURDAY:
 	writetext UnknownText_0x74f4d
 	yesorno
@@ -165,19 +165,19 @@ SailorScript_0x74e97:
 	iftrue UnknownScript_0x74e1a
 	checkcode VAR_WEEKDAY
 .ckir_BEFORE_ifequal_MONDAY:
-	if_equal MONDAY, UnknownScript_0x74eda
+	if_equal MONDAY, .TryBoard
 .ckir_AFTER_ifequal_MONDAY:
 .ckir_BEFORE_ifequal_TUESDAY:
-	if_equal TUESDAY, UnknownScript_0x74eda
+	if_equal TUESDAY, .TryBoard
 .ckir_AFTER_ifequal_TUESDAY:
 .ckir_BEFORE_ifequal_THURSDAY:
-	if_equal THURSDAY, UnknownScript_0x74ee0
+	if_equal THURSDAY, .TryBoard
 .ckir_AFTER_ifequal_THURSDAY:
 .ckir_BEFORE_ifequal_FRIDAY:
-	if_equal FRIDAY, UnknownScript_0x74ee0
+	if_equal FRIDAY, .TryBoard
 .ckir_AFTER_ifequal_FRIDAY:
 .ckir_BEFORE_ifequal_SATURDAY:
-	if_equal SATURDAY, UnknownScript_0x74ee0
+	if_equal SATURDAY, .TryBoard
 .ckir_AFTER_ifequal_SATURDAY:
 	writetext UnknownText_0x74f4d
 	yesorno
