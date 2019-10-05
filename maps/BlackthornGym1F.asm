@@ -51,7 +51,11 @@ BlackthornGymClairScript:
 	setevent EVENT_BEAT_COOLTRAINERF_FRAN
 	setevent EVENT_BEAT_COOLTRAINERF_LOLA
 	clearevent EVENT_MAHOGANY_MART_OWNERS
+	;; maybe get rid of this setevent?
+	;; replace it with farscall CianwoodGymActivateRockets
+.ckir_BEFORE_setevent_EVENT_BLACKTHORN_CITY_GRAMPS_BLOCKS_DRAGONS_DEN::
 	setevent EVENT_BLACKTHORN_CITY_GRAMPS_BLOCKS_DRAGONS_DEN
+.ckir_AFTER_setevent_EVENT_BLACKTHORN_CITY_GRAMPS_BLOCKS_DRAGONS_DEN::
 	clearevent EVENT_BLACKTHORN_CITY_GRAMPS_NOT_BLOCKING_DRAGONS_DEN
 	end
 
