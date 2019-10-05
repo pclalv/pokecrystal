@@ -18,7 +18,9 @@ GoldenrodMagnetTrainStation_MapScriptHeader:
 OfficerScript_0x550ec:
 	faceplayer
 	opentext
+.ckir_BEFORE_CHECKEVENT_EVENT_RESTORED_POWER_TO_KANTO:
 	checkevent EVENT_RESTORED_POWER_TO_KANTO
+.ckir_AFTER_CHECKEVENT_EVENT_RESTORED_POWER_TO_KANTO:
 	iftrue .MagnetTrainToSaffron
 	check_permaoptions EARLY_KANTO
 	iftrue .MagnetTrainToSaffron
