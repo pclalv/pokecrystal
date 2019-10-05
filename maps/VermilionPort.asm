@@ -85,11 +85,21 @@ VermilionPortWalkUpToShipScript:
 	turnobject PLAYER, LEFT
 	opentext
 	readvar VAR_WEEKDAY
+.ckir_BEFORE_ifequal_MONDAY:
 	ifequal MONDAY, .NextShipWednesday
+.ckir_AFTER_ifequal_MONDAY:
+.ckir_BEFORE_ifequal_TUESDAY:
 	ifequal TUESDAY, .NextShipWednesday
+.ckir_AFTER_ifequal_TUESDAY:
+.ckir_BEFORE_ifequal_THURSDAY:
 	ifequal THURSDAY, .NextShipSunday
+.ckir_AFTER_ifequal_THURSDAY:
+.ckir_BEFORE_ifequal_FRIDAY:
 	ifequal FRIDAY, .NextShipSunday
+.ckir_AFTER_ifequal_FRIDAY:
+.ckir_BEFORE_ifequal_SATURDAY:
 	ifequal SATURDAY, .NextShipSunday
+.ckir_AFTER_ifequal_SATURDAY:
 	writetext VermilionPortAskBoardingText
 	yesorno
 	iffalse VermilionPortNotRidingMoveAwayScript
@@ -147,11 +157,21 @@ VermilionPortSailorScript:
 	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
 	iftrue VermilionPortAlreadyRodeScript
 	readvar VAR_WEEKDAY
+.ckir_BEFORE_ifequal_MONDAY:
 	ifequal MONDAY, .NextShipWednesday
+.ckir_AFTER_ifequal_MONDAY:
+.ckir_BEFORE_ifequal_TUESDAY:
 	ifequal TUESDAY, .NextShipWednesday
+.ckir_AFTER_ifequal_TUESDAY:
+.ckir_BEFORE_ifequal_THURSDAY:
 	ifequal THURSDAY, .NextShipSunday
+.ckir_AFTER_ifequal_THURSDAY:
+.ckir_BEFORE_ifequal_FRIDAY:
 	ifequal FRIDAY, .NextShipSunday
+.ckir_AFTER_ifequal_FRIDAY:
+.ckir_BEFORE_ifequal_SATURDAY:
 	ifequal SATURDAY, .NextShipSunday
+.ckir_AFTER_ifequal_SATURDAY:
 	writetext VermilionPortAskBoardingText
 	yesorno
 	iffalse VermilionPortNotRidingScript
