@@ -11,7 +11,7 @@ FlowerShopTeacherScript:
 .ckir_BEFORE_CHECKEVENT_EVENT_FOUGHT_SUDOWOODO:
 	;; don't screw the player if they defeat sudowoodo before
 	;; visiting the flower shop.
-	checkevent EVENT_FOUGHT_SUDOWOODO
+	checkevent EVENT_PLAYERS_HOUSE_MOM_2
 .ckir_AFTER_CHECKEVENT_EVENT_FOUGHT_SUDOWOODO:
 	iftrue .Lalala
 	checkevent EVENT_GOT_SQUIRTBOTTLE
@@ -29,7 +29,7 @@ FlowerShopTeacherScript:
 	iffalse .HaventMetFloria
 .ckir_BEFORE_CHECKEVENT_EVENT_TALKED_TO_FLORIA_AT_FLOWER_SHOP:
 	;; it shouldn't matter whether the player talks to Floria or not.
-	checkevent EVENT_TALKED_TO_FLORIA_AT_FLOWER_SHOP
+	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
 .ckir_AFTER_CHECKEVENT_EVENT_TALKED_TO_FLORIA_AT_FLOWER_SHOP:
 	iffalse .Lalala
         ;; change this to check if the player defeated whitney, for
