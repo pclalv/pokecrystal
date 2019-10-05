@@ -103,6 +103,7 @@ VermilionPortWalkUpToShipScript:
 	writetext VermilionPortAskBoardingText
 	yesorno
 	iffalse VermilionPortNotRidingMoveAwayScript
+.TryBoard:
 	writetext VermilionPortAskTicketText
 	promptbutton
 	checkitem S_S_TICKET
@@ -175,6 +176,7 @@ VermilionPortSailorScript:
 	writetext VermilionPortAskBoardingText
 	yesorno
 	iffalse VermilionPortNotRidingScript
+.TryBoard:
 	writetext VermilionPortAskTicketText
 	promptbutton
 	checkitem S_S_TICKET
