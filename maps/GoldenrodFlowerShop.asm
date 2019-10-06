@@ -13,7 +13,7 @@ FlowerShopTeacherScript:
 .ckir_BEFORE_CHECKEVENT_EVENT_FOUGHT_SUDOWOODO:
 	;; don't screw the player if they defeat sudowoodo before
 	;; visiting the flower shop.
-	checkevent EVENT_PLAYERS_HOUSE_MOM_2
+	checkevent EVENT_KRISS_HOUSE_MOM_2
 .ckir_AFTER_CHECKEVENT_EVENT_FOUGHT_SUDOWOODO:
 	iftrue .Lalala
 	checkevent EVENT_GOT_SQUIRTBOTTLE
