@@ -5,7 +5,7 @@ require "pry-byebug"
 
 BANK_SIZE = Integer("4000", 16)
 
-ROM_FILE = ENV.fetch("ROM_FILE", "./pokecrystal.gbc")
+ROM_FILE = ENV.fetch("ROM_FILE", "./crystal-speedchoice.gbc")
 ROM_FILE_BASENAME = File.basename(ROM_FILE, File.extname(ROM_FILE))
 SYM_FILE = "#{ROM_FILE_BASENAME}.sym"
 OUT_FILE = "#{ROM_FILE_BASENAME}-label-details.json"

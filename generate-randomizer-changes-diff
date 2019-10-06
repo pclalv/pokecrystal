@@ -3,9 +3,7 @@
 require 'json'
 require 'pry-byebug'
 
-VERSION = ENV.fetch("VERSION", "pokecrystal")
-
-raise "Invalid version: #{VERSION}" unless %w(pokecrystal pokecrystal11).include?(VERSION)
+VERSION = "crystal-speedchoice"
 
 BLACKLISTED_LABELS = %w(
   SurfFunction.ckir_BEFORE_CHECK_FOGBADGE
@@ -13,13 +11,13 @@ BLACKLISTED_LABELS = %w(
   FlyFunction.ckir_BEFORE_CHECK_STORMBADGE
 )
 
-randomizer_labels_json  = JSON.load(File.read("#{VERSION}-randomizer-labels-label-details.json")).
+speedchoice_labels_json  = JSON.load(File.read("#{VERSION}-speedchoice-labels-label-details.json")).
   sort_by { |h| h['name'] }
-randomizer_changes_json = JSON.load(File.read("#{VERSION}-randomizer-changes-label-details.json")).
+speedchoice_changes_json = JSON.load(File.read("#{VERSION}-speedchoice-changes-label-details.json")).
   sort_by { |h| h['name'] }
 
-diff = randomizer_labels_json.
-  zip(randomizer_changes_json).
+diff = speedchoice_labels_json.
+  zip(speedchoice_changes_json).
   filter { |rl, rc| rl != rc }.
   map do |rl, rc|
     raise <<~EOF unless rl['name'] == rc['name'] && rl['address_range'] == rc['address_range']
@@ -39,4 +37,4 @@ diff = randomizer_labels_json.
   reject { |d| BLACKLISTED_LABELS.include?(d['name']) }.
   to_json
 
-File.write("#{VERSION}-randomizer-changes-diff.json", diff)
+File.write("#{VERSION}-speedchoice-changes-diff.json", diff)
