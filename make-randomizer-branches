@@ -1,15 +1,18 @@
 #!/usr/bin/env bash
 
-# make rom, generate label details and rename both
+set -eu
 
-for branch in randomizer-labels randomizer-changes; do
+# make rom, generate label details and rename both
+v=crystal-speedchoice
+
+for branch in speedchoice-labels speedchoice-changes; do
   git checkout $branch
 
-  for v in pokecrystal pokecrystal11; do
-    new_rom_basename=${v}-${branch}
-    make ${v}.gbc
-    cp ${v}.gbc ${new_rom_basename}.gbc
-    cp ${v}.sym ${new_rom_basename}.sym
-    ROM_FILE=${new_rom_basename}.gbc ./generate-label-details
-  done
+  new_rom_basename=${v}-${branch}
+  make ${v}.gbc
+  cp ${v}.gbc ${new_rom_basename}.gbc
+  cp ${v}.sym ${new_rom_basename}.sym
+  ROM_FILE=${new_rom_basename}.gbc ./generate-label-details
 done
+
+./generate-randomizer-changes-diff
