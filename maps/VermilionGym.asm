@@ -29,13 +29,9 @@ VermilionGymSurgeScript:
 	opentext
 .ckir_BEFORE_writetext_ReceivedThunderBadgeText::
 	writetext ReceivedThunderBadgeText
-.ckir_AFTER_writetext_ReceivedThunderBadgeText::
-.ckir_BEFORE_playsound_SFX_GET_BADGE::
 	playsound SFX_GET_BADGE
 .ckir_AFTER_playsound_SFX_GET_BADGE::
-.ckir_BEFORE_waitsfx::
 	waitsfx
-.ckir_AFTER_waitsfx::
 	setflag ENGINE_THUNDERBADGE
 	writetext LtSurgeThunderBadgeText
 	waitbutton
