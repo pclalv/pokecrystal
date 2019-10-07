@@ -35,11 +35,11 @@ FuchsiaGymJanineScript:
 	variablesprite SPRITE_FUCHSIA_GYM_4, SPRITE_YOUNGSTER
 	special LoadUsedSpritesGFX
 	opentext
+.ckir_BEFORE_writetext_Text_ReceivedSoulBadge::
 	writetext Text_ReceivedSoulBadge
-.ckir_BEFORE_playsound_SFX_GET_BADGE::
 	playsound SFX_GET_BADGE
+.ckir_AFTER_writetext_Text_ReceivedSoulBadge::
 	waitsfx
-.ckir_AFTER_playsound_SFX_GET_BADGE::
 	setflag ENGINE_SOULBADGE
 	sjump .AfterBattle
 .FightDone:

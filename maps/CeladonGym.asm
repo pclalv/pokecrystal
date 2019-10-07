@@ -29,11 +29,11 @@ CeladonGymErikaScript:
 	setevent EVENT_BEAT_BEAUTY_JULIA
 	setevent EVENT_BEAT_TWINS_JO_AND_ZOE
 	opentext
+.ckir_BEFORE_writetext_PlayerReceivedRainbowBadgeText::
 	writetext PlayerReceivedRainbowBadgeText
-.ckir_BEFORE_playsound_SFX_GET_BADGE::
 	playsound SFX_GET_BADGE
+.ckir_AFTER_writetext_PlayerReceivedRainbowBadgeText::
 	waitsfx
-.ckir_AFTER_playsound_SFX_GET_BADGE::
 	setflag ENGINE_RAINBOWBADGE
 .FightDone:
 	checkevent EVENT_GOT_TM19_GIGA_DRAIN

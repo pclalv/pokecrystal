@@ -28,11 +28,11 @@ SeafoamGymBlaineScript:
 	reloadmapafterbattle
 	setevent EVENT_BEAT_BLAINE
 	opentext
+.ckir_BEFORE_writetext_ReceivedVolcanoBadgeText::
 	writetext ReceivedVolcanoBadgeText
-.ckir_BEFORE_playsound_SFX_GET_BADGE::
 	playsound SFX_GET_BADGE
+.ckir_AFTER_writetext_ReceivedVolcanoBadgeText::
 	waitsfx
-.ckir_AFTER_playsound_SFX_GET_BADGE::
 	setflag ENGINE_VOLCANOBADGE
 	writetext BlaineAfterBattleText
 	waitbutton

@@ -21,11 +21,11 @@ ViridianGymBlueScript:
 	reloadmapafterbattle
 	setevent EVENT_BEAT_BLUE
 	opentext
+.ckir_BEFORE_writetext_Text_ReceivedEarthBadge::
 	writetext Text_ReceivedEarthBadge
-.ckir_BEFORE_playsound_SFX_GET_BADGE::
 	playsound SFX_GET_BADGE
+.ckir_AFTER_writetext_Text_ReceivedEarthBadge::
 	waitsfx
-.ckir_AFTER_playsound_SFX_GET_BADGE::
 	setflag ENGINE_EARTHBADGE
 	writetext LeaderBlueAfterText
 	waitbutton
