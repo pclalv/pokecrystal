@@ -51,6 +51,7 @@ CianwoodGymChuckScript:
 	readvar VAR_BADGES
 .ckir_AFTER_readvar_VAR_BADGES::
 .ckir_BEFORE_scall_CianwoodGymActivateRockets::
+	;; this is 3 bytes, but farscall makes it 4 bytes
 	scall CianwoodGymActivateRockets
 .ckir_AFTER_scall_CianwoodGymActivateRockets::
 .FightDone:
