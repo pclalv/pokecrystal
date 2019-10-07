@@ -1,0 +1,965 @@
+[
+    {
+        "integer_values": {
+            "new": [
+                49,
+                200,
+                6
+            ],
+            "old": [
+                49,
+                42,
+                0
+            ]
+        },
+        "address_range": {
+            "end": 349029,
+            "begin": 349026
+        },
+        "name": "FlowerShopTeacherScript.ckir_BEFORE_CHECKEVENT_EVENT_FOUGHT_SUDOWOODO"
+    },
+    {
+        "integer_values": {
+            "new": [
+                49,
+                26,
+                0
+            ],
+            "old": [
+                49,
+                186,
+                0
+            ]
+        },
+        "address_range": {
+            "end": 349047,
+            "begin": 349044
+        },
+        "name": "FlowerShopTeacherScript.ckir_BEFORE_CHECKEVENT_EVENT_TALKED_TO_FLORIA_AT_FLOWER_SHOP"
+    },
+    {
+        "integer_values": {
+            "new": [
+                49,
+                26,
+                0
+            ],
+            "old": [
+                49,
+                205,
+                0
+            ]
+        },
+        "address_range": {
+            "end": 1615947,
+            "begin": 1615944
+        },
+        "name": "OfficerScript_0x18a81e.ckir_BEFORE_CHECKEVENT_EVENT_RESTORED_POWER_TO_KANTO"
+    },
+    {
+        "integer_values": {
+            "new": [
+                49,
+                26,
+                0
+            ],
+            "old": [
+                49,
+                205,
+                0
+            ]
+        },
+        "address_range": {
+            "end": 348401,
+            "begin": 348398
+        },
+        "name": "OfficerScript_0x550ec.ckir_BEFORE_CHECKEVENT_EVENT_RESTORED_POWER_TO_KANTO"
+    },
+    {
+        "integer_values": {
+            "new": [
+                73,
+                19,
+                10,
+                9,
+                0,
+                255,
+                255,
+                0,
+                0,
+                156,
+                73,
+                200,
+                6
+            ],
+            "old": [
+                73,
+                19,
+                10,
+                9,
+                0,
+                255,
+                255,
+                0,
+                0,
+                156,
+                73,
+                56,
+                7
+            ]
+        },
+        "address_range": {
+            "end": 478556,
+            "begin": 478543
+        },
+        "name": "OlivinePort_MapEventHeader.ckir_BEFORE_OBJECT_EVENT_EVENT_OLIVINE_PORT_SPRITES_AFTER_HALL_OF_FAME_0"
+    },
+    {
+        "integer_values": {
+            "new": [
+                39,
+                19,
+                8,
+                6,
+                0,
+                255,
+                255,
+                0,
+                0,
+                23,
+                74,
+                200,
+                6
+            ],
+            "old": [
+                39,
+                19,
+                8,
+                6,
+                0,
+                255,
+                255,
+                0,
+                0,
+                23,
+                74,
+                56,
+                7
+            ]
+        },
+        "address_range": {
+            "end": 478595,
+            "begin": 478582
+        },
+        "name": "OlivinePort_MapEventHeader.ckir_BEFORE_OBJECT_EVENT_EVENT_OLIVINE_PORT_SPRITES_AFTER_HALL_OF_FAME_1"
+    },
+    {
+        "integer_values": {
+            "new": [
+                73,
+                19,
+                11,
+                7,
+                0,
+                255,
+                255,
+                0,
+                0,
+                254,
+                73,
+                26,
+                0
+            ],
+            "old": [
+                73,
+                19,
+                11,
+                7,
+                0,
+                255,
+                255,
+                0,
+                0,
+                254,
+                73,
+                55,
+                7
+            ]
+        },
+        "address_range": {
+            "end": 478543,
+            "begin": 478530
+        },
+        "name": "OlivinePort_MapEventHeader.ckir_BEFORE_OBJECT_EVENT_EVENT_OLIVINE_PORT_SPRITES_BEFORE_HALL_OF_FAME_0"
+    },
+    {
+        "integer_values": {
+            "new": [
+                59,
+                18,
+                8,
+                7,
+                0,
+                255,
+                255,
+                0,
+                0,
+                1,
+                74,
+                26,
+                0
+            ],
+            "old": [
+                59,
+                18,
+                8,
+                7,
+                0,
+                255,
+                255,
+                0,
+                0,
+                1,
+                74,
+                55,
+                7
+            ]
+        },
+        "address_range": {
+            "end": 478569,
+            "begin": 478556
+        },
+        "name": "OlivinePort_MapEventHeader.ckir_BEFORE_OBJECT_EVENT_EVENT_OLIVINE_PORT_SPRITES_BEFORE_HALL_OF_FAME_1"
+    },
+    {
+        "integer_values": {
+            "new": [
+                59,
+                18,
+                17,
+                7,
+                0,
+                255,
+                255,
+                0,
+                0,
+                12,
+                74,
+                26,
+                0
+            ],
+            "old": [
+                59,
+                18,
+                17,
+                7,
+                0,
+                255,
+                255,
+                0,
+                0,
+                12,
+                74,
+                55,
+                7
+            ]
+        },
+        "address_range": {
+            "end": 478582,
+            "begin": 478569
+        },
+        "name": "OlivinePort_MapEventHeader.ckir_BEFORE_OBJECT_EVENT_EVENT_OLIVINE_PORT_SPRITES_BEFORE_HALL_OF_FAME_2"
+    },
+    {
+        "integer_values": {
+            "new": [
+                36,
+                19,
+                15,
+                6,
+                0,
+                255,
+                255,
+                0,
+                0,
+                34,
+                74,
+                200,
+                6
+            ],
+            "old": [
+                36,
+                19,
+                15,
+                6,
+                0,
+                255,
+                255,
+                0,
+                0,
+                34,
+                74,
+                56,
+                7
+            ]
+        },
+        "address_range": {
+            "end": 478608,
+            "begin": 478595
+        },
+        "name": "OlivinePort_MapEventHeader.ckir_BEFORE_OBJECT_EVENT_EVENT_OLIVINE_PORT_SPRITES_BEFORE_HALL_OF_FAME_3"
+    },
+    {
+        "integer_values": {
+            "new": [
+                49,
+                200,
+                6
+            ],
+            "old": [
+                49,
+                201,
+                0
+            ]
+        },
+        "address_range": {
+            "end": 1609342,
+            "begin": 1609339
+        },
+        "name": "PowerPlantManager.ckir_BEFORE_CHECKEVENT_EVENT_RETURNED_MACHINE_PART"
+    },
+    {
+        "integer_values": {
+            "new": [
+                39,
+                32,
+                6,
+                9,
+                0,
+                255,
+                255,
+                146,
+                3,
+                154,
+                86,
+                255,
+                255
+            ],
+            "old": [
+                39,
+                32,
+                6,
+                9,
+                0,
+                255,
+                255,
+                146,
+                3,
+                154,
+                86,
+                21,
+                7
+            ]
+        },
+        "address_range": {
+            "end": 1711255,
+            "begin": 1711242
+        },
+        "name": "Route30_MapEventHeader.ckir_BEFORE_EVENT_ROUTE_30_YOUNGSTER_JOEY"
+    },
+    {
+        "integer_values": {
+            "new": [
+                76,
+                28,
+                9,
+                6,
+                0,
+                255,
+                255,
+                128,
+                0,
+                222,
+                39,
+                26,
+                0
+            ],
+            "old": [
+                76,
+                28,
+                9,
+                6,
+                0,
+                255,
+                255,
+                128,
+                0,
+                222,
+                39,
+                20,
+                7
+            ]
+        },
+        "address_range": {
+            "end": 1711307,
+            "begin": 1711294
+        },
+        "name": "Route30_MapEventHeader.ckir_BEFORE_OBJECT_EVENT_MONSTER_EVENT_ROUTE_30_BATTLE_0"
+    },
+    {
+        "integer_values": {
+            "new": [
+                76,
+                29,
+                9,
+                7,
+                0,
+                255,
+                255,
+                144,
+                0,
+                222,
+                39,
+                26,
+                0
+            ],
+            "old": [
+                76,
+                29,
+                9,
+                7,
+                0,
+                255,
+                255,
+                144,
+                0,
+                222,
+                39,
+                20,
+                7
+            ]
+        },
+        "address_range": {
+            "end": 1711320,
+            "begin": 1711307
+        },
+        "name": "Route30_MapEventHeader.ckir_BEFORE_OBJECT_EVENT_MONSTER_EVENT_ROUTE_30_BATTLE_1"
+    },
+    {
+        "integer_values": {
+            "new": [
+                39,
+                30,
+                9,
+                7,
+                0,
+                255,
+                255,
+                144,
+                0,
+                115,
+                86,
+                26,
+                0
+            ],
+            "old": [
+                39,
+                30,
+                9,
+                7,
+                0,
+                255,
+                255,
+                144,
+                0,
+                115,
+                86,
+                20,
+                7
+            ]
+        },
+        "address_range": {
+            "end": 1711242,
+            "begin": 1711229
+        },
+        "name": "Route30_MapEventHeader.ckir_BEFORE_OBJECT_EVENT_YOUNGSTER_EVENT_ROUTE_30_BATTLE"
+    },
+    {
+        "integer_values": {
+            "new": [
+                6,
+                6,
+                192,
+                73
+            ],
+            "old": [
+                6,
+                6,
+                242,
+                73
+            ]
+        },
+        "address_range": {
+            "end": 477620,
+            "begin": 477616
+        },
+        "name": "SailorScript_0x7499c.ckir_BEFORE_ifequal_SATURDAY"
+    },
+    {
+        "integer_values": {
+            "new": [
+                6,
+                0,
+                192,
+                73
+            ],
+            "old": [
+                6,
+                0,
+                242,
+                73
+            ]
+        },
+        "address_range": {
+            "end": 477616,
+            "begin": 477612
+        },
+        "name": "SailorScript_0x7499c.ckir_BEFORE_ifequal_SUNDAY"
+    },
+    {
+        "integer_values": {
+            "new": [
+                6,
+                4,
+                192,
+                73
+            ],
+            "old": [
+                6,
+                4,
+                248,
+                73
+            ]
+        },
+        "address_range": {
+            "end": 477632,
+            "begin": 477628
+        },
+        "name": "SailorScript_0x7499c.ckir_BEFORE_ifequal_THURSDAY"
+    },
+    {
+        "integer_values": {
+            "new": [
+                6,
+                2,
+                192,
+                73
+            ],
+            "old": [
+                6,
+                2,
+                248,
+                73
+            ]
+        },
+        "address_range": {
+            "end": 477624,
+            "begin": 477620
+        },
+        "name": "SailorScript_0x7499c.ckir_BEFORE_ifequal_TUESDAY"
+    },
+    {
+        "integer_values": {
+            "new": [
+                6,
+                3,
+                192,
+                73
+            ],
+            "old": [
+                6,
+                3,
+                248,
+                73
+            ]
+        },
+        "address_range": {
+            "end": 477628,
+            "begin": 477624
+        },
+        "name": "SailorScript_0x7499c.ckir_BEFORE_ifequal_WEDNESDAY"
+    },
+    {
+        "integer_values": {
+            "new": [
+                6,
+                5,
+                188,
+                78
+            ],
+            "old": [
+                6,
+                5,
+                224,
+                78
+            ]
+        },
+        "address_range": {
+            "end": 478897,
+            "begin": 478893
+        },
+        "name": "SailorScript_0x74e97.ckir_BEFORE_ifequal_FRIDAY"
+    },
+    {
+        "integer_values": {
+            "new": [
+                6,
+                1,
+                188,
+                78
+            ],
+            "old": [
+                6,
+                1,
+                218,
+                78
+            ]
+        },
+        "address_range": {
+            "end": 478885,
+            "begin": 478881
+        },
+        "name": "SailorScript_0x74e97.ckir_BEFORE_ifequal_MONDAY"
+    },
+    {
+        "integer_values": {
+            "new": [
+                6,
+                6,
+                188,
+                78
+            ],
+            "old": [
+                6,
+                6,
+                224,
+                78
+            ]
+        },
+        "address_range": {
+            "end": 478901,
+            "begin": 478897
+        },
+        "name": "SailorScript_0x74e97.ckir_BEFORE_ifequal_SATURDAY"
+    },
+    {
+        "integer_values": {
+            "new": [
+                6,
+                4,
+                188,
+                78
+            ],
+            "old": [
+                6,
+                4,
+                224,
+                78
+            ]
+        },
+        "address_range": {
+            "end": 478893,
+            "begin": 478889
+        },
+        "name": "SailorScript_0x74e97.ckir_BEFORE_ifequal_THURSDAY"
+    },
+    {
+        "integer_values": {
+            "new": [
+                6,
+                2,
+                188,
+                78
+            ],
+            "old": [
+                6,
+                2,
+                218,
+                78
+            ]
+        },
+        "address_range": {
+            "end": 478889,
+            "begin": 478885
+        },
+        "name": "SailorScript_0x74e97.ckir_BEFORE_ifequal_TUESDAY"
+    },
+    {
+        "integer_values": {
+            "new": [
+                84,
+                5,
+                6,
+                1,
+                0,
+                255,
+                255,
+                1,
+                0,
+                232,
+                89,
+                228,
+                6
+            ],
+            "old": [
+                84,
+                5,
+                6,
+                1,
+                0,
+                255,
+                255,
+                1,
+                0,
+                232,
+                89,
+                85,
+                6
+            ]
+        },
+        "address_range": {
+            "end": 515572,
+            "begin": 515559
+        },
+        "name": "UndergroundWarehouse_MapEventHeader.ckir_BEFORE_OBJECT_EVENT_ULTRABALL"
+    },
+    {
+        "integer_values": {
+            "new": [
+                49,
+                205,
+                0
+            ],
+            "old": [
+                49,
+                207,
+                0
+            ]
+        },
+        "address_range": {
+            "end": 1644614,
+            "begin": 1644611
+        },
+        "name": "UnknownScript_0x191838.ckir_BEFORE_CHECKEVENT_EVENT_MET_COPYCAT_FOUND_OUT_ABOUT_LOST_ITEM"
+    },
+    {
+        "integer_values": {
+            "new": [
+                6,
+                6,
+                78,
+                73
+            ],
+            "old": [
+                6,
+                6,
+                119,
+                73
+            ]
+        },
+        "address_range": {
+            "end": 477506,
+            "begin": 477502
+        },
+        "name": "UnknownScript_0x7491f.ckir_BEFORE_ifequal_SATURDAY"
+    },
+    {
+        "integer_values": {
+            "new": [
+                6,
+                0,
+                78,
+                73
+            ],
+            "old": [
+                6,
+                0,
+                119,
+                73
+            ]
+        },
+        "address_range": {
+            "end": 477502,
+            "begin": 477498
+        },
+        "name": "UnknownScript_0x7491f.ckir_BEFORE_ifequal_SUNDAY"
+    },
+    {
+        "integer_values": {
+            "new": [
+                6,
+                4,
+                78,
+                73
+            ],
+            "old": [
+                6,
+                4,
+                129,
+                73
+            ]
+        },
+        "address_range": {
+            "end": 477518,
+            "begin": 477514
+        },
+        "name": "UnknownScript_0x7491f.ckir_BEFORE_ifequal_THURSDAY"
+    },
+    {
+        "integer_values": {
+            "new": [
+                6,
+                2,
+                78,
+                73
+            ],
+            "old": [
+                6,
+                2,
+                129,
+                73
+            ]
+        },
+        "address_range": {
+            "end": 477510,
+            "begin": 477506
+        },
+        "name": "UnknownScript_0x7491f.ckir_BEFORE_ifequal_TUESDAY"
+    },
+    {
+        "integer_values": {
+            "new": [
+                6,
+                3,
+                78,
+                73
+            ],
+            "old": [
+                6,
+                3,
+                129,
+                73
+            ]
+        },
+        "address_range": {
+            "end": 477514,
+            "begin": 477510
+        },
+        "name": "UnknownScript_0x7491f.ckir_BEFORE_ifequal_WEDNESDAY"
+    },
+    {
+        "integer_values": {
+            "new": [
+                6,
+                5,
+                80,
+                78
+            ],
+            "old": [
+                6,
+                5,
+                124,
+                78
+            ]
+        },
+        "address_range": {
+            "end": 478789,
+            "begin": 478785
+        },
+        "name": "UnknownScript_0x74e20.ckir_BEFORE_ifequal_FRIDAY"
+    },
+    {
+        "integer_values": {
+            "new": [
+                6,
+                1,
+                80,
+                78
+            ],
+            "old": [
+                6,
+                1,
+                114,
+                78
+            ]
+        },
+        "address_range": {
+            "end": 478777,
+            "begin": 478773
+        },
+        "name": "UnknownScript_0x74e20.ckir_BEFORE_ifequal_MONDAY"
+    },
+    {
+        "integer_values": {
+            "new": [
+                6,
+                6,
+                80,
+                78
+            ],
+            "old": [
+                6,
+                6,
+                124,
+                78
+            ]
+        },
+        "address_range": {
+            "end": 478793,
+            "begin": 478789
+        },
+        "name": "UnknownScript_0x74e20.ckir_BEFORE_ifequal_SATURDAY"
+    },
+    {
+        "integer_values": {
+            "new": [
+                6,
+                4,
+                80,
+                78
+            ],
+            "old": [
+                6,
+                4,
+                124,
+                78
+            ]
+        },
+        "address_range": {
+            "end": 478785,
+            "begin": 478781
+        },
+        "name": "UnknownScript_0x74e20.ckir_BEFORE_ifequal_THURSDAY"
+    },
+    {
+        "integer_values": {
+            "new": [
+                6,
+                2,
+                80,
+                78
+            ],
+            "old": [
+                6,
+                2,
+                114,
+                78
+            ]
+        },
+        "address_range": {
+            "end": 478781,
+            "begin": 478777
+        },
+        "name": "UnknownScript_0x74e20.ckir_BEFORE_ifequal_TUESDAY"
+    }
+]
