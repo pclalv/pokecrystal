@@ -49,8 +49,10 @@ CianwoodGymChuckScript:
 	setflag ENGINE_STORMBADGE
 .ckir_BEFORE_readvar_VAR_BADGES::
 	readvar VAR_BADGES
-	scall CianwoodGymActivateRockets
 .ckir_AFTER_readvar_VAR_BADGES::
+.ckir_BEFORE_scall_CianwoodGymActivateRockets::
+	scall CianwoodGymActivateRockets
+.ckir_AFTER_scall_CianwoodGymActivateRockets::
 .FightDone:
 	checkevent EVENT_GOT_TM01_DYNAMICPUNCH
 	iftrue .AlreadyGotTM
