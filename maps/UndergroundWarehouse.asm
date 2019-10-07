@@ -101,7 +101,7 @@ UndergroundWarehouseTMSleepTalk:
 
 UndergroundWarehouseUltraBall:
 .ckir_BEFORE_ITEMBALL_ULTRABALL:
-	itemball ULTRA_BALL
+	itemball CARD_KEY
 .ckir_AFTER_ITEMBALL_ULTRABALL:
 
 GruntM24SeenText:
