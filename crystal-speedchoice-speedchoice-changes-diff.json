@@ -331,6 +331,21 @@
     {
         "integer_values": {
             "new": [
+                1
+            ],
+            "old": [
+                15
+            ]
+        },
+        "address_range": {
+            "end": 721296,
+            "begin": 721295
+        },
+        "name": "Remove cuttable tree in Ilex Forest"
+    },
+    {
+        "integer_values": {
+            "new": [
                 39,
                 32,
                 6,
