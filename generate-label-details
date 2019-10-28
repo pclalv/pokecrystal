@@ -21,6 +21,10 @@ CHECK_EVENT = %w(EVENT_RESTORED_POWER_TO_KANTO SAFFRON_EVENT_RESTORED_POWER_TO_K
 SET_EVENT = %w(EVENT_ROUTE_30_YOUNGSTER_JOEY EVENT_ROUTE_30_BATTLE EVENT_OLIVINE_PORT_SPRITES_AFTER_HALL_OF_FAME)
 IF_EQUAL_WEEKDAY = %w(WEEKDAY_SATURDAY WEEKDAY_SUNDAY WEEKDAY_TUESDAY WEEKDAY_WEDNESDAY WEEKDAY_THURSDAY)
 
+# there's no ASM-level label for this, so we have to handle it
+# specially.
+ILEX_FOREST_TREE = 721295
+
 def rom
   @rom ||= IO.binread(ROM_FILE)
 end
@@ -46,6 +50,21 @@ def label_addresses
   end]
 end
 
+def rom_bytes_to_integers(rom_bytes)
+  rom_bytes.split('').map(&:bytes).flatten.join(" ")
+end
+
+def ilex_forest_diff
+  {
+    "integer_values" => rom_bytes_to_integers(rom[ILEX_FOREST_TREE]),
+    "address_range" => {
+      "begin" => ILEX_FOREST_TREE,
+      "end" => ILEX_FOREST_TREE + 1,
+    },
+    "name" => "Remove cuttable tree in Ilex Forest",
+  }
+end
+
 def main
   key_item_address_ranges =
     label_addresses
@@ -63,10 +82,12 @@ def main
         "name" => key_item,
         "address_range" => { "begin" => address_range.begin, "end" => address_range.end },
         # "values" => rom[address_range], # it's difficult to write out raw bytes :(
-        "integer_values" => rom[address_range].split('').map(&:bytes).flatten.join(" "),
+        "integer_values" => rom_bytes_to_integers(rom[address_range]),
         "hex_values" => rom[address_range].each_char.map(&method(:byte_to_string)).join(" "),
       }
-    end.sort_by { |details| details["name"] }
+  end.sort_by { |details| details["name"] }
+
+  key_item_details << ilex_forest_diff
 
   File.write(OUT_FILE, key_item_details.to_json)
 
