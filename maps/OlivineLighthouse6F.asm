@@ -67,7 +67,15 @@ UnknownScript_0x60bab:
 	writetext UnknownText_0x60e6c
 	waitbutton
 	closetext
+.ckir_BEFORE_setevent_EVENT_JASMINE_RETURNED_TO_GYM::
+	;; this event is pretty inconsequential, so we'll take this as
+	;; an opportunity to set an event that's highly consequential:
+	;; EVENT_JASMINE_EXPLAINED_AMPHYS_SICKNESS. that way, the player
+	;; can get the Cianwood Pharmacy item even if they've already
+	;; used the Secretpotion on Amphy; otherwise, the player could 
+	;; hardlock.
 	setevent EVENT_JASMINE_RETURNED_TO_GYM
+.ckir_AFTER_setevent_EVENT_JASMINE_RETURNED_TO_GYM::
 	clearevent EVENT_OLIVINE_GYM_JASMINE
 	checkcode VAR_FACING
 	if_equal DOWN, UnknownScript_0x60c17
