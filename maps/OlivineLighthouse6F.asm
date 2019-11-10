@@ -72,7 +72,7 @@ OlivineLighthouseJasmine:
 	;; can get the Cianwood Pharmacy item even if they've already
 	;; used the Secretpotion on Amphy; otherwise, the player could 
 	;; hardlock.
-	setevent EVENT_JASMINE_RETURNED_TO_GYM
+	setevent EVENT_JASMINE_EXPLAINED_AMPHYS_SICKNESS
 .ckir_AFTER_setevent_EVENT_JASMINE_RETURNED_TO_GYM::
 	clearevent EVENT_OLIVINE_GYM_JASMINE
 	readvar VAR_FACING
