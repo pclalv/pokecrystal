@@ -11,9 +11,12 @@ BLACKLISTED_LABELS = %w(
   FlyFunction.ckir_BEFORE_CHECK_STORMBADGE
 )
 
-speedchoice_labels_json  = JSON.load(File.read("#{VERSION}-speedchoice-labels-label-details.json")).
+ORIG_JSON = ENV.fetch("ORIG_JSON", "#{VERSION}-speedchoice-labels-label-details.json")
+MOD_JSON = ENV.fetch("MOD_JSON", "#{VERSION}-speedchoice-changes-label-details.json")
+
+speedchoice_labels_json  = JSON.load(File.read(ORIG_JSON)).
   sort_by { |h| h['name'] }
-speedchoice_changes_json = JSON.load(File.read("#{VERSION}-speedchoice-changes-label-details.json")).
+speedchoice_changes_json = JSON.load(File.read(MOD_JSON)).
   sort_by { |h| h['name'] }
 
 diff = speedchoice_labels_json.
