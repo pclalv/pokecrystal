@@ -101,7 +101,11 @@ GruntF2Script:
 Buena:
 	faceplayer
 	opentext
+.ckir_BEFORE_checkflag_ENGINE_ROCKETS_IN_RADIO_TOWER::
+	;; we need an event that's guaranteed false here so that the
+	;; player can always obtain the BLUE CARD from Buena
 	checkflag ENGINE_ROCKETS_IN_RADIO_TOWER
+.ckir_AFTER_checkflag_ENGINE_ROCKETS_IN_RADIO_TOWER::
 	iftrue UnknownScript_0x5d865
 	checkevent EVENT_MET_BUENA
 	iffalse UnknownScript_0x5d800
