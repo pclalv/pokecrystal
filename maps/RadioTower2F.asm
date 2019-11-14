@@ -100,7 +100,11 @@ TrainerGruntF2:
 Buena:
 	faceplayer
 	opentext
+.ckir_BEFORE_checkflag_ENGINE_ROCKETS_IN_RADIO_TOWER::
+	;; we need an event that's guaranteed false here so that the
+	;; player can always obtain the BLUE CARD from Buena
 	checkflag ENGINE_ROCKETS_IN_RADIO_TOWER
+.ckir_AFTER_checkflag_ENGINE_ROCKETS_IN_RADIO_TOWER::
 	iftrue .MidRocketTakeover
 	checkevent EVENT_MET_BUENA
 	iffalse .Introduction
