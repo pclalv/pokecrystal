@@ -2,6 +2,25 @@
     {
         "integer_values": {
             "new": [
+                52,
+                200,
+                6
+            ],
+            "old": [
+                52,
+                19,
+                0
+            ]
+        },
+        "address_range": {
+            "end": 382842,
+            "begin": 382839
+        },
+        "name": "Buena.ckir_BEFORE_checkflag_ENGINE_ROCKETS_IN_RADIO_TOWER"
+    },
+    {
+        "integer_values": {
+            "new": [
                 49,
                 200,
                 6
@@ -36,6 +55,123 @@
             "begin": 349044
         },
         "name": "FlowerShopTeacherScript.ckir_BEFORE_CHECKEVENT_EVENT_TALKED_TO_FLORIA_AT_FLOWER_SHOP"
+    },
+    {
+        "integer_values": {
+            "new": [
+                53,
+                24,
+                33,
+                7,
+                0,
+                255,
+                255,
+                0,
+                0,
+                50,
+                75,
+                26,
+                0
+            ],
+            "old": [
+                53,
+                24,
+                33,
+                7,
+                0,
+                255,
+                255,
+                0,
+                0,
+                50,
+                75,
+                206,
+                6
+            ]
+        },
+        "address_range": {
+            "end": 1676282,
+            "begin": 1676269
+        },
+        "name": "GoldenrodCity_MapEventHeader.ckir_BEFORE_person_event_SPRITE_ROCKET_1"
+    },
+    {
+        "integer_values": {
+            "new": [
+                53,
+                11,
+                33,
+                6,
+                0,
+                255,
+                255,
+                0,
+                0,
+                53,
+                75,
+                26,
+                0
+            ],
+            "old": [
+                53,
+                11,
+                33,
+                6,
+                0,
+                255,
+                255,
+                0,
+                0,
+                53,
+                75,
+                206,
+                6
+            ]
+        },
+        "address_range": {
+            "end": 1676295,
+            "begin": 1676282
+        },
+        "name": "GoldenrodCity_MapEventHeader.ckir_BEFORE_person_event_SPRITE_ROCKET_2"
+    },
+    {
+        "integer_values": {
+            "new": [
+                53,
+                24,
+                32,
+                7,
+                0,
+                255,
+                255,
+                0,
+                0,
+                41,
+                75,
+                26,
+                0
+            ],
+            "old": [
+                53,
+                24,
+                32,
+                7,
+                0,
+                255,
+                255,
+                0,
+                0,
+                41,
+                75,
+                205,
+                6
+            ]
+        },
+        "address_range": {
+            "end": 1676243,
+            "begin": 1676230
+        },
+        "name": "GoldenrodCity_MapEventHeader.ckir_BEFORE_person_event_SPRITE_ROCKET_3"
     },
     {
         "integer_values": {
