@@ -103,7 +103,7 @@ Buena:
 .ckir_BEFORE_checkflag_ENGINE_ROCKETS_IN_RADIO_TOWER::
 	;; we need an event that's guaranteed false here so that the
 	;; player can always obtain the BLUE CARD from Buena
-	checkflag EVENT_KRISS_HOUSE_MOM_2
+	checkflag EVENT_MET_BUENA
 .ckir_AFTER_checkflag_ENGINE_ROCKETS_IN_RADIO_TOWER::
 	iftrue .MidRocketTakeover
 	checkevent EVENT_MET_BUENA
