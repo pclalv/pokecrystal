@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+MASTER=speedchoice/master
+
+branch="$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/')"
+make
+branch_shasum="$(sha256sum < crystal-speedchoice.gbc | awk '{print $1}')"
+
+git co $MASTER
+
+make
+master_shasum="$(sha256sum < crystal-speedchoice.gbc | awk '{print $1}')"
+
+if [[ "$branch_shasum" == "$master_shasum" ]]; then
+  echo 'ok'
+  git co $branch
+else
+  echo "shasum mismatch!"
+  echo "$branch: $branch_shasum"
+  echo "$MASTER $master_shasum"
+fi
