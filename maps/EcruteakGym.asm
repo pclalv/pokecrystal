@@ -42,7 +42,9 @@ MortyScript_0x99d58:
 	writetext UnknownText_0x9a043
 	playsound SFX_GET_BADGE
 	waitsfx
+.ckir_BEFORE_setflag_ENGINE_FOGBADGE::
 	setflag ENGINE_FOGBADGE
+.ckir_AFTER_setflag_ENGINE_FOGBADGE::
 	checkcode VAR_BADGES
 	scall EcruteakGymTriggerRockets
 	domaptrigger ECRUTEAK_HOUSE, $1

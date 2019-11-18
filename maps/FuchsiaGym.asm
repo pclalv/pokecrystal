@@ -40,7 +40,9 @@ JanineScript_0x195db9:
 	writetext UnknownText_0x195feb
 	playsound SFX_GET_BADGE
 	waitsfx
+.ckir_BEFORE_setflag_ENGINE_SOULBADGE::
 	setflag ENGINE_SOULBADGE
+.ckir_AFTER_setflag_ENGINE_SOULBADGE::
 	checkcode VAR_BADGES
 	scall FuchsiaGymTriggerRockets
 	jump UnknownScript_0x195e02

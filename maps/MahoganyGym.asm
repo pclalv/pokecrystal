@@ -31,7 +31,9 @@ PryceScript_0x199a9e:
 	writetext UnknownText_0x199d3b
 	playsound SFX_GET_BADGE
 	waitsfx
+.ckir_BEFORE_setflag_ENGINE_GLACIERBADGE::
 	setflag ENGINE_GLACIERBADGE
+.ckir_AFTER_setflag_ENGINE_GLACIERBADGE::
 	checkcode VAR_BADGES
 	scall MahoganyGymTriggerRockets
 .FightDone

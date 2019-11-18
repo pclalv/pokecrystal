@@ -28,7 +28,9 @@ FalknerScript_0x683c2:
 	writetext UnknownText_0x685af
 	playsound SFX_GET_BADGE
 	waitsfx
+.ckir_BEFORE_setflag_ENGINE_ZEPHYRBADGE::
 	setflag ENGINE_ZEPHYRBADGE
+.ckir_AFTER_setflag_ENGINE_ZEPHYRBADGE::
 	checkcode VAR_BADGES
 	scall VioletGymTriggerRockets
 .FightDone

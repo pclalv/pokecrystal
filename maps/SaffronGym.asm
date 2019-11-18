@@ -34,7 +34,9 @@ SabrinaScript_0x189c2e:
 	writetext UnknownText_0x189e95
 	playsound SFX_GET_BADGE
 	waitsfx
+.ckir_BEFORE_setflag_ENGINE_MARSHBADGE::
 	setflag ENGINE_MARSHBADGE
+.ckir_AFTER_setflag_ENGINE_MARSHBADGE::
 	checkcode VAR_BADGES
 	scall SaffronGymTriggerRockets
 	writetext UnknownText_0x189ead

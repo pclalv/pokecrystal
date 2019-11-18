@@ -26,7 +26,9 @@ JasmineScript_0x9c12f:
 	writetext UnknownText_0x9c33a
 	playsound SFX_GET_BADGE
 	waitsfx
+.ckir_BEFORE_setflag_ENGINE_MINERALBADGE::
 	setflag ENGINE_MINERALBADGE
+.ckir_AFTER_setflag_ENGINE_MINERALBADGE::
 	checkcode VAR_BADGES
 	scall OlivineGymTriggerRockets
 .FightDone

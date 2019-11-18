@@ -80,7 +80,9 @@ MistyScript_0x188432:
 	writetext UnknownText_0x188768
 	playsound SFX_GET_BADGE
 	waitsfx
+.ckir_BEFORE_setflag_ENGINE_CASCADEBADGE::
 	setflag ENGINE_CASCADEBADGE
+.ckir_AFTER_setflag_ENGINE_CASCADEBADGE::
 	checkcode VAR_BADGES
 	scall CeruleanGymTriggerRockets
 .FightDone

@@ -34,7 +34,9 @@ ErikaScript_0x72a6a:
 	writetext UnknownText_0x72c96
 	playsound SFX_GET_BADGE
 	waitsfx
+.ckir_BEFORE_setflag_ENGINE_RAINBOWBADGE::
 	setflag ENGINE_RAINBOWBADGE
+.ckir_AFTER_setflag_ENGINE_RAINBOWBADGE::
 	checkcode VAR_BADGES
 	scall CeladonGymTriggerRockets
 .FightDone

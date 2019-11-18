@@ -31,7 +31,9 @@ BugsyScript:
 	writetext Text_ReceivedHiveBadge
 	playsound SFX_GET_BADGE
 	waitsfx
+.ckir_BEFORE_setflag_ENGINE_HIVEBADGE::
 	setflag ENGINE_HIVEBADGE
+.ckir_AFTER_setflag_ENGINE_HIVEBADGE::
 	checkcode VAR_BADGES
 	scall AzaleaGymTriggerRockets
 .FightDone

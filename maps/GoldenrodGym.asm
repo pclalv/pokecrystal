@@ -62,7 +62,9 @@ WhitneyScript_0x5400c:
 	writetext UnknownText_0x54273
 	playsound SFX_GET_BADGE
 	waitsfx
+.ckir_BEFORE_setflag_ENGINE_PLAINBADGE::
 	setflag ENGINE_PLAINBADGE
+.ckir_AFTER_setflag_ENGINE_PLAINBADGE::
 	checkcode VAR_BADGES
 	scall GoldenrodGymTriggerRockets
 UnknownScript_0x54064:

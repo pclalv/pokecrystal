@@ -35,7 +35,9 @@ BlaineScript_0x1ab4fb:
 	writetext UnknownText_0x1ab683
 	playsound SFX_GET_BADGE
 	waitsfx
+.ckir_BEFORE_setflag_ENGINE_VOLCANOBADGE::
 	setflag ENGINE_VOLCANOBADGE
+.ckir_AFTER_setflag_ENGINE_VOLCANOBADGE::
 	checkcode VAR_BADGES
 	scall SeafoamGymTriggerRockets
 	writetext UnknownText_0x1ab69d

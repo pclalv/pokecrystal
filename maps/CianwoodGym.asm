@@ -48,7 +48,9 @@ ChuckScript_0x9d60f:
 	writetext UnknownText_0x9d835
 	playsound SFX_GET_BADGE
 	waitsfx
+.ckir_BEFORE_setflag_ENGINE_STORMBADGE::
 	setflag ENGINE_STORMBADGE
+.ckir_AFTER_setflag_ENGINE_STORMBADGE::
 	checkcode VAR_BADGES
 	scall CianwoodGymTriggerRockets
 .FightDone
