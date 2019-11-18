@@ -38,7 +38,9 @@ EcruteakGymMortyScript:
 	writetext Text_ReceivedFogBadge
 	playsound SFX_GET_BADGE
 	waitsfx
+.ckir_BEFORE_setflag_ENGINE_FOGBADGE::
 	setflag ENGINE_FOGBADGE
+.ckir_AFTER_setflag_ENGINE_FOGBADGE::
 	readvar VAR_BADGES
 	scall EcruteakGymActivateRockets
 	setmapscene ECRUTEAK_TIN_TOWER_ENTRANCE, SCENE_FINISHED

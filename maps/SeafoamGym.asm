@@ -31,7 +31,9 @@ SeafoamGymBlaineScript:
 	writetext ReceivedVolcanoBadgeText
 	playsound SFX_GET_BADGE
 	waitsfx
+.ckir_BEFORE_setflag_ENGINE_VOLCANOBADGE::
 	setflag ENGINE_VOLCANOBADGE
+.ckir_AFTER_setflag_ENGINE_VOLCANOBADGE::
 	checkcode VAR_BADGES
 	scall SeafoamGymActivateRockets
 	writetext BlaineAfterBattleText

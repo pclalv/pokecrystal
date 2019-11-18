@@ -54,7 +54,9 @@ BlackthornGymClairScript:
 	waitsfx
 	playsound SFX_GET_BADGE
 	waitsfx
+.ckir_BEFORE_setflag_ENGINE_RISINGBADGE::
 	setflag ENGINE_RISINGBADGE
+.ckir_AFTER_setflag_ENGINE_RISINGBADGE::
 	checkcode VAR_BADGES
 	scall BlackthornGymActivateRockets
 	specialphonecall SPECIALCALL_MASTERBALL

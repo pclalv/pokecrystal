@@ -24,7 +24,9 @@ OlivineGymJasmineScript:
 	writetext Text_ReceivedMineralBadge
 	playsound SFX_GET_BADGE
 	waitsfx
+.ckir_BEFORE_setflag_ENGINE_MINERALBADGE::
 	setflag ENGINE_MINERALBADGE
+.ckir_AFTER_setflag_ENGINE_MINERALBADGE::
 	readvar VAR_BADGES
 	scall OlivineGymActivateRockets
 .FightDone:

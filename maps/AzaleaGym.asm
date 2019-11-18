@@ -29,7 +29,9 @@ AzaleaGymBugsyScript:
 	writetext Text_ReceivedHiveBadge
 	playsound SFX_GET_BADGE
 	waitsfx
+.ckir_BEFORE_setflag_ENGINE_HIVEBADGE::
 	setflag ENGINE_HIVEBADGE
+.ckir_AFTER_setflag_ENGINE_HIVEBADGE::
 	readvar VAR_BADGES
 	scall AzaleaGymActivateRockets
 .FightDone:

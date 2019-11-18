@@ -58,7 +58,9 @@ GoldenrodGymWhitneyScript:
 	writetext PlayerReceivedPlainBadgeText
 	playsound SFX_GET_BADGE
 	waitsfx
+.ckir_BEFORE_setflag_ENGINE_PLAINBADGE::
 	setflag ENGINE_PLAINBADGE
+.ckir_AFTER_setflag_ENGINE_PLAINBADGE::
 	readvar VAR_BADGES
 	scall GoldenrodGymActivateRockets
 .GotPlainBadge:

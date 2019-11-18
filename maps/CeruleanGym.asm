@@ -76,7 +76,9 @@ CeruleanGymMistyScript:
 	writetext ReceivedCascadeBadgeText
 	playsound SFX_GET_BADGE
 	waitsfx
+.ckir_BEFORE_setflag_ENGINE_CASCADEBADGE::
 	setflag ENGINE_CASCADEBADGE
+.ckir_AFTER_setflag_ENGINE_CASCADEBADGE::
 	checkcode VAR_BADGES
 	scall CeruleanGymActivateRockets
 .FightDone:

@@ -32,7 +32,9 @@ CeladonGymErikaScript:
 	writetext PlayerReceivedRainbowBadgeText
 	playsound SFX_GET_BADGE
 	waitsfx
+.ckir_BEFORE_setflag_ENGINE_RAINBOWBADGE::
 	setflag ENGINE_RAINBOWBADGE
+.ckir_AFTER_setflag_ENGINE_RAINBOWBADGE::
 	checkcode VAR_BADGES
 	scall CeladonGymActivateRockets
 .FightDone:

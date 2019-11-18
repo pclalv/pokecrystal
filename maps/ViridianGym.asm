@@ -24,7 +24,9 @@ ViridianGymBlueScript:
 	writetext Text_ReceivedEarthBadge
 	playsound SFX_GET_BADGE
 	waitsfx
+.ckir_BEFORE_setflag_ENGINE_EARTHBADGE::
 	setflag ENGINE_EARTHBADGE
+.ckir_AFTER_setflag_ENGINE_EARTHBADGE::
 	checkcode VAR_BADGES
 	scall ViridianGymActivateRockets
 	writetext LeaderBlueAfterText

@@ -26,7 +26,9 @@ PewterGymBrockScript:
 	writetext ReceivedBoulderBadgeText
 	playsound SFX_GET_BADGE
 	waitsfx
+.ckir_BEFORE_setflag_ENGINE_BOULDERBADGE::
 	setflag ENGINE_BOULDERBADGE
+.ckir_AFTER_setflag_ENGINE_BOULDERBADGE::
 	checkcode VAR_BADGES
 	scall PewterGymActivateRockets
 	writetext BrockBoulderBadgeText

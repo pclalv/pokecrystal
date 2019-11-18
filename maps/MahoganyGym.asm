@@ -29,7 +29,9 @@ MahoganyGymPryceScript:
 	writetext Text_ReceivedGlacierBadge
 	playsound SFX_GET_BADGE
 	waitsfx
+.ckir_BEFORE_setflag_ENGINE_GLACIERBADGE::
 	setflag ENGINE_GLACIERBADGE
+.ckir_AFTER_setflag_ENGINE_GLACIERBADGE::
 	readvar VAR_BADGES
 	scall MahoganyGymActivateRockets
 .FightDone:

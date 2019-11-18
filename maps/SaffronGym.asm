@@ -32,7 +32,9 @@ SaffronGymSabrinaScript:
 	writetext ReceivedMarshBadgeText
 	playsound SFX_GET_BADGE
 	waitsfx
+.ckir_BEFORE_setflag_ENGINE_MARSHBADGE::
 	setflag ENGINE_MARSHBADGE
+.ckir_AFTER_setflag_ENGINE_MARSHBADGE::
 	checkcode VAR_BADGES
 	scall SaffronGymActivateRockets
 	writetext SabrinaMarshBadgeText

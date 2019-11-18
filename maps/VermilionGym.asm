@@ -30,7 +30,9 @@ VermilionGymSurgeScript:
 	writetext ReceivedThunderBadgeText
 	playsound SFX_GET_BADGE
 	waitsfx
+.ckir_BEFORE_setflag_ENGINE_THUNDERBADGE::
 	setflag ENGINE_THUNDERBADGE
+.ckir_AFTER_setflag_ENGINE_THUNDERBADGE::
 	checkcode VAR_BADGES
 	scall VermilionGymActivateRockets
 	writetext LtSurgeThunderBadgeText
