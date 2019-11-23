@@ -150,7 +150,9 @@ RadioTower1FRadioCardWomanScript:
 	scall .ReceiveItem
 	writetext RadioTower1FPokegearIsARadioText
 	promptbutton
+.ckir_BEFORE_setflag_ENGINE_RADIO_CARD::
 	setflag ENGINE_RADIO_CARD
+.ckir_AFTER_setflag_ENGINE_RADIO_CARD::
 .GotCard:
 	writetext RadioTower1FRadioCardWomanTuneInText
 	waitbutton

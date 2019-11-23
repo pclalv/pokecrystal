@@ -38,8 +38,12 @@ MeetMomScript:
 	promptbutton
 	getstring STRING_BUFFER_4, PokegearName
 	scall PlayersHouse1FReceiveItemStd
+.ckir_BEFORE_setflag_ENGINE_POKEGEAR::
 	setflag ENGINE_POKEGEAR
+.ckir_AFTER_setflag_ENGINE_POKEGEAR::
+.ckir_BEFORE_setflag_ENGINE_PHONE_CARD::
 	setflag ENGINE_PHONE_CARD
+.ckir_AFTER_setflag_ENGINE_PHONE_CARD::
 	addcellnum PHONE_MOM
 	setscene SCENE_FINISHED
 	setevent EVENT_PLAYERS_HOUSE_MOM_1
