@@ -43,7 +43,9 @@ UnknownScript_0x7a4f6:
 	stringtotext GearName, $1
 	scall UnknownScript_0x7a57e
 	setflag ENGINE_POKEGEAR
+.ckir_BEFORE_setflag_ENGINE_PHONE_CARD::
 	setflag ENGINE_PHONE_CARD
+.ckir_AFTER_setflag_ENGINE_PHONE_CARD::
 	addcellnum PHONE_MOM
 	dotrigger $1
 	setevent EVENT_KRISS_HOUSE_MOM_1

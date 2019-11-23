@@ -152,7 +152,9 @@ CooltrainerFScript_0x5cdd5:
 	scall UnknownScript_0x5ce3e
 	writetext UnknownText_0x5d3c0
 	buttonsound
+.ckir_BEFORE_setflag_ENGINE_RADIO_CARD::
 	setflag ENGINE_RADIO_CARD
+.ckir_AFTER_setflag_ENGINE_RADIO_CARD::
 UnknownScript_0x5ce2d:
 	writetext UnknownText_0x5d3e5
 	waitbutton

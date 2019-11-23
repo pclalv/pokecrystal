@@ -38,7 +38,9 @@ GentlemanScript_0x7ee6c:
 	buttonsound
 	stringtotext .expncardname, $1
 	scall .UnknownScript_0x7ee94
+.ckir_BEFORE_setflag_ENGINE_EXPN_CARD::
 	setflag ENGINE_EXPN_CARD
+.ckir_AFTER_setflag_ENGINE_EXPN_CARD::
 .UnknownScript_0x7ee8e
 	writetext UnknownText_0x7f141
 	waitbutton
