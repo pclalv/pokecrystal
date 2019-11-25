@@ -250,10 +250,12 @@ PokemonFanClubClefairyGuyTakeThisDollBackToGirlText:
 	line "No worries!"
 	done
 
+ckir_BEFORE_giveitem_text_PokemonFanClubPlayerReceivedDollText::
 PokemonFanClubPlayerReceivedDollText:
 	text "<PLAYER> received"
 	line "# DOLL."
 	done
+ckir_AFTER_giveitem_text_PokemonFanClubPlayerReceivedDollText::
 
 PokemonFanClubClefairyGuyGoingToGetARealClefairyText:
 	text "You watch. I'm"

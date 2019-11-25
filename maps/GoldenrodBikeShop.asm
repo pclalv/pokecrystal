@@ -70,10 +70,12 @@ GoldenrodBikeShopClerkAgreedText:
 	line "a BICYCLE."
 	done
 
+ckir_BEFORE_giveitem_text_BorrowedABicycleText::
 BorrowedABicycleText:
 	text "<PLAYER> borrowed a"
 	line "BICYCLE."
 	done
+ckir_AFTER_giveitem_text_BorrowedABicycleText::
 
 GoldenrodBikeShopClerkFirstRateBikesText:
 	text "My BICYCLES are"

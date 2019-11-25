@@ -59,10 +59,12 @@ PharmacistGiveSecretpotionText:
 	line "the trick."
 	done
 
+ckir_BEFORE_giveitem_text_ReceivedSecretpotionText::
 ReceivedSecretpotionText:
 	text "<PLAYER> received"
 	line "SECRETPOTION."
 	done
+ckir_AFTER_giveitem_text_ReceivedSecretpotionText::
 
 PharmacistDescribeSecretpotionText:
 	text "My SECRETPOTION is"

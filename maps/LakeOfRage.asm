@@ -440,10 +440,12 @@ LakeOfRageGyaradosCryText:
 	text "GYARADOS: Gyashaa!"
 	done
 
+ckir_BEFORE_giveitem_text_LakeOfRageGotRedScaleText::
 LakeOfRageGotRedScaleText:
 	text "<PLAYER> obtained a"
 	line "RED SCALE."
 	done
+ckir_AFTER_giveitem_text_LakeOfRageGotRedScaleText::
 
 LakeOfRageGrampsText:
 	text "The GYARADOS are"
