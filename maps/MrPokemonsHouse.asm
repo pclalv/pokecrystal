@@ -190,10 +190,12 @@ MrPokemonIntroText2:
 	cont "examine."
 	done
 
+ckir_BEFORE_giveitem_text_MrPokemonsHouse_GotEggText::
 MrPokemonsHouse_GotEggText:
 	text "<PLAYER> received"
 	line "MYSTERY EGG."
 	done
+ckir_AFTER_giveitem_text_MrPokemonsHouse_GotEggText::
 
 MrPokemonIntroText3:
 	text "I know a couple"

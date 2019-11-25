@@ -450,10 +450,12 @@ UnknownText_0x703cb:
 	text "GYARADOS: Gyashaa!"
 	done
 
+ckir_BEFORE_giveitem_text_UnknownText_0x703df::
 UnknownText_0x703df:
 	text "<PLAYER> obtained a"
 	line "RED SCALE."
 	done
+ckir_AFTER_giveitem_text_UnknownText_0x703df::
 
 UnknownText_0x703f8:
 	text "The GYARADOS are"

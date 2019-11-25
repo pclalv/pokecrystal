@@ -252,10 +252,12 @@ UnknownText_0x191c5a:
 	line "No worries!"
 	done
 
+ckir_BEFORE_giveitem_text_UnknownText_0x191d0a::
 UnknownText_0x191d0a:
 	text "<PLAYER> received"
 	line "# DOLL."
 	done
+ckir_AFTER_giveitem_text_UnknownText_0x191d0a::
 
 UnknownText_0x191d1e:
 	text "You watch. I'm"

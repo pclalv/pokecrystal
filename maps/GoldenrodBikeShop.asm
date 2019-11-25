@@ -72,10 +72,12 @@ UnknownText_0x547f8:
 	line "a BICYCLE."
 	done
 
+ckir_BEFORE_giveitem_text_UnknownText_0x54848::
 UnknownText_0x54848:
 	text "<PLAYER> borrowed a"
 	line "BICYCLE."
 	done
+ckir_AFTER_giveitem_text_UnknownText_0x54848::
 
 UnknownText_0x5485f:
 	text "My BICYCLES are"
