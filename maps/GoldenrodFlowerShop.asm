@@ -23,7 +23,16 @@ FlowerShopTeacherScript:
 	checkevent EVENT_TALKED_TO_FLORIA_AT_FLOWER_SHOP
 .ckir_AFTER_CHECKEVENT_EVENT_TALKED_TO_FLORIA_AT_FLOWER_SHOP:
 	iffalse .Lalala
+        ;; change this to check if the player defeated whitney, for
+        ;; the sake of badge randomization. otherwise, plainbadge will
+        ;; always have to appear early.
+        ;; checkevent EVENT_BEAT_WHITNEY
+
+        ;; on second thought, it's fine as is. the player already
+        ;; starts out with way too many key items.
+.ckir_BEFORE_checkflag_ENGINE_PLAINBADGE::
 	checkflag ENGINE_PLAINBADGE
+.ckir_AFTER_checkflag_ENGINE_PLAINBADGE::
 	iffalse .NoPlainBadge
 	faceplayer
 	opentext
