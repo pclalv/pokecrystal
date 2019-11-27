@@ -15,21 +15,21 @@ ORIG_JSON = ENV.fetch("ORIG_JSON", "#{VERSION}-speedchoice-labels-label-details.
 MOD_JSON = ENV.fetch("MOD_JSON", "#{VERSION}-speedchoice-changes-label-details.json")
 
 speedchoice_labels_json  = JSON.load(File.read(ORIG_JSON)).
-  sort_by { |h| h['name'] }
+  sort_by { |h| h['label'] }
 speedchoice_changes_json = JSON.load(File.read(MOD_JSON)).
-  sort_by { |h| h['name'] }
+  sort_by { |h| h['label'] }
 
 diff = speedchoice_labels_json.
   zip(speedchoice_changes_json).
   filter { |rl, rc| rl != rc }.
   map do |rl, rc|
-    raise <<~EOF unless rl['name'] == rc['name'] && rl['address_range'] == rc['address_range']
-      #{rl['name']} != #{rc['name']}
+    raise <<~EOF unless rl['label'] == rc['label'] && rl['address_range'] == rc['address_range']
+      #{rl['label']} != #{rc['label']}
       #{rl['address_range']} != #{rc['address_range']}
     EOF
 
     {
-    :name => rl['name'],
+    :label => rl['label'],
     :address_range => rl['address_range'],
       :integer_values => {
         :old => rl['integer_values'].split(" ").map(&method(:Integer)),
@@ -37,7 +37,7 @@ diff = speedchoice_labels_json.
       },
     }
   end.
-  reject { |d| BLACKLISTED_LABELS.include?(d['name']) }.
+  reject { |d| BLACKLISTED_LABELS.include?(d['label']) }.
   to_json
 
 File.write("#{VERSION}-speedchoice-changes-diff.json", diff)

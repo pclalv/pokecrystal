@@ -50,12 +50,12 @@ def ilex_forest_diff
       "begin" => ILEX_FOREST_TREE,
       "end" => ILEX_FOREST_TREE + 1,
     },
-    "name" => "Remove cuttable tree in Ilex Forest",
+    "label" => "Remove cuttable tree in Ilex Forest",
   }
 end
 
 def main
-  key_item_address_ranges =
+  label_address_ranges =
     label_addresses
       .keys
       .reject { |label| label.include?("ckir_AFTER") }
@@ -65,20 +65,19 @@ def main
         [label, address_range]
       end
 
-  key_item_details =
-    key_item_address_ranges.map do |key_item, address_range|
+  label_details =
+    label_address_ranges.map do |label, address_range|
       {
-        "name" => key_item,
+        "label" => label,
         "address_range" => { "begin" => address_range.begin, "end" => address_range.end },
-        # "values" => rom[address_range], # it's difficult to write out raw bytes :(
         "integer_values" => rom_bytes_to_integers(rom[address_range]),
         "hex_values" => rom[address_range].each_char.map(&method(:byte_to_string)).join(" "),
       }
-  end.sort_by { |details| details["name"] }
+  end.sort_by { |details| details["label"] }
 
-  key_item_details << ilex_forest_diff
+  label_details << ilex_forest_diff
 
-  File.write(OUT_FILE, key_item_details.to_json)
+  File.write(OUT_FILE, label_details.to_json)
 
   STDERR.puts "generated #{OUT_FILE}"
 end
