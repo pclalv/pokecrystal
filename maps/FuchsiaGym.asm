@@ -14,7 +14,9 @@ FuchsiaGym_MapScriptHeader:
 	db 0
 
 JanineScript_0x195db9:
+.ckir_BEFORE_checkflag_ENGINE_SOULBADGE::
 	checkflag ENGINE_SOULBADGE
+.ckir_AFTER_checkflag_ENGINE_SOULBADGE::
 	iftrue .FightDone
 	applymovement FUCHSIAGYM_JANINE, MovementData_0x195f27
 	faceplayer

@@ -13,7 +13,9 @@ PewterGym_MapScriptHeader:
 BrockScript_0x1a2864:
 	faceplayer
 	opentext
+.ckir_BEFORE_checkflag_ENGINE_BOULDERBADGE::
 	checkflag ENGINE_BOULDERBADGE
+.ckir_AFTER_checkflag_ENGINE_BOULDERBADGE::
 	iftrue .FightDone
 	writetext UnknownText_0x1a28d0
 	waitbutton

@@ -16,7 +16,9 @@ SaffronGym_MapScriptHeader:
 SabrinaScript_0x189c2e:
 	faceplayer
 	opentext
+.ckir_BEFORE_checkflag_ENGINE_MARSHBADGE::
 	checkflag ENGINE_MARSHBADGE
+.ckir_AFTER_checkflag_ENGINE_MARSHBADGE::
 	iftrue .FightDone
 	writetext UnknownText_0x189cdf
 	waitbutton

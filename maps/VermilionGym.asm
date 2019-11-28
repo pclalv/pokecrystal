@@ -15,7 +15,9 @@ VermilionGym_MapScriptHeader:
 SurgeScript_0x1920a5:
 	faceplayer
 	opentext
+.ckir_BEFORE_checkflag_ENGINE_THUNDERBADGE::
 	checkflag ENGINE_THUNDERBADGE
+.ckir_AFTER_checkflag_ENGINE_THUNDERBADGE::
 	iftrue .FightDone
 	writetext UnknownText_0x192142
 	waitbutton
