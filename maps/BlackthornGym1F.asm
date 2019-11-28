@@ -29,10 +29,9 @@ BlackthornGym1F_MapScripts:
 BlackthornGymClairScript:
 	faceplayer
 	opentext
-        ;; what to do about this... we might have to associate badges
-        ;; with multiple addresses...
-        ;; actually, i think it's fine. i'll just leave it alone.
+.ckir_BEFORE_checkflag_ENGINE_RISINGBADGE::
 	checkflag ENGINE_RISINGBADGE
+.ckir_AFTER_checkflag_ENGINE_RISINGBADGE::
 	iftrue .AlreadyGotBadge
 	checkevent EVENT_BEAT_CLAIR
 	iftrue .FightDone
