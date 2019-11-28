@@ -15,7 +15,7 @@ SeafoamGymBlaineScript:
 	faceplayer
 	opentext
 .ckir_BEFORE_checkflag_ENGINE_VOLCANOBADGE::
-	checkflag ENGINE_VOLCANOBADGE
+	checkevent EVENT_BEAT_BLAINE
 .ckir_AFTER_checkflag_ENGINE_VOLCANOBADGE::
 	iftrue .FightDone
 	writetext BlaineIntroText

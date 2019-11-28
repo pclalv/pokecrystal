@@ -15,7 +15,7 @@ CeladonGymErikaScript:
 	faceplayer
 	opentext
 .ckir_BEFORE_checkflag_ENGINE_RAINBOWBADGE::
-	checkflag ENGINE_RAINBOWBADGE
+	checkevent EVENT_BEAT_ERIKA
 .ckir_AFTER_checkflag_ENGINE_RAINBOWBADGE::
 	iftrue .FightDone
 	writetext ErikaBeforeBattleText

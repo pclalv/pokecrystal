@@ -11,7 +11,7 @@ ViridianGymBlueScript:
 	faceplayer
 	opentext
 .ckir_BEFORE_checkflag_ENGINE_EARTHBADGE::
-	checkflag ENGINE_EARTHBADGE
+	checkevent EVENT_BEAT_BLUE
 .ckir_AFTER_checkflag_ENGINE_EARTHBADGE::
 	iftrue .FightDone
 	writetext LeaderBlueBeforeText

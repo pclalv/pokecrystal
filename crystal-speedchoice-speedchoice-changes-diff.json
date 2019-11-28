@@ -3,6 +3,63 @@
         "integer_values": {
             "new": [
                 49,
+                203,
+                4
+            ],
+            "old": [
+                52,
+                41,
+                0
+            ]
+        },
+        "address_range": {
+            "end": 1750272,
+            "begin": 1750269
+        },
+        "label": "BlaineScript_0x1ab4fb.ckir_BEFORE_checkflag_ENGINE_VOLCANOBADGE"
+    },
+    {
+        "integer_values": {
+            "new": [
+                49,
+                204,
+                4
+            ],
+            "old": [
+                52,
+                42,
+                0
+            ]
+        },
+        "address_range": {
+            "end": 633387,
+            "begin": 633384
+        },
+        "label": "BlueScript_0x9aa26.ckir_BEFORE_checkflag_ENGINE_EARTHBADGE"
+    },
+    {
+        "integer_values": {
+            "new": [
+                49,
+                197,
+                4
+            ],
+            "old": [
+                52,
+                35,
+                0
+            ]
+        },
+        "address_range": {
+            "end": 1714281,
+            "begin": 1714278
+        },
+        "label": "BrockScript_0x1a2864.ckir_BEFORE_checkflag_ENGINE_BOULDERBADGE"
+    },
+    {
+        "integer_values": {
+            "new": [
+                49,
                 61,
                 3
             ],
@@ -17,6 +74,25 @@
             "begin": 382839
         },
         "label": "Buena.ckir_BEFORE_checkflag_ENGINE_ROCKETS_IN_RADIO_TOWER"
+    },
+    {
+        "integer_values": {
+            "new": [
+                49,
+                200,
+                4
+            ],
+            "old": [
+                52,
+                38,
+                0
+            ]
+        },
+        "address_range": {
+            "end": 470190,
+            "begin": 470187
+        },
+        "label": "ErikaScript_0x72a6a.ckir_BEFORE_checkflag_ENGINE_RAINBOWBADGE"
     },
     {
         "integer_values": {
@@ -172,6 +248,44 @@
             "begin": 1676230
         },
         "label": "GoldenrodCity_MapEventHeader.ckir_BEFORE_person_event_SPRITE_ROCKET_3"
+    },
+    {
+        "integer_values": {
+            "new": [
+                49,
+                201,
+                4
+            ],
+            "old": [
+                52,
+                39,
+                0
+            ]
+        },
+        "address_range": {
+            "end": 1662930,
+            "begin": 1662927
+        },
+        "label": "JanineScript_0x195db9.ckir_BEFORE_checkflag_ENGINE_SOULBADGE"
+    },
+    {
+        "integer_values": {
+            "new": [
+                49,
+                198,
+                4
+            ],
+            "old": [
+                52,
+                36,
+                0
+            ]
+        },
+        "address_range": {
+            "end": 1606711,
+            "begin": 1606708
+        },
+        "label": "MistyScript_0x188432.ckir_BEFORE_checkflag_ENGINE_CASCADEBADGE"
     },
     {
         "integer_values": {
@@ -677,6 +791,25 @@
     {
         "integer_values": {
             "new": [
+                49,
+                202,
+                4
+            ],
+            "old": [
+                52,
+                40,
+                0
+            ]
+        },
+        "address_range": {
+            "end": 1612871,
+            "begin": 1612868
+        },
+        "label": "SabrinaScript_0x189c2e.ckir_BEFORE_checkflag_ENGINE_MARSHBADGE"
+    },
+    {
+        "integer_values": {
+            "new": [
                 6,
                 6,
                 192,
@@ -883,6 +1016,25 @@
             "begin": 478885
         },
         "label": "SailorScript_0x74e97.ckir_BEFORE_ifequal_TUESDAY"
+    },
+    {
+        "integer_values": {
+            "new": [
+                49,
+                199,
+                4
+            ],
+            "old": [
+                52,
+                37,
+                0
+            ]
+        },
+        "address_range": {
+            "end": 1646770,
+            "begin": 1646767
+        },
+        "label": "SurgeScript_0x1920a5.ckir_BEFORE_checkflag_ENGINE_THUNDERBADGE"
     },
     {
         "integer_values": {

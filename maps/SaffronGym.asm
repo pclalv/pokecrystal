@@ -15,7 +15,7 @@ SaffronGymSabrinaScript:
 	faceplayer
 	opentext
 .ckir_BEFORE_checkflag_ENGINE_MARSHBADGE::
-	checkflag ENGINE_MARSHBADGE
+	checkevent EVENT_BEAT_SABRINA
 .ckir_AFTER_checkflag_ENGINE_MARSHBADGE::
 	iftrue .FightDone
 	writetext SabrinaIntroText

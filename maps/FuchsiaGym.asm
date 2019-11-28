@@ -13,7 +13,7 @@ FuchsiaGym_MapScripts:
 
 FuchsiaGymJanineScript:
 .ckir_BEFORE_checkflag_ENGINE_SOULBADGE::
-	checkflag ENGINE_SOULBADGE
+	checkevent EVENT_BEAT_JANINE
 .ckir_AFTER_checkflag_ENGINE_SOULBADGE::
 	iftrue .FightDone
 	applymovement FUCHSIAGYM_JANINE, Movement_NinjaSpin
