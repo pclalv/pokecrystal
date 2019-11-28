@@ -14,7 +14,9 @@ CeladonGym_MapScripts:
 CeladonGymErikaScript:
 	faceplayer
 	opentext
+.ckir_BEFORE_checkflag_ENGINE_RAINBOWBADGE::
 	checkflag ENGINE_RAINBOWBADGE
+.ckir_AFTER_checkflag_ENGINE_RAINBOWBADGE::
 	iftrue .FightDone
 	writetext ErikaBeforeBattleText
 	waitbutton

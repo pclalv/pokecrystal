@@ -11,7 +11,9 @@ PewterGym_MapScripts:
 PewterGymBrockScript:
 	faceplayer
 	opentext
+.ckir_BEFORE_checkflag_ENGINE_BOULDERBADGE::
 	checkflag ENGINE_BOULDERBADGE
+.ckir_AFTER_checkflag_ENGINE_BOULDERBADGE::
 	iftrue .FightDone
 	writetext BrockIntroText
 	waitbutton

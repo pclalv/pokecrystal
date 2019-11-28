@@ -10,7 +10,9 @@ ViridianGym_MapScripts:
 ViridianGymBlueScript:
 	faceplayer
 	opentext
+.ckir_BEFORE_checkflag_ENGINE_EARTHBADGE::
 	checkflag ENGINE_EARTHBADGE
+.ckir_AFTER_checkflag_ENGINE_EARTHBADGE::
 	iftrue .FightDone
 	writetext LeaderBlueBeforeText
 	waitbutton

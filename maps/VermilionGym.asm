@@ -13,7 +13,9 @@ VermilionGym_MapScripts:
 VermilionGymSurgeScript:
 	faceplayer
 	opentext
+.ckir_BEFORE_checkflag_ENGINE_THUNDERBADGE::
 	checkflag ENGINE_THUNDERBADGE
+.ckir_AFTER_checkflag_ENGINE_THUNDERBADGE::
 	iftrue .FightDone
 	writetext LtSurgeIntroText
 	waitbutton

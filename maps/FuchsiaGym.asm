@@ -12,7 +12,9 @@ FuchsiaGym_MapScripts:
 	db 0 ; callbacks
 
 FuchsiaGymJanineScript:
+.ckir_BEFORE_checkflag_ENGINE_SOULBADGE::
 	checkflag ENGINE_SOULBADGE
+.ckir_AFTER_checkflag_ENGINE_SOULBADGE::
 	iftrue .FightDone
 	applymovement FUCHSIAGYM_JANINE, Movement_NinjaSpin
 	faceplayer

@@ -14,7 +14,9 @@ SaffronGym_MapScripts:
 SaffronGymSabrinaScript:
 	faceplayer
 	opentext
+.ckir_BEFORE_checkflag_ENGINE_MARSHBADGE::
 	checkflag ENGINE_MARSHBADGE
+.ckir_AFTER_checkflag_ENGINE_MARSHBADGE::
 	iftrue .FightDone
 	writetext SabrinaIntroText
 	waitbutton
