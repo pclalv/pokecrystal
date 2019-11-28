@@ -33,6 +33,9 @@ BlackthornGym1F_MapScriptHeader:
 BlackthornGymClairScript:
 	faceplayer
 	opentext
+        ;; what to do about this... we might have to associate badges
+        ;; with multiple addresses...
+        ;; actually, i think it's fine. i'll just leave it alone.
 	checkflag ENGINE_RISINGBADGE
 	iftrue .AlreadyGotBadge
 	checkevent EVENT_BEAT_CLAIR

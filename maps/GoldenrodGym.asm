@@ -54,6 +54,11 @@ WhitneyScript_0x5400c:
 .StoppedCrying
 	checkevent EVENT_GOT_TM45_ATTRACT
 	iftrue UnknownScript_0x54077
+        ;; this line looks problematic, but i can't figure out in what
+        ;; circumstances it would be hit - seems like the 
+        ;; `if got Attract` line would always be triggered first?
+        ;; as with blackthorn, i think i'm just gonna leave this
+        ;; alone.
 	checkflag ENGINE_PLAINBADGE
 	iftrue UnknownScript_0x54064
 	writetext UnknownText_0x54222
