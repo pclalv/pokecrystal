@@ -17,7 +17,7 @@ SabrinaScript_0x189c2e:
 	faceplayer
 	opentext
 .ckir_BEFORE_checkflag_ENGINE_MARSHBADGE::
-	checkflag ENGINE_MARSHBADGE
+	checkevent EVENT_BEAT_SABRINA
 .ckir_AFTER_checkflag_ENGINE_MARSHBADGE::
 	iftrue .FightDone
 	writetext UnknownText_0x189cdf

@@ -64,7 +64,7 @@ MistyScript_0x188432:
 	faceplayer
 	opentext
 .ckir_BEFORE_checkflag_ENGINE_CASCADEBADGE::
-	checkflag ENGINE_CASCADEBADGE
+	checkevent EVENT_BEAT_MISTY
 .ckir_AFTER_checkflag_ENGINE_CASCADEBADGE::
 	iftrue .FightDone
 	writetext UnknownText_0x188674
