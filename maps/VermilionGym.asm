@@ -148,16 +148,21 @@ UnknownText_0x192238:
 	text "SURGE: Arrrgh!"
 	line "You are strong!"
 
+.ckir_BEFORE_text_THUNDERBADGE::
 	para "OK, kid. You get"
 	line "THUNDERBADGE!"
 	done
+.ckir_AFTER_text_THUNDERBADGE::
 
 UnknownText_0x192277:
+.ckir_BEFORE_text_THUNDERBADGE_received::
 	text "<PLAYER> received"
 	line "THUNDERBADGE."
 	done
+.ckir_AFTER_text_THUNDERBADGE_received::
 
 UnknownText_0x192291:
+.ckir_BEFORE_text_THUNDERBADGE_unimportant::
 	text "SURGE: THUNDER-"
 	line "BADGE increases"
 	cont "#MON's speed. "
@@ -168,6 +173,7 @@ UnknownText_0x192291:
 	para "me. You wear it"
 	line "proudly, hear?"
 	done
+.ckir_AFTER_text_THUNDERBADGE_unimportant::
 
 UnknownText_0x192303:
 	text "SURGE: Hey, kid!"

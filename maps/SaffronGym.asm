@@ -170,17 +170,22 @@ UnknownText_0x189df4:
 	para "predict what the"
 	line "future holds…"
 
+.ckir_BEFORE_text_MARSHBADGE::
 	para "OK, you win. You"
 	line "earned yourself"
 	cont "MARSHBADGE."
 	done
+.ckir_AFTER_text_MARSHBADGE::
 
 UnknownText_0x189e95:
+.ckir_BEFORE_text_MARSHBADGE_received::
 	text "<PLAYER> received"
 	line "MARSHBADGE."
 	done
+.ckir_AFTER_text_MARSHBADGE_received::
 
 UnknownText_0x189ead:
+.ckir_BEFORE_text_MARSHBADGE_unimportant::
 	text "SABRINA: MARSH-"
 	line "BADGE draws out"
 
@@ -197,6 +202,7 @@ UnknownText_0x189ead:
 	line "celebrated and"
 	cont "beloved CHAMPION!"
 	done
+.ckir_AFTER_text_MARSHBADGE_unimportant::
 
 UnknownText_0x189f6c:
 	text "SABRINA: Your love"

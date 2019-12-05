@@ -131,11 +131,14 @@ UnknownText_0x1a29bb:
 	done
 
 UnknownText_0x1a2a3d:
+.ckir_BEFORE_text_BOULDERBADGE_received::
 	text "<PLAYER> received"
 	line "BOULDERBADGE."
 	done
+.ckir_AFTER_text_BOULDERBADGE_received::
 
 UnknownText_0x1a2a57:
+.ckir_BEFORE_text_BOULDERBADGE_unimportant::
 	text "BROCK: <PLAY_G>,"
 	line "thanks. I enjoyed"
 
@@ -149,6 +152,7 @@ UnknownText_0x1a2a57:
 	para "#MON even more"
 	line "powerful."
 	done
+.ckir_AFTER_text_BOULDERBADGE_unimportant::
 
 UnknownText_0x1a2ada:
 	text "BROCK: The world"

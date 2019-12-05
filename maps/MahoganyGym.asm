@@ -197,11 +197,14 @@ UnknownText_0x199cb3:
 	done
 
 UnknownText_0x199d3b:
+.ckir_BEFORE_text_GLACIERBADGE_received::
 	text "<PLAYER> received"
 	line "GLACIERBADGE."
 	done
+.ckir_AFTER_text_GLACIERBADGE_received::
 
 UnknownText_0x199d55:
+.ckir_BEFORE_text_GLACIERBADGE_unimportant::
 	text "That BADGE will"
 	line "raise the SPECIAL"
 	cont "stats of #MON."
@@ -214,6 +217,7 @@ UnknownText_0x199d55:
 	para "And this… This is"
 	line "a gift from me!"
 	done
+.ckir_AFTER_text_GLACIERBADGE_unimportant::
 
 UnknownText_0x199def::
 	text "That TM contains"

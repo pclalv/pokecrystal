@@ -233,11 +233,14 @@ UnknownText_0x9a00a:
 	done
 
 UnknownText_0x9a043:
+.ckir_BEFORE_text_FOGBADGE_received::
 	text "<PLAYER> received"
 	line "FOGBADGE."
 	done
+.ckir_AFTER_text_FOGBADGE_received::
 
 UnknownText_0x9a059:
+.ckir_BEFORE_text_FOGBADGE_unimportant::
 	text "By having FOG-"
 	line "BADGE, #MON up"
 
@@ -253,7 +256,7 @@ UnknownText_0x9a059:
 	para "I want you to have"
 	line "this too."
 	done
-
+.ckir_AFTER_text_FOGBADGE_unimportant::
 UnknownText_0x9a0ec::
 	text "It's SHADOW BALL."
 	line "It causes damage"

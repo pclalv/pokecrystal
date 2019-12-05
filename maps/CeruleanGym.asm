@@ -284,14 +284,18 @@ UnknownText_0x18870c:
 	para "I'll admit that"
 	line "you are skilled…"
 
+.ckir_BEFORE_text_CASCADEBADGE::
 	para "Here you go. It's"
 	line "CASCADEBADGE."
 	done
+.ckir_AFTER_text_CASCADEBADGE::
 
 UnknownText_0x188768:
+.ckir_BEFORE_text_CASCADEBADGE_received::
 	text "<PLAYER> received"
 	line "CASCADEBADGE."
 	done
+.ckir_AFTER_text_CASCADEBADGE_received::
 
 UnknownText_0x188782:
 	text "MISTY: Are there"

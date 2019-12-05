@@ -164,14 +164,18 @@ UnknownText_0x72c3e:
 	para "You are remarkably"
 	line "strong…"
 
+.ckir_BEFORE_text_RAINBOWBADGE::
 	para "I shall give you"
 	line "RAINBOWBADGE…"
 	done
+.ckir_AFTER_text_RAINBOWBADGE::
 
 UnknownText_0x72c96:
+.ckir_BEFORE_text_RAINBOWBADGE_received::
 	text "<PLAYER> received"
 	line "RAINBOWBADGE."
 	done
+.ckir_AFTER_text_RAINBOWBADGE_received::
 
 UnknownText_0x72cb0::
 	text "ERIKA: That was a"

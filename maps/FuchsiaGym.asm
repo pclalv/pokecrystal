@@ -271,14 +271,18 @@ UnknownText_0x195fa1:
 	line "tough one. You"
 	cont "definitely won…"
 
+.ckir_BEFORE_text_SOULBADGE::
 	para "Here's SOULBADGE."
 	line "Take it."
 	done
+.ckir_AFTER_text_SOULBADGE::
 
 UnknownText_0x195feb:
+.ckir_BEFORE_text_SOULBADGE_received::
 	text "<PLAYER> received"
 	line "SOULBADGE."
 	done
+.ckir_AFTER_text_SOULBADGE_received::
 
 UnknownText_0x196002::
 	text "JANINE: You're so"

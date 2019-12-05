@@ -136,11 +136,14 @@ UnknownText_0x9c2bb:
 	done
 
 UnknownText_0x9c33a:
+.ckir_BEFORE_text_MINERALBADGE_received::
 	text "<PLAYER> received"
 	line "MINERALBADGE."
 	done
+.ckir_AFTER_text_MINERALBADGE_received::
 
 UnknownText_0x9c354:
+.ckir_BEFORE_text_MINERALBADGE_unimportant::
 	text "MINERALBADGE"
 	line "raises #MON's"
 	cont "DEFENSE."
@@ -148,6 +151,7 @@ UnknownText_0x9c354:
 	para "…Um… Please take"
 	line "this too…"
 	done
+.ckir_AFTER_text_MINERALBADGE_unimportant::
 
 UnknownText_0x9c393:
 	text "<PLAYER> received"

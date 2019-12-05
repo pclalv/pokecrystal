@@ -145,17 +145,22 @@ UnknownText_0x6854a:
 	para "All right."
 	line "Take this."
 
+.ckir_BEFORE_text_ZEPHYRBADGE::
 	para "It's the official"
 	line "#MON LEAGUE"
 	cont "ZEPHYRBADGE."
 	done
+.ckir_AFTER_text_ZEPHYRBADGE::
 
 UnknownText_0x685af:
+.ckir_BEFORE_text_ZEPHYRBADGE_received::
 	text "<PLAYER> received"
 	line "ZEPHYRBADGE."
 	done
+.ckir_AFTER_text_ZEPHYRBADGE_received::
 
 UnknownText_0x685c8:
+.ckir_BEFORE_text_ZEPHYRBADGE_unimportant::
 	text "ZEPHYRBADGE"
 	line "raises the attack"
 	cont "power of #MON."
@@ -169,6 +174,7 @@ UnknownText_0x685c8:
 	para "Here--take this"
 	line "too."
 	done
+.ckir_AFTER_text_ZEPHYRBADGE_unimportant::
 
 UnknownText_0x68648::
 	text "By using a TM, a"

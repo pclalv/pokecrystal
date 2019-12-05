@@ -192,17 +192,22 @@ UnknownText_0x9d7f6:
 	text "Wha? Huh?"
 	line "I lost?"
 
+.ckir_BEFORE_text_STORMBADGE::
 	para "How about that!"
 	line "You're worthy of"
 	cont "STORMBADGE!"
 	done
+.ckir_AFTER_text_STORMBADGE::
 
 UnknownText_0x9d835:
+.ckir_BEFORE_text_STORMBADGE_received::
 	text "<PLAYER> received"
 	line "STORMBADGE."
 	done
+.ckir_AFTER_text_STORMBADGE_received::
 
 UnknownText_0x9d84d:
+.ckir_BEFORE_text_STORMBADGE_unimportant::
 	text "STORMBADGE makes"
 	line "all #MON up to"
 
@@ -218,6 +223,7 @@ UnknownText_0x9d84d:
 	para "Here, take this"
 	line "too!"
 	done
+.ckir_AFTER_text_STORMBADGE_unimportant::
 
 UnknownText_0x9d8da::
 	text "That is DYNAMIC-"

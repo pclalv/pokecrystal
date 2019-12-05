@@ -113,14 +113,18 @@ UnknownText_0x1ab646:
 	text "BLAINE: Awesome."
 	line "I've burned out…"
 
+.ckir_BEFORE_text_VOLCANOBADGE::
 	para "You've earned"
 	line "VOLCANOBADGE!"
 	done
+.ckir_AFTER_text_VOLCANOBADGE::
 
 UnknownText_0x1ab683:
+.ckir_BEFORE_text_VOLCANOBADGE_received::
 	text "<PLAYER> received"
 	line "VOLCANOBADGE."
 	done
+.ckir_AFTER_text_VOLCANOBADGE_received::
 
 UnknownText_0x1ab69d:
 	text "BLAINE: I did lose"
