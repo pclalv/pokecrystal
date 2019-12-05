@@ -261,15 +261,20 @@ ClairText_Lazy:
 	para "myself through"
 	line "those motions."
 
+.ckir_BEFORE_text_RISINGBADGE::
 	para "This is the"
 	line "RISINGBADGE."
 	cont "Just take it."
+.ckir_AFTER_text_RISINGBADGE::
 
+.ckir_BEFORE_text_RISINGBADGE_received::
 	para "<PLAYER> received"
 	line "RISINGBADGE."
 	done
+.ckir_AFTER_text_RISINGBADGE_received::
 
 BlackthornGymClairText_DescribeBadge:
+.ckir_BEFORE_text_RISINGBADGE_unimportant::
 	text "RISINGBADGE will"
 	line "enable your"
 
@@ -289,6 +294,7 @@ BlackthornGymClairText_DescribeBadge:
 	para "And here, have"
 	line "this junk too."
 	done
+.ckir_AFTER_text_RISINGBADGE_unimportant::
 
 ClairText_TooMuchToExpect:
 	text "What's the matter?"

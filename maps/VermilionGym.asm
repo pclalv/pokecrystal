@@ -146,16 +146,21 @@ LtSurgeWinLossText:
 	text "SURGE: Arrrgh!"
 	line "You are strong!"
 
+.ckir_BEFORE_text_THUNDERBADGE::
 	para "OK, kid. You get"
 	line "THUNDERBADGE!"
 	done
+.ckir_AFTER_text_THUNDERBADGE::
 
 ReceivedThunderBadgeText:
+.ckir_BEFORE_text_THUNDERBADGE_received::
 	text "<PLAYER> received"
 	line "THUNDERBADGE."
 	done
+.ckir_AFTER_text_THUNDERBADGE_received::
 
 LtSurgeThunderBadgeText:
+.ckir_BEFORE_text_THUNDERBADGE_unimportant::
 	text "SURGE: THUNDER-"
 	line "BADGE increases"
 	cont "#MON's speed. "
@@ -166,6 +171,7 @@ LtSurgeThunderBadgeText:
 	para "me. You wear it"
 	line "proudly, hear?"
 	done
+.ckir_AFTER_text_THUNDERBADGE_unimportant::
 
 LtSurgeFightDoneText:
 	text "SURGE: Hey, kid!"

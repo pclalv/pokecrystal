@@ -143,17 +143,22 @@ FalknerWinLossText:
 	para "All right."
 	line "Take this."
 
+.ckir_BEFORE_text_ZEPHYRBADGE::
 	para "It's the official"
 	line "#MON LEAGUE"
 	cont "ZEPHYRBADGE."
 	done
+.ckir_AFTER_text_ZEPHYRBADGE::
 
 ReceivedZephyrBadgeText:
+.ckir_BEFORE_text_ZEPHYRBADGE_received::
 	text "<PLAYER> received"
 	line "ZEPHYRBADGE."
 	done
+.ckir_AFTER_text_ZEPHYRBADGE_received::
 
 FalknerZephyrBadgeText:
+.ckir_BEFORE_text_ZEPHYRBADGE_unimportant::
 	text "ZEPHYRBADGE"
 	line "raises the attack"
 	cont "power of #MON."
@@ -167,6 +172,7 @@ FalknerZephyrBadgeText:
 	para "Here--take this"
 	line "too."
 	done
+.ckir_AFTER_text_ZEPHYRBADGE_unimportant::
 
 FalknerTMMudSlapText:
 	text "By using a TM, a"

@@ -195,11 +195,14 @@ PryceText_Impressed:
 	done
 
 Text_ReceivedGlacierBadge:
+.ckir_BEFORE_text_GLACIERBADGE_received::
 	text "<PLAYER> received"
 	line "GLACIERBADGE."
 	done
+.ckir_AFTER_text_GLACIERBADGE_received::
 
 PryceText_GlacierBadgeSpeech:
+.ckir_BEFORE_text_GLACIERBADGE_unimportant::
 	text "That BADGE will"
 	line "raise the SPECIAL"
 	cont "stats of #MON."
@@ -212,6 +215,7 @@ PryceText_GlacierBadgeSpeech:
 	para "And this… This is"
 	line "a gift from me!"
 	done
+.ckir_AFTER_text_GLACIERBADGE_unimportant::
 
 PryceText_IcyWindSpeech:
 	text "That TM contains"

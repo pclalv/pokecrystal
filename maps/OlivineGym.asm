@@ -134,11 +134,14 @@ Jasmine_BetterTrainer:
 	done
 
 Text_ReceivedMineralBadge:
+.ckir_BEFORE_text_MINERALBADGE_received::
 	text "<PLAYER> received"
 	line "MINERALBADGE."
 	done
+.ckir_AFTER_text_MINERALBADGE_received::
 
 Jasmine_BadgeSpeech:
+.ckir_BEFORE_text_MINERALBADGE_unimportant::
 	text "MINERALBADGE"
 	line "raises #MON's"
 	cont "DEFENSE."
@@ -146,6 +149,7 @@ Jasmine_BadgeSpeech:
 	para "…Um… Please take"
 	line "this too…"
 	done
+.ckir_AFTER_text_MINERALBADGE_unimportant::
 
 Text_ReceivedTM09:
 	text "<PLAYER> received"

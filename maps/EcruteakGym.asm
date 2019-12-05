@@ -229,11 +229,14 @@ MortyWinLossText:
 	done
 
 Text_ReceivedFogBadge:
+.ckir_BEFORE_text_FOGBADGE_received::
 	text "<PLAYER> received"
 	line "FOGBADGE."
 	done
+.ckir_AFTER_text_FOGBADGE_received::
 
 MortyText_FogBadgeSpeech:
+.ckir_BEFORE_text_FOGBADGE_unimportant::
 	text "By having FOG-"
 	line "BADGE, #MON up"
 
@@ -249,6 +252,7 @@ MortyText_FogBadgeSpeech:
 	para "I want you to have"
 	line "this too."
 	done
+.ckir_AFTER_text_FOGBADGE_unimportant::
 
 MortyText_ShadowBallSpeech:
 	text "It's SHADOW BALL."

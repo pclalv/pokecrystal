@@ -109,14 +109,18 @@ BlaineWinLossText:
 	text "BLAINE: Awesome."
 	line "I've burned out…"
 
+.ckir_BEFORE_text_VOLCANOBADGE::
 	para "You've earned"
 	line "VOLCANOBADGE!"
 	done
+.ckir_AFTER_text_VOLCANOBADGE::
 
 ReceivedVolcanoBadgeText:
+.ckir_BEFORE_text_VOLCANOBADGE_received::
 	text "<PLAYER> received"
 	line "VOLCANOBADGE."
 	done
+.ckir_AFTER_text_VOLCANOBADGE_received::
 
 BlaineAfterBattleText:
 	text "BLAINE: I did lose"

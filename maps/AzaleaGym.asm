@@ -180,11 +180,14 @@ BugsyText_ResearchIncomplete:
 	done
 
 Text_ReceivedHiveBadge:
+.ckir_BEFORE_text_HIVEBADGE_received::
 	text "<PLAYER> received"
 	line "HIVEBADGE."
 	done
+.ckir_AFTER_text_HIVEBADGE_received::
 
 BugsyText_HiveBadgeSpeech:
+.ckir_BEFORE_text_HIVEBADGE_unimportant::
 	text "Do you know the"
 	line "benefits of HIVE-"
 	cont "BADGE?"
@@ -204,6 +207,7 @@ BugsyText_HiveBadgeSpeech:
 	para "Here, I also want"
 	line "you to have this."
 	done
+.ckir_AFTER_text_HIVEBADGE_unimportant::
 
 BugsyText_FuryCutterSpeech:
 	text "TM49 contains"

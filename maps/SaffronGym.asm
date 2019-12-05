@@ -168,17 +168,22 @@ SabrinaWinLossText:
 	para "predict what the"
 	line "future holds…"
 
+.ckir_BEFORE_text_MARSHBADGE::
 	para "OK, you win. You"
 	line "earned yourself"
 	cont "MARSHBADGE."
 	done
+.ckir_AFTER_text_MARSHBADGE::
 
 ReceivedMarshBadgeText:
+.ckir_BEFORE_text_MARSHBADGE_received::
 	text "<PLAYER> received"
 	line "MARSHBADGE."
 	done
+.ckir_AFTER_text_MARSHBADGE_received::
 
 SabrinaMarshBadgeText:
+.ckir_BEFORE_text_MARSHBADGE_unimportant::
 	text "SABRINA: MARSH-"
 	line "BADGE draws out"
 
@@ -195,6 +200,7 @@ SabrinaMarshBadgeText:
 	line "celebrated and"
 	cont "beloved CHAMPION!"
 	done
+.ckir_AFTER_text_MARSHBADGE_unimportant::
 
 SabrinaFightDoneText:
 	text "SABRINA: Your love"

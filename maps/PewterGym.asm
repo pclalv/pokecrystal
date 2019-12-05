@@ -129,11 +129,14 @@ BrockWinLossText:
 	done
 
 ReceivedBoulderBadgeText:
+.ckir_BEFORE_text_BOULDERBADGE_received::
 	text "<PLAYER> received"
 	line "BOULDERBADGE."
 	done
+.ckir_AFTER_text_BOULDERBADGE_received::
 
 BrockBoulderBadgeText:
+.ckir_BEFORE_text_BOULDERBADGE_unimportant::
 	text "BROCK: <PLAY_G>,"
 	line "thanks. I enjoyed"
 
@@ -147,6 +150,7 @@ BrockBoulderBadgeText:
 	para "#MON even more"
 	line "powerful."
 	done
+.ckir_AFTER_text_BOULDERBADGE_unimportant::
 
 BrockFightDoneText:
 	text "BROCK: The world"

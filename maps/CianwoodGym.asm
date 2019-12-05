@@ -190,17 +190,22 @@ ChuckLossText:
 	text "Wha? Huh?"
 	line "I lost?"
 
+.ckir_BEFORE_text_STORMBADGE::
 	para "How about that!"
 	line "You're worthy of"
 	cont "STORMBADGE!"
 	done
+.ckir_AFTER_text_STORMBADGE::
 
 GetStormBadgeText:
+.ckir_BEFORE_text_STORMBADGE_received::
 	text "<PLAYER> received"
 	line "STORMBADGE."
 	done
+.ckir_AFTER_text_STORMBADGE_received::
 
 ChuckExplainBadgeText:
+.ckir_BEFORE_text_STORMBADGE_unimportant::
 	text "STORMBADGE makes"
 	line "all #MON up to"
 
@@ -216,6 +221,7 @@ ChuckExplainBadgeText:
 	para "Here, take this"
 	line "too!"
 	done
+.ckir_AFTER_text_STORMBADGE_unimportant::
 
 ChuckExplainTMText:
 	text "That is DYNAMIC-"

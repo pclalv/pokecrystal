@@ -269,14 +269,18 @@ JanineText_ToughOne:
 	line "tough one. You"
 	cont "definitely won…"
 
+.ckir_BEFORE_text_SOULBADGE::
 	para "Here's SOULBADGE."
 	line "Take it."
 	done
+.ckir_AFTER_text_SOULBADGE::
 
 Text_ReceivedSoulBadge:
+.ckir_BEFORE_text_SOULBADGE_received::
 	text "<PLAYER> received"
 	line "SOULBADGE."
 	done
+.ckir_AFTER_text_SOULBADGE_received::
 
 JanineText_ToxicSpeech:
 	text "JANINE: You're so"

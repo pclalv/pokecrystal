@@ -227,17 +227,23 @@ WhitneyWhatDoYouWantText:
 	para "What? What do you"
 	line "want? A BADGE?"
 
+.ckir_BEFORE_text_PLAINBADGE::
 	para "Oh, right."
 	line "I forgot. Here's"
 	cont "PLAINBADGE."
 	done
+.ckir_AFTER_text_PLAINBADGE::
 
 PlayerReceivedPlainBadgeText:
+.ckir_BEFORE_text_PLAINBADGE_received::
 	text "<PLAYER> received"
 	line "PLAINBADGE."
 	done
+.ckir_AFTER_text_PLAINBADGE_received::
 
 WhitneyPlainBadgeText:
+;;; just wipe out all of this text and replace it with something dumb
+.ckir_BEFORE_text_PLAINBADGE_unimportant::
 	text "PLAINBADGE lets"
 	line "your #MON use"
 
@@ -251,6 +257,7 @@ WhitneyPlainBadgeText:
 	para "Oh, you can have"
 	line "this too!"
 	done
+.ckir_AFTER_text_PLAINBADGE_unimportant::
 
 WhitneyAttractText:
 	text "It's ATTRACT!"

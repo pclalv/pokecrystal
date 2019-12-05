@@ -119,15 +119,19 @@ LeaderBlueWinText:
 
 	para "…"
 
+.ckir_BEFORE_text_EARTHBADGE::
 	para "Tch, all right…"
 	line "Here, take this--"
 	cont "it's EARTHBADGE."
 	done
+.ckir_AFTER_text_EARTHBADGE::
 
 Text_ReceivedEarthBadge:
+.ckir_BEFORE_text_EARTHBADGE_received::
 	text "<PLAYER> received"
 	line "EARTHBADGE."
 	done
+.ckir_AFTER_text_EARTHBADGE_received::
 
 LeaderBlueAfterText:
 	text "BLUE: …"

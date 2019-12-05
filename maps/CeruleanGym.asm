@@ -280,14 +280,18 @@ MistyWinLossText:
 	para "I'll admit that"
 	line "you are skilled…"
 
+.ckir_BEFORE_text_CASCADEBADGE::
 	para "Here you go. It's"
 	line "CASCADEBADGE."
 	done
+.ckir_AFTER_text_CASCADEBADGE::
 
 ReceivedCascadeBadgeText:
+.ckir_BEFORE_text_CASCADEBADGE_received::
 	text "<PLAYER> received"
 	line "CASCADEBADGE."
 	done
+.ckir_AFTER_text_CASCADEBADGE_received::
 
 MistyFightDoneText:
 	text "MISTY: Are there"

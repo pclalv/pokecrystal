@@ -162,14 +162,18 @@ ErikaBeatenText:
 	para "You are remarkably"
 	line "strong…"
 
+.ckir_BEFORE_text_RAINBOWBADGE::
 	para "I shall give you"
 	line "RAINBOWBADGE…"
 	done
+.ckir_AFTER_text_RAINBOWBADGE::
 
 PlayerReceivedRainbowBadgeText:
+.ckir_BEFORE_text_RAINBOWBADGE_received::
 	text "<PLAYER> received"
 	line "RAINBOWBADGE."
 	done
+.ckir_AFTER_text_RAINBOWBADGE_received::
 
 ErikaExplainTMText:
 	text "ERIKA: That was a"
