@@ -35,7 +35,9 @@ Copycat:
 	iftrue .Part15
 	checkevent EVENT_RETURNED_LOST_ITEM_TO_COPYCAT
 	iftrue .Part13
+.ckir_BEFORE_checkitem_LOST_ITEM::
 	checkitem LOST_ITEM
+.ckir_AFTER_checkitem_LOST_ITEM::
 	iftrue .Part12
 	checkflag ENGINE_PLAYER_IS_FEMALE
 	iftrue .Part1
@@ -116,7 +118,9 @@ Copycat:
 	opentext
 	writetext UnknownText_0x18b17f
 	buttonsound
+.ckir_BEFORE_takeitem_LOST_ITEM::
 	takeitem LOST_ITEM
+.ckir_AFTER_takeitem_LOST_ITEM::
 	setevent EVENT_RETURNED_LOST_ITEM_TO_COPYCAT
 	clearevent EVENT_COPYCATS_HOUSE_2F_DOLL
 	jump .Part14
