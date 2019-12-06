@@ -30,7 +30,9 @@ Copycat:
 	iftrue .GotPass
 	checkevent EVENT_RETURNED_LOST_ITEM_TO_COPYCAT
 	iftrue .TryGivePassAgain
+.ckir_BEFORE_checkitem_LOST_ITEM::
 	checkitem LOST_ITEM
+.ckir_AFTER_checkitem_LOST_ITEM::
 	iftrue .ReturnLostItem
 	checkflag ENGINE_PLAYER_IS_FEMALE
 	iftrue .Default_Female_1
@@ -111,7 +113,9 @@ Copycat:
 	opentext
 	writetext CopycatText_GiveDoll
 	promptbutton
+.ckir_BEFORE_takeitem_LOST_ITEM::
 	takeitem LOST_ITEM
+.ckir_AFTER_takeitem_LOST_ITEM::
 	setevent EVENT_RETURNED_LOST_ITEM_TO_COPYCAT
 	clearevent EVENT_COPYCATS_HOUSE_2F_DOLL
 	sjump .GivePass
