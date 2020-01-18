@@ -64,8 +64,12 @@ FuchsiaGymJanineScript:
 	end
 
 FuchsiaGymActivateRockets:
+.ckir_BEFORE_RadioTowerRockets::
 	if_equal 7, .RadioTowerRockets
+.ckir_AFTER_RadioTowerRockets::
+.ckir_BEFORE_GoldenrodRockets::
 	if_equal 6, .GoldenrodRockets
+.ckir_AFTER_GoldenrodRockets::
 	end
 
 .GoldenrodRockets
