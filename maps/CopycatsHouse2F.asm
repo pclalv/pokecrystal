@@ -234,8 +234,10 @@ UnknownText_0x18b064:
 	text "<PLAYER>: Hi!"
 	line "I heard that you"
 
+.ckir_BEFORE_para_lost_your_favorite_doll::
 	para "lost your favorite"
 	line "# DOLL."
+.ckir_AFTER_para_lost_your_favorite_doll::
 
 	para "<PLAYER>: If I find"
 	line "it, you'll give me"
