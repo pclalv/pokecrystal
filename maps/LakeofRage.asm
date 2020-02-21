@@ -88,7 +88,9 @@ RocketlessLoRLanceScript2:
 	setevent EVENT_TEAM_ROCKET_BASE_B2F_GRUNT_WITH_EXECUTIVE
 	setevent EVENT_TEAM_ROCKET_BASE_B2F_LANCE
 	setevent EVENT_BEAT_ROCKET_EXECUTIVEF_2
+.ckir_BEFORE_verbosegiveitem_HM_WHIRLPOOL::
 	verbosegiveitem HM_WHIRLPOOL
+.ckir_AFTER_verbosegiveitem_HM_WHIRLPOOL::
 	setevent EVENT_GOT_HM06_WHIRLPOOL
 	domaptrigger TEAM_ROCKET_BASE_B2F, $3
 	setevent EVENT_CLEARED_ROCKET_HIDEOUT
@@ -107,9 +109,13 @@ RocketlessLoRLanceScript2:
 	clearevent EVENT_RADIO_TOWER_ROCKET_TAKEOVER
 	setevent EVENT_MAHOGANY_TOWN_POKEFAN_M_BLOCKS_EAST
 	domaptrigger MAHOGANY_TOWN, $1
+.ckir_BEFORE_verbosegiveitem_BASEMENT_KEY::
 	verbosegiveitem BASEMENT_KEY
+.ckir_AFTER_verbosegiveitem_BASEMENT_KEY::
 	setevent EVENT_BEAT_ROCKET_EXECUTIVEM_3
+.ckir_BEFORE_verbosegiveitem_CARD_KEY::
 	verbosegiveitem CARD_KEY
+.ckir_AFTER_verbosegiveitem_CARD_KEY::
 	setevent EVENT_RECEIVED_CARD_KEY
 	setevent EVENT_WAREHOUSE_LAYOUT_1
 	clearevent EVENT_WAREHOUSE_LAYOUT_2
@@ -126,7 +132,9 @@ RocketlessLoRLanceScript2:
 	clearevent EVENT_RADIO_TOWER_CIVILIANS_AFTER
 	setevent EVENT_BLACKTHORN_CITY_SUPER_NERD_BLOCKS_GYM
 	clearevent EVENT_BLACKTHORN_CITY_SUPER_NERD_DOES_NOT_BLOCK_GYM
+.ckir_BEFORE_verbosegiveitem_CLEAR_BELL::
 	verbosegiveitem CLEAR_BELL
+.ckir_AFTER_verbosegiveitem_CLEAR_BELL::
 	domaptrigger RADIO_TOWER_5F, $2
 	domaptrigger ECRUTEAK_HOUSE, $0
 	setevent EVENT_GOT_CLEAR_BELL
@@ -138,6 +146,8 @@ RocketlessLoRLanceScript2:
 	setevent EVENT_TEAM_ROCKET_BASE_B3F_LANCE_PASSWORDS
 	setevent EVENT_TEAM_ROCKET_BASE_B3F_EXECUTIVE
 	setevent EVENT_RIVAL_TEAM_ROCKET_BASE
+        ;; should we do an early return here so that it's impossible
+        ;; for Early Kanto to have any effect?
 	check_permaoptions EARLY_KANTO
 	iffalse .skip_boat_and_train
 	; setup for boat
