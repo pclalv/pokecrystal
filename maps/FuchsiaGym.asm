@@ -417,9 +417,19 @@ FuchsiaGym_MapEvents:
 	bg_event  6, 15, BGEVENT_READ, FuchsiaGymStatue
 
 	db 6 ; object events
+.ckir_BEFORE_person_event_SPRITE_JANINE_at_10_1::
 	object_event  1, 10, SPRITE_JANINE, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, FuchsiaGymJanineScript, -1
+.ckir_AFTER_person_event_SPRITE_JANINE_at_10_1::
+.ckir_BEFORE_person_event_SPRITE_FUCHSIA_GYM_1_at_7_5::
 	object_event  5,  7, SPRITE_FUCHSIA_GYM_1, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, LassAliceScript, -1
+.ckir_AFTER_person_event_SPRITE_FUCHSIA_GYM_1_at_7_5::
+.ckir_BEFORE_person_event_SPRITE_FUCHSIA_GYM_2_at_11_5::
 	object_event  5, 11, SPRITE_FUCHSIA_GYM_2, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, LassLindaScript, -1
+.ckir_AFTER_person_event_SPRITE_FUCHSIA_GYM_2_at_11_5::
+.ckir_BEFORE_person_event_SPRITE_FUCHSIA_GYM_3_at_4_9::
 	object_event  9,  4, SPRITE_FUCHSIA_GYM_3, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, PicnickerCindyScript, -1
+.ckir_AFTER_person_event_SPRITE_FUCHSIA_GYM_3_at_4_9::
+.ckir_BEFORE_person_event_SPRITE_FUCHSIA_GYM_4_at_2_4::
 	object_event  4,  2, SPRITE_FUCHSIA_GYM_4, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, CamperBarryScript, -1
+.ckir_AFTER_person_event_SPRITE_FUCHSIA_GYM_4_at_2_4::
 	object_event  7, 15, SPRITE_GYM_GUY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, FuchsiaGymGuyScript, -1
