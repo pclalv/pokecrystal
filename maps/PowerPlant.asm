@@ -138,6 +138,7 @@ PowerPlantManager:
 	checkevent EVENT_RETURNED_MACHINE_PART
 .ckir_AFTER_checkevent_EVENT_RETURNED_MACHINE_PART:
 	iftrue .ReturnedMachinePart
+.ckir_BEFORE_checkitem_MACHINE_PART::
 	checkitem MACHINE_PART
 	iftrue .FoundMachinePart
 	checkevent EVENT_MET_MANAGER_AT_POWER_PLANT
@@ -156,6 +157,7 @@ PowerPlantManager:
 	clearevent EVENT_FOUND_MACHINE_PART_IN_CERULEAN_GYM
 	setmapscene CERULEAN_GYM, SCENE_CERULEANGYM_GRUNT_RUNS_OUT
 	setscene SCENE_POWERPLANT_GUARD_GETS_PHONE_CALL
+.ckir_AFTER_checkitem_MACHINE_PART::
 	end
 
 .MetManager:
