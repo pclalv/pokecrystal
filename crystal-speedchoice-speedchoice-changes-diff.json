@@ -792,6 +792,25 @@
         "integer_values": {
             "new": [
                 49,
+                189,
+                4
+            ],
+            "old": [
+                52,
+                27,
+                0
+            ]
+        },
+        "address_range": {
+            "end": 1639549,
+            "begin": 1639546
+        },
+        "label": "Route32CooltrainerMTrigger.ckir_BEFORE_checkflag_ENGINE_ZEPHYRBADGE"
+    },
+    {
+        "integer_values": {
+            "new": [
+                49,
                 202,
                 4
             ],
