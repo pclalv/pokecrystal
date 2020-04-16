@@ -18,7 +18,16 @@ FlowerShopTeacherScript:
 	iftrue .Lalala
 	checkevent EVENT_GOT_SQUIRTBOTTLE
 	iftrue .GotSquirtbottle
+.ckir_BEFORE_checkevent_EVENT_MET_FLORIA::
+        ;; don't force the player to talk to Floria at the Sudowood.
+        ;; say the player gets the Squirtbottle, skips Azalea Town,
+        ;; and goes directly from Violet to Goldenrod. the first time
+	;; the player passes the Sudowoodo, Floria won't be there,
+        ;; because arriving in Goldenrod is the trigger for Floria being
+	;; there. effectively, the player has to waste time going BACK
+        ;; to the tree just to talk to here.
 	checkevent EVENT_MET_FLORIA
+.ckir_AFTER_checkevent_EVENT_MET_FLORIA::
 	iffalse .HaventMetFloria
 .ckir_BEFORE_CHECKEVENT_EVENT_TALKED_TO_FLORIA_AT_FLOWER_SHOP:
 	;; it shouldn't matter whether the player talks to Floria or not.
