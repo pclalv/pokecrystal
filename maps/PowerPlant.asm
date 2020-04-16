@@ -142,6 +142,7 @@ PowerPlantManager:
 	checkevent EVENT_RETURNED_MACHINE_PART
 .ckir_AFTER_CHECKEVENT_EVENT_RETURNED_MACHINE_PART:
 	iftrue UnknownScript_0x188eac
+.ckir_BEFORE_checkitem_MACHINE_PART::
 	checkitem MACHINE_PART
 	iftrue UnknownScript_0x188e93
 	checkevent EVENT_MET_MANAGER_AT_POWER_PLANT
@@ -160,6 +161,7 @@ PowerPlantManager:
 	clearevent EVENT_FOUND_MACHINE_PART_IN_CERULEAN_GYM
 	domaptrigger CERULEAN_GYM, $1
 	dotrigger $1
+.ckir_AFTER_checkitem_MACHINE_PART::
 	end
 
 UnknownScript_0x188e8d:
