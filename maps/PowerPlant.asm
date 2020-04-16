@@ -142,6 +142,12 @@ PowerPlantManager:
 	iftrue .FoundMachinePart
 	checkevent EVENT_MET_MANAGER_AT_POWER_PLANT
 	iftrue .MetManager
+        ;; we need to be able to make this happen the very first time
+	;; the player talks to the power plant manager, so that we can
+	;; nix that janky thing where the player has to talk to this guy
+	;; twice if they meet him for the first time with the
+	;; MACHINE_PART in hand. i wonder, can we move this whole
+	;; block around?
 	writetext PowerPlantManagerWhoWouldRuinMyGeneratorText
 	waitbutton
 	closetext
