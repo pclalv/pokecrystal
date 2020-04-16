@@ -55,7 +55,9 @@ Route32CooltrainerMTrigger:
 	opentext
 	checkevent EVENT_GOT_MIRACLE_SEED_IN_ROUTE_32
 	iftrue .GotMiracleSeed
+.ckir_BEFORE_checkflag_ENGINE_ZEPHYRBADGE::
 	checkflag ENGINE_ZEPHYRBADGE
+.ckir_AFTER_checkflag_ENGINE_ZEPHYRBADGE::
 	iffalse .DontHaveZephyrBadge
 	checkevent EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE
 	iftrue .GiveMiracleSeed
