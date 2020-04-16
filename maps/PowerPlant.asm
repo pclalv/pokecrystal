@@ -146,6 +146,12 @@ PowerPlantManager:
 	iftrue UnknownScript_0x188e93
 	checkevent EVENT_MET_MANAGER_AT_POWER_PLANT
 	iftrue UnknownScript_0x188e8d
+        ;; we need to be able to make this happen the very first time
+	;; the player talks to the power plant manager, so that we can
+	;; nix that janky thing where the player has to talk to this guy
+	;; twice if they meet him for the first time with the
+	;; MACHINE_PART in hand. i wonder, can we move this whole
+	;; block around?
 	writetext UnknownText_0x189264
 	waitbutton
 	closetext
