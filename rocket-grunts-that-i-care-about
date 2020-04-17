@@ -1,0 +1,25 @@
+# data for buffing rockets
+file                                         macro    flag                         group   id  seen-text         win-text            lost-text  talk-again-text
+maps/RadioTower1F.asm                        trainer  EVENT_BEAT_ROCKET_GRUNTM_3   GRUNTM  3   GruntM3SeenText   GruntM3BeatenText   0          GruntM3Script
+maps/RadioTower2F.asm                        trainer  EVENT_BEAT_ROCKET_GRUNTF_2   GRUNTF  2   GruntF2SeenText   GruntF2BeatenText   0          GruntF2Script
+maps/RadioTower2F.asm                        trainer  EVENT_BEAT_ROCKET_GRUNTM_4   GRUNTM  4   GruntM4SeenText   GruntM4BeatenText   0          GruntM4Script
+maps/RadioTower2F.asm                        trainer  EVENT_BEAT_ROCKET_GRUNTM_5   GRUNTM  5   GruntM5SeenText   GruntM5BeatenText   0          GruntM5Script
+maps/RadioTower2F.asm                        trainer  EVENT_BEAT_ROCKET_GRUNTM_6   GRUNTM  6   GruntM6SeenText   GruntM6BeatenText   0          GruntM6Script
+maps/RadioTower3F.asm                        trainer  EVENT_BEAT_ROCKET_GRUNTM_7   GRUNTM  7   GruntM7SeenText   GruntM7BeatenText   0          GruntM7Script
+maps/RadioTower3F.asm                        trainer  EVENT_BEAT_ROCKET_GRUNTM_8   GRUNTM  8   GruntM8SeenText   GruntM8BeatenText   0          GruntM8Script
+maps/RadioTower3F.asm                        trainer  EVENT_BEAT_ROCKET_GRUNTM_9   GRUNTM  9   GruntM9SeenText   GruntM9BeatenText   0          GruntM9Script
+maps/RadioTower4F.asm                        trainer  EVENT_BEAT_ROCKET_GRUNTF_4   GRUNTF  4   GruntF4SeenText   GruntF4BeatenText   0          GruntF4Script
+maps/RadioTower4F.asm                        trainer  EVENT_BEAT_ROCKET_GRUNTM_10  GRUNTM  10  GruntM10SeenText  GruntM10BeatenText  0          GruntM10Script
+maps/TeamRocketBaseB1F.asm                   trainer  EVENT_BEAT_ROCKET_GRUNTM_16  GRUNTM  16  GruntM16SeenText  GruntM16BeatenText  0          GruntM16Script
+maps/TeamRocketBaseB2F.asm                   trainer  EVENT_BEAT_ROCKET_GRUNTM_17  GRUNTM  17  GruntM17SeenText  GruntM17BeatenText  0          GruntM17Script
+maps/TeamRocketBaseB2F.asm                   trainer  EVENT_BEAT_ROCKET_GRUNTM_18  GRUNTM  18  GruntM18SeenText  GruntM18BeatenText  0          GruntM18Script
+maps/TeamRocketBaseB2F.asm                   trainer  EVENT_BEAT_ROCKET_GRUNTM_19  GRUNTM  19  GruntM19SeenText  GruntM19BeatenText  0          GruntM19Script
+maps/TeamRocketBaseB3F.asm                   trainer  EVENT_BEAT_ROCKET_GRUNTF_5   GRUNTF  5   GruntF5SeenText   GruntF5BeatenText   0          GruntF5Script
+maps/TeamRocketBaseB3F.asm                   trainer  EVENT_BEAT_ROCKET_GRUNTM_28  GRUNTM  28  GruntM28SeenText  GruntM28BeatenText  0          GruntM28Script
+maps/UndergroundPathSwitchRoomEntrances.asm  trainer  EVENT_BEAT_ROCKET_GRUNTF_3   GRUNTF  3   GruntF3SeenText   GruntF3BeatenText   0          GruntF3Script
+maps/UndergroundPathSwitchRoomEntrances.asm  trainer  EVENT_BEAT_ROCKET_GRUNTM_11  GRUNTM  11  GruntM11SeenText  GruntM11BeatenText  0          GruntM11Script
+maps/UndergroundPathSwitchRoomEntrances.asm  trainer  EVENT_BEAT_ROCKET_GRUNTM_13  GRUNTM  13  GruntM13SeenText  GruntM13BeatenText  0          GruntM13Script
+maps/UndergroundPathSwitchRoomEntrances.asm  trainer  EVENT_BEAT_ROCKET_GRUNTM_25  GRUNTM  25  GruntM25SeenText  GruntM25BeatenText  0          GruntM25Script
+maps/UndergroundWarehouse.asm                trainer  EVENT_BEAT_ROCKET_GRUNTM_14  GRUNTM  14  GruntM14SeenText  GruntM14BeatenText  0          GruntM14Script
+maps/UndergroundWarehouse.asm                trainer  EVENT_BEAT_ROCKET_GRUNTM_15  GRUNTM  15  GruntM15SeenText  GruntM15BeatenText  0          GruntM15Script
+maps/UndergroundWarehouse.asm                trainer  EVENT_BEAT_ROCKET_GRUNTM_24  GRUNTM  24  GruntM24SeenText  GruntM24BeatenText  0          GruntM24Script
