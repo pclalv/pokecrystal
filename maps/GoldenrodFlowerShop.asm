@@ -26,7 +26,7 @@ FlowerShopTeacherScript:
         ;; because arriving in Goldenrod is the trigger for Floria being
 	;; there. effectively, the player has to waste time going BACK
         ;; to the tree just to talk to here.
-	checkevent EVENT_MET_FLORIA
+	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
 .ckir_AFTER_checkevent_EVENT_MET_FLORIA::
 	iffalse .HaventMetFloria
 .ckir_BEFORE_CHECKEVENT_EVENT_TALKED_TO_FLORIA_AT_FLOWER_SHOP:
