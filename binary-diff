@@ -18,14 +18,36 @@ raise <<~ERROR unless original_file.length == modified_file.length
   modified_file.length: #{modified_file.length}
 ERROR
 
-diff = []
+runs = []
+run = []
 
 original_file.zip(modified_file).each_with_index do |(original_value, modified_value), idx|
-  diff << {
-    :index => idx,
-    :original_value => original_value,
-    :modified_value => modified_value,
-  } if original_value != modified_value
+  if (original_value != modified_value)
+    # continue the run
+    run << {
+      :index => idx,
+      :original_value => original_value,
+      :modified_value => modified_value,
+    }
+  else
+    # finish the run
+    if !run.empty?
+      runs << run 
+      run = []
+    end
+  end
 end
 
-puts diff.to_json
+runs = runs.map do |run|
+  start = run.first
+  finish = run.last
+
+  {
+    :start => start[:index],
+    :finish => finish[:index],
+    :original => run.map { |d| d[:original_value] },
+    :modified => run.map { |d| d[:modified_value] },
+  }
+end
+
+puts runs.to_json
