@@ -166,6 +166,7 @@ PowerPlantManager:
 	waitbutton
 	closetext
 	end
+        end
 .ckir_AFTER_checkitem_MACHINE_PART::
 
 .FoundMachinePart:
