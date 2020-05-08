@@ -134,30 +134,34 @@ PowerPlantGymGuy4Script:
 PowerPlantManager:
 	faceplayer
 	opentext
+        ;; the changes in following block of code are such that
+        ;; everything Just Works when the player arrives at the Power
+        ;; Plant with the MACHINE_PART in hand and talks to the
+        ;; manager for the first time, while retaining compatibility
+        ;; with the case ;; where the player meets the Manager
+        ;; _without_ the MACHINE_PART.
 .ckir_BEFORE_checkitem_MACHINE_PART::
-	checkevent EVENT_RETURNED_MACHINE_PART
-	iftrue .ReturnedMachinePart
-	checkitem MACHINE_PART
-	iftrue .FoundMachinePart
 	checkevent EVENT_MET_MANAGER_AT_POWER_PLANT
 	iftrue .MetManager
-        ;; we need to be able to make this happen the very first time
-	;; the player talks to the power plant manager, so that we can
-	;; nix that janky thing where the player has to talk to this guy
-	;; twice if they meet him for the first time with the
-	;; MACHINE_PART in hand. i wonder, can we move this whole
-	;; block around?
+
 	writetext PowerPlantManagerWhoWouldRuinMyGeneratorText
-	waitbutton
-	closetext
 	setevent EVENT_MET_MANAGER_AT_POWER_PLANT
 	clearevent EVENT_CERULEAN_GYM_ROCKET
 	clearevent EVENT_FOUND_MACHINE_PART_IN_CERULEAN_GYM
 	setmapscene CERULEAN_GYM, SCENE_CERULEANGYM_GRUNT_RUNS_OUT
 	setscene SCENE_POWERPLANT_GUARD_GETS_PHONE_CALL
+
+	waitbutton
+
+	checkitem MACHINE_PART
+	iftrue .FoundMachinePart ;ok
+
+	closetext
 	end
 
 .MetManager:
+	checkitem MACHINE_PART
+	iftrue .FoundMachinePart
 	writetext PowerPlantManagerIWontForgiveCulpritText
 	waitbutton
 	closetext
