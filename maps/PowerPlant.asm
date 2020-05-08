@@ -138,11 +138,9 @@ UnknownScript_0x188e5f:
 PowerPlantManager:
 	faceplayer
 	opentext
-.ckir_BEFORE_CHECKEVENT_EVENT_RETURNED_MACHINE_PART:
-	checkevent EVENT_RETURNED_MACHINE_PART
-.ckir_AFTER_CHECKEVENT_EVENT_RETURNED_MACHINE_PART:
-	iftrue UnknownScript_0x188eac
 .ckir_BEFORE_checkitem_MACHINE_PART::
+	checkevent EVENT_RETURNED_MACHINE_PART
+	iftrue UnknownScript_0x188eac
 	checkitem MACHINE_PART
 	iftrue UnknownScript_0x188e93
 	checkevent EVENT_MET_MANAGER_AT_POWER_PLANT
