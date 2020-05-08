@@ -144,7 +144,7 @@ PowerPlantManager:
 	checkitem MACHINE_PART
 	iftrue UnknownScript_0x188e93
 	checkevent EVENT_MET_MANAGER_AT_POWER_PLANT
-	iftrue UnknownScript_0x188e8d
+	iftrue .UnknownScript_0x188e8d
         ;; we need to be able to make this happen the very first time
 	;; the player talks to the power plant manager, so that we can
 	;; nix that janky thing where the player has to talk to this guy
@@ -159,14 +159,14 @@ PowerPlantManager:
 	clearevent EVENT_FOUND_MACHINE_PART_IN_CERULEAN_GYM
 	domaptrigger CERULEAN_GYM, $1
 	dotrigger $1
-.ckir_AFTER_checkitem_MACHINE_PART::
 	end
 
-UnknownScript_0x188e8d:
+.UnknownScript_0x188e8d:
 	writetext UnknownText_0x189308
 	waitbutton
 	closetext
 	end
+.ckir_AFTER_checkitem_MACHINE_PART::
 
 UnknownScript_0x188e93:
 	writetext UnknownText_0x18936e
