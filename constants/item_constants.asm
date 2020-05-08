@@ -4,6 +4,9 @@
 	const ULTRA_BALL   ; $02
 	const BRIGHTPOWDER ; $03
 	const GREAT_BALL   ; $04
+        ;; great! there's no key item values that overlap with
+        ;; pokegear card engine flag values (0x00 thru 0x03)
+        ;; this will be useful in writing my new script command.
 	const POKE_BALL    ; $05
 	const TOWN_MAP     ; $06
 	const BICYCLE      ; $07

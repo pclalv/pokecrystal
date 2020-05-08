@@ -1084,3 +1084,9 @@ increment_4byte_stat: macro
     db increment_4byte_stat_command
     dw \1 ; address
     endm
+
+	enum giveitem_or_setflag_command
+giveitem_or_setflag: macro
+	db giveitem_or_setflag_command
+	db \1 ; item or flag
+	endm

@@ -3306,3 +3306,61 @@ Script_increment_4byte_stat:
     ret
 	
 ; 97c28
+
+        ;; unfortunately, these scripts cannot live here, because
+        ;; scripting.asm runs right up against events_2.asm,
+        ;; according to events.asm
+
+        ;; probably the way to go is to get this code merged into crystal-speedchoice.
+        ;; TODO: make sure this code is correct, test it, see what else gets shifted around by adding it.
+
+        ;; i think that the crystal-speedchoice project should be
+	;; willing to tolerate some shift, as long as it doesn't affect
+	;; the patches they apply. in the interest of keeping thigns
+	;; simple, we'll just try to keep the binary diff as small as
+	;; possible.
+Script_giveitem_or_setflag:
+; script command 0xad
+        ;; pseudocode:
+        ;; if arg < 0x04
+        ;;      arg IS ENGINE_{RADIO,MAP,PHONE,EXPN}_CARD
+        ;;      setflag arg
+        ;; else
+        ;;      arg IS a key item
+        ;;      giveitem arg
+        call GetScriptByte
+	cp 4
+
+        ;; GetScriptByte increments ScriptPos, so we need to undo that
+        ;; before jumping to another script that expects to be able
+        ;; to call GetScriptByte itself.
+        push hl
+        push bc
+
+        ld hl, ScriptPos
+        ld c, [hl]
+        inc hl
+	ld b, [hl]
+        dec bc
+	ld [hl], b
+	dec hl
+	ld [hl], c
+
+        pop bc
+        pop hl
+
+        jp c, Script_setflag
+        jp Script_giveitem
+
+        ;; it's pretty trivial to port this script to verbosegiveitem.
+
+        ;; all right now how the fuck is this gonna work for itemball, which isn't a script at all?
+
+        ;; the itemballs could be reimplemented as person_events, but
+        ;; there's also this issue of person_events occupying much
+        ;; more space than an itemball.
+        ;; itemball is 2-byte, and trainer is 7-byte.
+
+        ;; and THEN  there's the issue of hiddenitems.
+
+        ;; i might have to hack the signpost code...

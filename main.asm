@@ -5181,7 +5181,19 @@ HiddenItemScript:: ; 0x13625
 	copybytetovar EngineBuffer3
 	itemtotext 0, 0
 	writetext .found_text
-	giveitem ITEM_FROM_MEM
+        ;; or, for hiddenitems, we could hook in here and make this call giveitem_or_setflag
+        ;; and teach giveitem_or_setflag how to recognize ITEM_FROM_MEM
+        ;; or maybe we don't even have to because ITEM_FROM_MEM (0xff) > 4
+        ;; but will this break for other hiddenitems that aren't MACHINE_PART?
+
+        ;; from item_constants.asm:
+	;; const NO_ITEM      ; $00
+	;; const MASTER_BALL  ; $01
+	;; const ULTRA_BALL   ; $02
+	;; const BRIGHTPOWDER ; $03
+
+        ;; if any of those are a hidden item, then the player is just gonna get an ENGINE_*_CARD for free.
+	giveitem_or_setflag ITEM_FROM_MEM
 	iffalse .bag_full
     increment_2byte_stat sStatsItemsPickedUp
 	callasm SetMemEvent
@@ -5287,6 +5299,7 @@ ApplyPokerusTick: ; 13988
 
 INCLUDE "event/bug_contest_2.asm"
 
+        ;; maybe i can replace this unused code with 
 INCLUDE "unknown/013a47.asm"
 
 GetSquareRoot: ; 13b87

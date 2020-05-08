@@ -122,6 +122,7 @@ IsInJohto:: ; 2f17
 	ret
 ; 2f3e
 
+        ;; maybe i can add a script somewhere in here?
 ret_2f3e:: ; 2f3e
 	ret
 ; 2f3f
