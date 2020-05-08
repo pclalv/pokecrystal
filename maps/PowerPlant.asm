@@ -155,7 +155,6 @@ PowerPlantManager:
 	clearevent EVENT_FOUND_MACHINE_PART_IN_CERULEAN_GYM
 	setmapscene CERULEAN_GYM, SCENE_CERULEANGYM_GRUNT_RUNS_OUT
 	setscene SCENE_POWERPLANT_GUARD_GETS_PHONE_CALL
-.ckir_AFTER_checkitem_MACHINE_PART::
 	end
 
 .MetManager:
@@ -163,6 +162,7 @@ PowerPlantManager:
 	waitbutton
 	closetext
 	end
+.ckir_AFTER_checkitem_MACHINE_PART::
 
 .FoundMachinePart:
 	writetext PowerPlantManagerThatsThePartText
