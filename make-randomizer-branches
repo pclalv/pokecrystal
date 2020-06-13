@@ -5,7 +5,7 @@ set -eu
 # make rom, generate label details and rename both
 v=crystal-speedchoice
 
-for branch in speedchoice-labels speedchoice-changes; do
+for branch in speedchoice-labels-v7 speedchoice-changes-v7; do
   git checkout $branch
 
   new_rom_basename=${v}-${branch}
