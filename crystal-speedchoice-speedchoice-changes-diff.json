@@ -3,63 +3,6 @@
         "integer_values": {
             "new": [
                 49,
-                203,
-                4
-            ],
-            "old": [
-                52,
-                41,
-                0
-            ]
-        },
-        "address_range": {
-            "end": 1750272,
-            "begin": 1750269
-        },
-        "label": "BlaineScript_0x1ab4fb.ckir_BEFORE_checkflag_ENGINE_VOLCANOBADGE"
-    },
-    {
-        "integer_values": {
-            "new": [
-                49,
-                204,
-                4
-            ],
-            "old": [
-                52,
-                42,
-                0
-            ]
-        },
-        "address_range": {
-            "end": 633387,
-            "begin": 633384
-        },
-        "label": "BlueScript_0x9aa26.ckir_BEFORE_checkflag_ENGINE_EARTHBADGE"
-    },
-    {
-        "integer_values": {
-            "new": [
-                49,
-                197,
-                4
-            ],
-            "old": [
-                52,
-                35,
-                0
-            ]
-        },
-        "address_range": {
-            "end": 1714281,
-            "begin": 1714278
-        },
-        "label": "BrockScript_0x1a2864.ckir_BEFORE_checkflag_ENGINE_BOULDERBADGE"
-    },
-    {
-        "integer_values": {
-            "new": [
-                49,
                 61,
                 3
             ],
@@ -92,7 +35,26 @@
             "end": 470190,
             "begin": 470187
         },
-        "label": "ErikaScript_0x72a6a.ckir_BEFORE_checkflag_ENGINE_RAINBOWBADGE"
+        "label": "CeladonGymErikaScript.ckir_BEFORE_checkflag_ENGINE_RAINBOWBADGE"
+    },
+    {
+        "integer_values": {
+            "new": [
+                49,
+                198,
+                4
+            ],
+            "old": [
+                52,
+                36,
+                0
+            ]
+        },
+        "address_range": {
+            "end": 1606711,
+            "begin": 1606708
+        },
+        "label": "CeruleanGymMistyScript.ckir_BEFORE_checkflag_ENGINE_CASCADEBADGE"
     },
     {
         "integer_values": {
@@ -154,80 +116,21 @@
     {
         "integer_values": {
             "new": [
-                53,
-                24,
-                33,
-                7,
-                0,
-                255,
-                255,
-                0,
-                0,
-                50,
-                75,
-                26,
-                0
+                49,
+                201,
+                4
             ],
             "old": [
-                53,
-                24,
-                33,
-                7,
-                0,
-                255,
-                255,
-                0,
-                0,
-                50,
-                75,
-                206,
-                6
+                52,
+                39,
+                0
             ]
         },
         "address_range": {
-            "end": 1676282,
-            "begin": 1676269
+            "end": 1662930,
+            "begin": 1662927
         },
-        "label": "GoldenrodCity_MapEventHeader.ckir_BEFORE_person_event_SPRITE_ROCKET_1"
-    },
-    {
-        "integer_values": {
-            "new": [
-                53,
-                11,
-                33,
-                6,
-                0,
-                255,
-                255,
-                0,
-                0,
-                53,
-                75,
-                26,
-                0
-            ],
-            "old": [
-                53,
-                11,
-                33,
-                6,
-                0,
-                255,
-                255,
-                0,
-                0,
-                53,
-                75,
-                206,
-                6
-            ]
-        },
-        "address_range": {
-            "end": 1676295,
-            "begin": 1676282
-        },
-        "label": "GoldenrodCity_MapEventHeader.ckir_BEFORE_person_event_SPRITE_ROCKET_2"
+        "label": "FuchsiaGymJanineScript.ckir_BEFORE_checkflag_ENGINE_SOULBADGE"
     },
     {
         "integer_values": {
@@ -266,64 +169,85 @@
             "end": 1676243,
             "begin": 1676230
         },
-        "label": "GoldenrodCity_MapEventHeader.ckir_BEFORE_person_event_SPRITE_ROCKET_3"
+        "label": "GoldenrodCity_MapEvents.ckir_BEFORE_object_event_EVENT_GOLDENROD_CITY_ROCKET_TAKEOVER_ROCKET_0"
     },
     {
         "integer_values": {
             "new": [
-                49,
-                201,
-                4
-            ],
-            "old": [
-                52,
-                39,
-                0
-            ]
-        },
-        "address_range": {
-            "end": 1662930,
-            "begin": 1662927
-        },
-        "label": "JanineScript_0x195db9.ckir_BEFORE_checkflag_ENGINE_SOULBADGE"
-    },
-    {
-        "integer_values": {
-            "new": [
-                49,
-                198,
-                4
-            ],
-            "old": [
-                52,
-                36,
-                0
-            ]
-        },
-        "address_range": {
-            "end": 1606711,
-            "begin": 1606708
-        },
-        "label": "MistyScript_0x188432.ckir_BEFORE_checkflag_ENGINE_CASCADEBADGE"
-    },
-    {
-        "integer_values": {
-            "new": [
-                49,
+                53,
+                24,
+                33,
+                7,
+                0,
+                255,
+                255,
+                0,
+                0,
+                50,
+                75,
                 26,
                 0
             ],
             "old": [
-                49,
-                205,
-                0
+                53,
+                24,
+                33,
+                7,
+                0,
+                255,
+                255,
+                0,
+                0,
+                50,
+                75,
+                206,
+                6
             ]
         },
         "address_range": {
-            "end": 1615947,
-            "begin": 1615944
+            "end": 1676282,
+            "begin": 1676269
         },
-        "label": "OfficerScript_0x18a81e.ckir_BEFORE_CHECKEVENT_EVENT_RESTORED_POWER_TO_KANTO"
+        "label": "GoldenrodCity_MapEvents.ckir_BEFORE_object_event_EVENT_GOLDENROD_CITY_ROCKET_TAKEOVER_ROCKET_1"
+    },
+    {
+        "integer_values": {
+            "new": [
+                53,
+                11,
+                33,
+                6,
+                0,
+                255,
+                255,
+                0,
+                0,
+                53,
+                75,
+                26,
+                0
+            ],
+            "old": [
+                53,
+                11,
+                33,
+                6,
+                0,
+                255,
+                255,
+                0,
+                0,
+                53,
+                75,
+                206,
+                6
+            ]
+        },
+        "address_range": {
+            "end": 1676295,
+            "begin": 1676282
+        },
+        "label": "GoldenrodCity_MapEvents.ckir_BEFORE_object_event_EVENT_GOLDENROD_CITY_ROCKET_TAKEOVER_ROCKET_2"
     },
     {
         "integer_values": {
@@ -342,7 +266,292 @@
             "end": 348401,
             "begin": 348398
         },
-        "label": "OfficerScript_0x550ec.ckir_BEFORE_CHECKEVENT_EVENT_RESTORED_POWER_TO_KANTO"
+        "label": "GoldenrodMagnetTrainStationOfficerScript.ckir_BEFORE_CHECKEVENT_EVENT_RESTORED_POWER_TO_KANTO"
+    },
+    {
+        "integer_values": {
+            "new": [
+                127,
+                1
+            ],
+            "old": [
+                2,
+                1
+            ]
+        },
+        "address_range": {
+            "end": 514538,
+            "begin": 514536
+        },
+        "label": "GoldenrodUndergroundWarehouseUltraBall.ckir_BEFORE_itemball_ULTRABALL"
+    },
+    {
+        "integer_values": {
+            "new": [
+                84,
+                12,
+                17,
+                1,
+                0,
+                255,
+                255,
+                1,
+                0,
+                232,
+                89,
+                228,
+                6
+            ],
+            "old": [
+                84,
+                5,
+                6,
+                1,
+                0,
+                255,
+                255,
+                1,
+                0,
+                232,
+                89,
+                85,
+                6
+            ]
+        },
+        "address_range": {
+            "end": 515572,
+            "begin": 515559
+        },
+        "label": "GoldenrodUndergroundWarehouse_MapEvents.ckir_BEFORE_object_event_EVENT_GOLDENROD_UNDERGROUND_WAREHOUSE_ULTRA_BALL"
+    },
+    {
+        "integer_values": {
+            "new": [
+                51,
+                55,
+                0
+            ],
+            "old": [
+                51,
+                32,
+                0
+            ]
+        },
+        "address_range": {
+            "end": 396305,
+            "begin": 396302
+        },
+        "label": "OlivineLighthouseJasmine.ckir_BEFORE_setevent_EVENT_JASMINE_RETURNED_TO_GYM"
+    },
+    {
+        "integer_values": {
+            "new": [
+                6,
+                6,
+                192,
+                73
+            ],
+            "old": [
+                6,
+                6,
+                242,
+                73
+            ]
+        },
+        "address_range": {
+            "end": 477620,
+            "begin": 477616
+        },
+        "label": "OlivinePortSailorAfterHOFScript.ckir_BEFORE_ifequal_SATURDAY"
+    },
+    {
+        "integer_values": {
+            "new": [
+                6,
+                0,
+                192,
+                73
+            ],
+            "old": [
+                6,
+                0,
+                242,
+                73
+            ]
+        },
+        "address_range": {
+            "end": 477616,
+            "begin": 477612
+        },
+        "label": "OlivinePortSailorAfterHOFScript.ckir_BEFORE_ifequal_SUNDAY"
+    },
+    {
+        "integer_values": {
+            "new": [
+                6,
+                4,
+                192,
+                73
+            ],
+            "old": [
+                6,
+                4,
+                248,
+                73
+            ]
+        },
+        "address_range": {
+            "end": 477632,
+            "begin": 477628
+        },
+        "label": "OlivinePortSailorAfterHOFScript.ckir_BEFORE_ifequal_THURSDAY"
+    },
+    {
+        "integer_values": {
+            "new": [
+                6,
+                2,
+                192,
+                73
+            ],
+            "old": [
+                6,
+                2,
+                248,
+                73
+            ]
+        },
+        "address_range": {
+            "end": 477624,
+            "begin": 477620
+        },
+        "label": "OlivinePortSailorAfterHOFScript.ckir_BEFORE_ifequal_TUESDAY"
+    },
+    {
+        "integer_values": {
+            "new": [
+                6,
+                3,
+                192,
+                73
+            ],
+            "old": [
+                6,
+                3,
+                248,
+                73
+            ]
+        },
+        "address_range": {
+            "end": 477628,
+            "begin": 477624
+        },
+        "label": "OlivinePortSailorAfterHOFScript.ckir_BEFORE_ifequal_WEDNESDAY"
+    },
+    {
+        "integer_values": {
+            "new": [
+                6,
+                6,
+                78,
+                73
+            ],
+            "old": [
+                6,
+                6,
+                119,
+                73
+            ]
+        },
+        "address_range": {
+            "end": 477506,
+            "begin": 477502
+        },
+        "label": "OlivinePortWalkUpToShipScript.ckir_BEFORE_ifequal_SATURDAY"
+    },
+    {
+        "integer_values": {
+            "new": [
+                6,
+                0,
+                78,
+                73
+            ],
+            "old": [
+                6,
+                0,
+                119,
+                73
+            ]
+        },
+        "address_range": {
+            "end": 477502,
+            "begin": 477498
+        },
+        "label": "OlivinePortWalkUpToShipScript.ckir_BEFORE_ifequal_SUNDAY"
+    },
+    {
+        "integer_values": {
+            "new": [
+                6,
+                4,
+                78,
+                73
+            ],
+            "old": [
+                6,
+                4,
+                129,
+                73
+            ]
+        },
+        "address_range": {
+            "end": 477518,
+            "begin": 477514
+        },
+        "label": "OlivinePortWalkUpToShipScript.ckir_BEFORE_ifequal_THURSDAY"
+    },
+    {
+        "integer_values": {
+            "new": [
+                6,
+                2,
+                78,
+                73
+            ],
+            "old": [
+                6,
+                2,
+                129,
+                73
+            ]
+        },
+        "address_range": {
+            "end": 477510,
+            "begin": 477506
+        },
+        "label": "OlivinePortWalkUpToShipScript.ckir_BEFORE_ifequal_TUESDAY"
+    },
+    {
+        "integer_values": {
+            "new": [
+                6,
+                3,
+                78,
+                73
+            ],
+            "old": [
+                6,
+                3,
+                129,
+                73
+            ]
+        },
+        "address_range": {
+            "end": 477514,
+            "begin": 477510
+        },
+        "label": "OlivinePortWalkUpToShipScript.ckir_BEFORE_ifequal_WEDNESDAY"
     },
     {
         "integer_values": {
@@ -381,7 +590,7 @@
             "end": 478556,
             "begin": 478543
         },
-        "label": "OlivinePort_MapEventHeader.ckir_BEFORE_OBJECT_EVENT_EVENT_OLIVINE_PORT_SPRITES_AFTER_HALL_OF_FAME_0"
+        "label": "OlivinePort_MapEvents.ckir_BEFORE_object_event_EVENT_OLIVINE_PORT_SPRITES_AFTER_HALL_OF_FAME_0"
     },
     {
         "integer_values": {
@@ -420,7 +629,7 @@
             "end": 478595,
             "begin": 478582
         },
-        "label": "OlivinePort_MapEventHeader.ckir_BEFORE_OBJECT_EVENT_EVENT_OLIVINE_PORT_SPRITES_AFTER_HALL_OF_FAME_1"
+        "label": "OlivinePort_MapEvents.ckir_BEFORE_object_event_EVENT_OLIVINE_PORT_SPRITES_AFTER_HALL_OF_FAME_1"
     },
     {
         "integer_values": {
@@ -459,7 +668,7 @@
             "end": 478543,
             "begin": 478530
         },
-        "label": "OlivinePort_MapEventHeader.ckir_BEFORE_OBJECT_EVENT_EVENT_OLIVINE_PORT_SPRITES_BEFORE_HALL_OF_FAME_0"
+        "label": "OlivinePort_MapEvents.ckir_BEFORE_object_event_EVENT_OLIVINE_PORT_SPRITES_BEFORE_HALL_OF_FAME_0"
     },
     {
         "integer_values": {
@@ -498,7 +707,7 @@
             "end": 478569,
             "begin": 478556
         },
-        "label": "OlivinePort_MapEventHeader.ckir_BEFORE_OBJECT_EVENT_EVENT_OLIVINE_PORT_SPRITES_BEFORE_HALL_OF_FAME_1"
+        "label": "OlivinePort_MapEvents.ckir_BEFORE_object_event_EVENT_OLIVINE_PORT_SPRITES_BEFORE_HALL_OF_FAME_1"
     },
     {
         "integer_values": {
@@ -537,7 +746,7 @@
             "end": 478582,
             "begin": 478569
         },
-        "label": "OlivinePort_MapEventHeader.ckir_BEFORE_OBJECT_EVENT_EVENT_OLIVINE_PORT_SPRITES_BEFORE_HALL_OF_FAME_2"
+        "label": "OlivinePort_MapEvents.ckir_BEFORE_object_event_EVENT_OLIVINE_PORT_SPRITES_BEFORE_HALL_OF_FAME_2"
     },
     {
         "integer_values": {
@@ -576,7 +785,45 @@
             "end": 478608,
             "begin": 478595
         },
-        "label": "OlivinePort_MapEventHeader.ckir_BEFORE_OBJECT_EVENT_EVENT_OLIVINE_PORT_SPRITES_BEFORE_HALL_OF_FAME_3"
+        "label": "OlivinePort_MapEvents.ckir_BEFORE_object_event_EVENT_OLIVINE_PORT_SPRITES_BEFORE_HALL_OF_FAME_3"
+    },
+    {
+        "integer_values": {
+            "new": [
+                49,
+                197,
+                4
+            ],
+            "old": [
+                52,
+                35,
+                0
+            ]
+        },
+        "address_range": {
+            "end": 1714281,
+            "begin": 1714278
+        },
+        "label": "PewterGymBrockScript.ckir_BEFORE_checkflag_ENGINE_BOULDERBADGE"
+    },
+    {
+        "integer_values": {
+            "new": [
+                49,
+                205,
+                0
+            ],
+            "old": [
+                49,
+                207,
+                0
+            ]
+        },
+        "address_range": {
+            "end": 1644614,
+            "begin": 1644611
+        },
+        "label": "PokemonFanClubClefairyGuyScript.ckir_BEFORE_checkevent_EVENT_MET_COPYCAT_FOUND_OUT_ABOUT_LOST_ITEM"
     },
     {
         "integer_values": {
@@ -716,7 +963,7 @@
             "end": 382715,
             "begin": 382702
         },
-        "label": "RadioTower1F_MapEventHeader.ckir_BEFORE_person_event_SPRITE_COOLTRAINER_F"
+        "label": "RadioTower1F_MapEvents.ckir_BEFORE_person_event_SPRITE_COOLTRAINER_F"
     },
     {
         "integer_values": {
@@ -736,45 +983,6 @@
     {
         "integer_values": {
             "new": [
-                39,
-                32,
-                6,
-                9,
-                0,
-                255,
-                255,
-                146,
-                3,
-                154,
-                86,
-                255,
-                255
-            ],
-            "old": [
-                39,
-                32,
-                6,
-                9,
-                0,
-                255,
-                255,
-                146,
-                3,
-                154,
-                86,
-                21,
-                7
-            ]
-        },
-        "address_range": {
-            "end": 1711255,
-            "begin": 1711242
-        },
-        "label": "Route30_MapEventHeader.ckir_BEFORE_EVENT_ROUTE_30_YOUNGSTER_JOEY"
-    },
-    {
-        "integer_values": {
-            "new": [
                 76,
                 28,
                 9,
@@ -784,7 +992,7 @@
                 255,
                 128,
                 0,
-                222,
+                188,
                 39,
                 26,
                 0
@@ -799,7 +1007,7 @@
                 255,
                 128,
                 0,
-                222,
+                188,
                 39,
                 20,
                 7
@@ -809,7 +1017,7 @@
             "end": 1711307,
             "begin": 1711294
         },
-        "label": "Route30_MapEventHeader.ckir_BEFORE_OBJECT_EVENT_MONSTER_EVENT_ROUTE_30_BATTLE_0"
+        "label": "Route30_MapEvents.ckir_BEFORE_object_event_EVENT_ROUTE_30_BATTLE_MONSTER_0"
     },
     {
         "integer_values": {
@@ -823,7 +1031,7 @@
                 255,
                 144,
                 0,
-                222,
+                188,
                 39,
                 26,
                 0
@@ -838,7 +1046,7 @@
                 255,
                 144,
                 0,
-                222,
+                188,
                 39,
                 20,
                 7
@@ -848,7 +1056,7 @@
             "end": 1711320,
             "begin": 1711307
         },
-        "label": "Route30_MapEventHeader.ckir_BEFORE_OBJECT_EVENT_MONSTER_EVENT_ROUTE_30_BATTLE_1"
+        "label": "Route30_MapEvents.ckir_BEFORE_object_event_EVENT_ROUTE_30_BATTLE_MONSTER_1"
     },
     {
         "integer_values": {
@@ -887,7 +1095,46 @@
             "end": 1711242,
             "begin": 1711229
         },
-        "label": "Route30_MapEventHeader.ckir_BEFORE_OBJECT_EVENT_YOUNGSTER_EVENT_ROUTE_30_BATTLE"
+        "label": "Route30_MapEvents.ckir_BEFORE_object_event_EVENT_ROUTE_30_BATTLE_YOUNGSTER"
+    },
+    {
+        "integer_values": {
+            "new": [
+                39,
+                32,
+                6,
+                9,
+                0,
+                255,
+                255,
+                146,
+                3,
+                154,
+                86,
+                255,
+                255
+            ],
+            "old": [
+                39,
+                32,
+                6,
+                9,
+                0,
+                255,
+                255,
+                146,
+                3,
+                154,
+                86,
+                21,
+                7
+            ]
+        },
+        "address_range": {
+            "end": 1711255,
+            "begin": 1711242
+        },
+        "label": "Route30_MapEvents.ckir_BEFORE_object_event_EVENT_ROUTE_30_YOUNGSTER_JOEY"
     },
     {
         "integer_values": {
@@ -906,7 +1153,7 @@
             "end": 1639549,
             "begin": 1639546
         },
-        "label": "Route32CooltrainerMTrigger.ckir_BEFORE_checkflag_ENGINE_ZEPHYRBADGE"
+        "label": "Route32CooltrainerMContinueScene.ckir_BEFORE_checkflag_ENGINE_ZEPHYRBADGE"
     },
     {
         "integer_values": {
@@ -925,112 +1172,64 @@
             "end": 1612871,
             "begin": 1612868
         },
-        "label": "SabrinaScript_0x189c2e.ckir_BEFORE_checkflag_ENGINE_MARSHBADGE"
+        "label": "SaffronGymSabrinaScript.ckir_BEFORE_checkflag_ENGINE_MARSHBADGE"
     },
     {
         "integer_values": {
             "new": [
-                6,
-                6,
-                192,
-                73
+                49,
+                26,
+                0
             ],
             "old": [
-                6,
-                6,
-                242,
-                73
+                49,
+                205,
+                0
             ]
         },
         "address_range": {
-            "end": 477620,
-            "begin": 477616
+            "end": 1615947,
+            "begin": 1615944
         },
-        "label": "SailorScript_0x7499c.ckir_BEFORE_ifequal_SATURDAY"
+        "label": "SaffronMagnetTrainStationOfficerScript.ckir_BEFORE_checkevent_EVENT_RESTORED_POWER_TO_KANTO"
     },
     {
         "integer_values": {
             "new": [
-                6,
-                0,
-                192,
-                73
+                49,
+                203,
+                4
             ],
             "old": [
-                6,
-                0,
-                242,
-                73
+                52,
+                41,
+                0
             ]
         },
         "address_range": {
-            "end": 477616,
-            "begin": 477612
+            "end": 1750272,
+            "begin": 1750269
         },
-        "label": "SailorScript_0x7499c.ckir_BEFORE_ifequal_SUNDAY"
+        "label": "SeafoamGymBlaineScript.ckir_BEFORE_checkflag_ENGINE_VOLCANOBADGE"
     },
     {
         "integer_values": {
             "new": [
-                6,
-                4,
-                192,
-                73
+                49,
+                199,
+                4
             ],
             "old": [
-                6,
-                4,
-                248,
-                73
+                52,
+                37,
+                0
             ]
         },
         "address_range": {
-            "end": 477632,
-            "begin": 477628
+            "end": 1646770,
+            "begin": 1646767
         },
-        "label": "SailorScript_0x7499c.ckir_BEFORE_ifequal_THURSDAY"
-    },
-    {
-        "integer_values": {
-            "new": [
-                6,
-                2,
-                192,
-                73
-            ],
-            "old": [
-                6,
-                2,
-                248,
-                73
-            ]
-        },
-        "address_range": {
-            "end": 477624,
-            "begin": 477620
-        },
-        "label": "SailorScript_0x7499c.ckir_BEFORE_ifequal_TUESDAY"
-    },
-    {
-        "integer_values": {
-            "new": [
-                6,
-                3,
-                192,
-                73
-            ],
-            "old": [
-                6,
-                3,
-                248,
-                73
-            ]
-        },
-        "address_range": {
-            "end": 477628,
-            "begin": 477624
-        },
-        "label": "SailorScript_0x7499c.ckir_BEFORE_ifequal_WEDNESDAY"
+        "label": "VermilionGymSurgeScript.ckir_BEFORE_checkflag_ENGINE_THUNDERBADGE"
     },
     {
         "integer_values": {
@@ -1051,7 +1250,7 @@
             "end": 478897,
             "begin": 478893
         },
-        "label": "SailorScript_0x74e97.ckir_BEFORE_ifequal_FRIDAY"
+        "label": "VermilionPortSailorScript.ckir_BEFORE_ifequal_FRIDAY"
     },
     {
         "integer_values": {
@@ -1072,7 +1271,7 @@
             "end": 478885,
             "begin": 478881
         },
-        "label": "SailorScript_0x74e97.ckir_BEFORE_ifequal_MONDAY"
+        "label": "VermilionPortSailorScript.ckir_BEFORE_ifequal_MONDAY"
     },
     {
         "integer_values": {
@@ -1093,7 +1292,7 @@
             "end": 478901,
             "begin": 478897
         },
-        "label": "SailorScript_0x74e97.ckir_BEFORE_ifequal_SATURDAY"
+        "label": "VermilionPortSailorScript.ckir_BEFORE_ifequal_SATURDAY"
     },
     {
         "integer_values": {
@@ -1114,7 +1313,7 @@
             "end": 478893,
             "begin": 478889
         },
-        "label": "SailorScript_0x74e97.ckir_BEFORE_ifequal_THURSDAY"
+        "label": "VermilionPortSailorScript.ckir_BEFORE_ifequal_THURSDAY"
     },
     {
         "integer_values": {
@@ -1135,225 +1334,7 @@
             "end": 478889,
             "begin": 478885
         },
-        "label": "SailorScript_0x74e97.ckir_BEFORE_ifequal_TUESDAY"
-    },
-    {
-        "integer_values": {
-            "new": [
-                49,
-                199,
-                4
-            ],
-            "old": [
-                52,
-                37,
-                0
-            ]
-        },
-        "address_range": {
-            "end": 1646770,
-            "begin": 1646767
-        },
-        "label": "SurgeScript_0x1920a5.ckir_BEFORE_checkflag_ENGINE_THUNDERBADGE"
-    },
-    {
-        "integer_values": {
-            "new": [
-                127,
-                1
-            ],
-            "old": [
-                2,
-                1
-            ]
-        },
-        "address_range": {
-            "end": 514538,
-            "begin": 514536
-        },
-        "label": "UndergroundWarehouseUltraBall.ckir_BEFORE_ITEMBALL_ULTRABALL"
-    },
-    {
-        "integer_values": {
-            "new": [
-                84,
-                12,
-                17,
-                1,
-                0,
-                255,
-                255,
-                1,
-                0,
-                232,
-                89,
-                228,
-                6
-            ],
-            "old": [
-                84,
-                5,
-                6,
-                1,
-                0,
-                255,
-                255,
-                1,
-                0,
-                232,
-                89,
-                85,
-                6
-            ]
-        },
-        "address_range": {
-            "end": 515572,
-            "begin": 515559
-        },
-        "label": "UndergroundWarehouse_MapEventHeader.ckir_BEFORE_OBJECT_EVENT_ULTRABALL"
-    },
-    {
-        "integer_values": {
-            "new": [
-                49,
-                205,
-                0
-            ],
-            "old": [
-                49,
-                207,
-                0
-            ]
-        },
-        "address_range": {
-            "end": 1644614,
-            "begin": 1644611
-        },
-        "label": "UnknownScript_0x191838.ckir_BEFORE_CHECKEVENT_EVENT_MET_COPYCAT_FOUND_OUT_ABOUT_LOST_ITEM"
-    },
-    {
-        "integer_values": {
-            "new": [
-                51,
-                55,
-                0
-            ],
-            "old": [
-                51,
-                32,
-                0
-            ]
-        },
-        "address_range": {
-            "end": 396305,
-            "begin": 396302
-        },
-        "label": "UnknownScript_0x60bab.ckir_BEFORE_setevent_EVENT_JASMINE_RETURNED_TO_GYM"
-    },
-    {
-        "integer_values": {
-            "new": [
-                6,
-                6,
-                78,
-                73
-            ],
-            "old": [
-                6,
-                6,
-                119,
-                73
-            ]
-        },
-        "address_range": {
-            "end": 477506,
-            "begin": 477502
-        },
-        "label": "UnknownScript_0x7491f.ckir_BEFORE_ifequal_SATURDAY"
-    },
-    {
-        "integer_values": {
-            "new": [
-                6,
-                0,
-                78,
-                73
-            ],
-            "old": [
-                6,
-                0,
-                119,
-                73
-            ]
-        },
-        "address_range": {
-            "end": 477502,
-            "begin": 477498
-        },
-        "label": "UnknownScript_0x7491f.ckir_BEFORE_ifequal_SUNDAY"
-    },
-    {
-        "integer_values": {
-            "new": [
-                6,
-                4,
-                78,
-                73
-            ],
-            "old": [
-                6,
-                4,
-                129,
-                73
-            ]
-        },
-        "address_range": {
-            "end": 477518,
-            "begin": 477514
-        },
-        "label": "UnknownScript_0x7491f.ckir_BEFORE_ifequal_THURSDAY"
-    },
-    {
-        "integer_values": {
-            "new": [
-                6,
-                2,
-                78,
-                73
-            ],
-            "old": [
-                6,
-                2,
-                129,
-                73
-            ]
-        },
-        "address_range": {
-            "end": 477510,
-            "begin": 477506
-        },
-        "label": "UnknownScript_0x7491f.ckir_BEFORE_ifequal_TUESDAY"
-    },
-    {
-        "integer_values": {
-            "new": [
-                6,
-                3,
-                78,
-                73
-            ],
-            "old": [
-                6,
-                3,
-                129,
-                73
-            ]
-        },
-        "address_range": {
-            "end": 477514,
-            "begin": 477510
-        },
-        "label": "UnknownScript_0x7491f.ckir_BEFORE_ifequal_WEDNESDAY"
+        "label": "VermilionPortSailorScript.ckir_BEFORE_ifequal_TUESDAY"
     },
     {
         "integer_values": {
@@ -1374,7 +1355,7 @@
             "end": 478789,
             "begin": 478785
         },
-        "label": "UnknownScript_0x74e20.ckir_BEFORE_ifequal_FRIDAY"
+        "label": "VermilionPortWalkUpToShipScript.ckir_BEFORE_ifequal_FRIDAY"
     },
     {
         "integer_values": {
@@ -1395,7 +1376,7 @@
             "end": 478777,
             "begin": 478773
         },
-        "label": "UnknownScript_0x74e20.ckir_BEFORE_ifequal_MONDAY"
+        "label": "VermilionPortWalkUpToShipScript.ckir_BEFORE_ifequal_MONDAY"
     },
     {
         "integer_values": {
@@ -1416,7 +1397,7 @@
             "end": 478793,
             "begin": 478789
         },
-        "label": "UnknownScript_0x74e20.ckir_BEFORE_ifequal_SATURDAY"
+        "label": "VermilionPortWalkUpToShipScript.ckir_BEFORE_ifequal_SATURDAY"
     },
     {
         "integer_values": {
@@ -1437,7 +1418,7 @@
             "end": 478785,
             "begin": 478781
         },
-        "label": "UnknownScript_0x74e20.ckir_BEFORE_ifequal_THURSDAY"
+        "label": "VermilionPortWalkUpToShipScript.ckir_BEFORE_ifequal_THURSDAY"
     },
     {
         "integer_values": {
@@ -1458,6 +1439,25 @@
             "end": 478781,
             "begin": 478777
         },
-        "label": "UnknownScript_0x74e20.ckir_BEFORE_ifequal_TUESDAY"
+        "label": "VermilionPortWalkUpToShipScript.ckir_BEFORE_ifequal_TUESDAY"
+    },
+    {
+        "integer_values": {
+            "new": [
+                49,
+                204,
+                4
+            ],
+            "old": [
+                52,
+                42,
+                0
+            ]
+        },
+        "address_range": {
+            "end": 633387,
+            "begin": 633384
+        },
+        "label": "ViridianGymBlueScript.ckir_BEFORE_checkflag_ENGINE_EARTHBADGE"
     }
 ]
