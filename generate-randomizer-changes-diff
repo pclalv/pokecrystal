@@ -11,6 +11,12 @@ BLACKLISTED_LABELS = %w(
   FlyFunction.ckir_BEFORE_CHECK_STORMBADGE
 )
 
+# get these, even if there's no diff
+WHITELIST = %w(
+  WhitneyScript_0x5400c.ckir_BEFORE_checkflag_ENGINE_PLAINBADGE
+  BlackthornGymClairScript.ckir_BEFORE_checkflag_ENGINE_RISINGBADGE
+)
+
 ORIG_JSON = ENV.fetch("ORIG_JSON", "#{VERSION}-speedchoice-labels-label-details.json")
 MOD_JSON = ENV.fetch("MOD_JSON", "#{VERSION}-speedchoice-changes-label-details.json")
 
@@ -21,7 +27,9 @@ speedchoice_changes_json = JSON.load(File.read(MOD_JSON)).
 
 diff = speedchoice_labels_json.
   zip(speedchoice_changes_json).
-  filter { |rl, rc| rl != rc }.
+  filter do |rl, rc|
+    rl != rc || WHITELIST.include?(rl['label'])
+  end.
   map do |rl, rc|
     raise <<~EOF unless rl['label'] == rc['label'] && rl['address_range'] == rc['address_range']
       #{rl['label']} != #{rc['label']}
