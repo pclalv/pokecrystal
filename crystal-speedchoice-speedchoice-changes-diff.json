@@ -2,6 +2,25 @@
     {
         "integer_values": {
             "new": [
+                52,
+                34,
+                0
+            ],
+            "old": [
+                52,
+                34,
+                0
+            ]
+        },
+        "address_range": {
+            "end": 1658409,
+            "begin": 1658406
+        },
+        "label": "BlackthornGymClairScript.ckir_BEFORE_checkflag_ENGINE_RISINGBADGE"
+    },
+    {
+        "integer_values": {
+            "new": [
                 49,
                 203,
                 4
@@ -1459,5 +1478,24 @@
             "begin": 478777
         },
         "label": "UnknownScript_0x74e20.ckir_BEFORE_ifequal_TUESDAY"
+    },
+    {
+        "integer_values": {
+            "new": [
+                52,
+                29,
+                0
+            ],
+            "old": [
+                52,
+                29,
+                0
+            ]
+        },
+        "address_range": {
+            "end": 344141,
+            "begin": 344138
+        },
+        "label": "WhitneyScript_0x5400c.ckir_BEFORE_checkflag_ENGINE_PLAINBADGE"
     }
 ]
