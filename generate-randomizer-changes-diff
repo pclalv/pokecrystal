@@ -36,6 +36,18 @@ PATCHES = %w(
   ckir_BEFORE_giveitem_text_UnknownText_0x54848
   ckir_BEFORE_giveitem_text_UnknownText_0x703df
 
+  ClairText_Lazy.ckir_BEFORE_text_RISINGBADGE
+  LeaderBlueWinText.ckir_BEFORE_text_EARTHBADGE
+  UnknownText_0x18870c.ckir_BEFORE_text_CASCADEBADGE
+  UnknownText_0x189df4.ckir_BEFORE_text_MARSHBADGE
+  UnknownText_0x192238.ckir_BEFORE_text_THUNDERBADGE
+  UnknownText_0x195fa1.ckir_BEFORE_text_SOULBADGE
+  UnknownText_0x1ab646.ckir_BEFORE_text_VOLCANOBADGE
+  UnknownText_0x54222.ckir_BEFORE_text_PLAINBADGE
+  UnknownText_0x6854a.ckir_BEFORE_text_ZEPHYRBADGE
+  UnknownText_0x72c3e.ckir_BEFORE_text_RAINBOWBADGE
+  UnknownText_0x9d7f6.ckir_BEFORE_text_STORMBADGE
+
   AzaleaGymTriggerRockets.ckir_BEFORE_GoldenrodRockets
   BlackthornGymTriggerRockets.ckir_BEFORE_GoldenrodRockets
   CeladonGymTriggerRockets.ckir_BEFORE_GoldenrodRockets
