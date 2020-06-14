@@ -30,6 +30,12 @@ PATCHES = %w(
   FuchsiaGym_MapEventHeader.ckir_BEFORE_person_event_SPRITE_FUCHSIA_GYM_4_at_2_4
   FuchsiaGym_MapEventHeader.ckir_BEFORE_person_event_SPRITE_JANINE_at_10_1
 
+  ckir_BEFORE_giveitem_text_MrPokemonsHouse_GotEggText
+  ckir_BEFORE_giveitem_text_ReceivedSecretpotionText
+  ckir_BEFORE_giveitem_text_UnknownText_0x191d0a
+  ckir_BEFORE_giveitem_text_UnknownText_0x54848
+  ckir_BEFORE_giveitem_text_UnknownText_0x703df
+
   AzaleaGymTriggerRockets.ckir_BEFORE_GoldenrodRockets
   BlackthornGymTriggerRockets.ckir_BEFORE_GoldenrodRockets
   CeladonGymTriggerRockets.ckir_BEFORE_GoldenrodRockets
