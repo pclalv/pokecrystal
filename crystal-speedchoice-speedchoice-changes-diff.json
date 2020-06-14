@@ -1159,23 +1159,6 @@
     {
         "integer_values": {
             "new": [
-                127,
-                1
-            ],
-            "old": [
-                2,
-                1
-            ]
-        },
-        "address_range": {
-            "end": 514538,
-            "begin": 514536
-        },
-        "label": "UndergroundWarehouseUltraBall.ckir_BEFORE_ITEMBALL_ULTRABALL"
-    },
-    {
-        "integer_values": {
-            "new": [
                 84,
                 12,
                 17,
