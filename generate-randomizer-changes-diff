@@ -11,7 +11,9 @@ BLACKLISTED_LABELS = %w(
   FlyFunction.ckir_BEFORE_CHECK_STORMBADGE
 )
 
-# get these, even if there's no diff
+# non-diffs that should be included anyway. these are 'patches'; a
+# patch does not necessarily have a diff, but the randomizer can
+# generate a diff patch from it.
 WHITELIST = %w(
   WhitneyScript_0x5400c.ckir_BEFORE_checkflag_ENGINE_PLAINBADGE
   BlackthornGymClairScript.ckir_BEFORE_checkflag_ENGINE_RISINGBADGE
@@ -19,6 +21,39 @@ WHITELIST = %w(
   UnknownText_0x18b064.ckir_BEFORE_para_lost_your_favorite_doll
   Copycat.ckir_BEFORE_takeitem_LOST_ITEM
   Copycat.ckir_BEFORE_checkitem_LOST_ITEM
+
+  AzaleaGymTriggerRockets.ckir_BEFORE_GoldenrodRockets
+  AzaleaGymTriggerRockets.ckir_BEFORE_RadioTowerRockets
+  BlackthornGymTriggerRockets.ckir_BEFORE_GoldenrodRockets
+  BlackthornGymTriggerRockets.ckir_BEFORE_RadioTowerRockets
+  CeladonGymTriggerRockets.ckir_BEFORE_GoldenrodRockets
+  CeladonGymTriggerRockets.ckir_BEFORE_RadioTowerRockets
+  CeruleanGymTriggerRockets.ckir_BEFORE_GoldenrodRockets
+  CeruleanGymTriggerRockets.ckir_BEFORE_RadioTowerRockets
+  CianwoodGymTriggerRockets.ckir_BEFORE_GoldenrodRockets
+  CianwoodGymTriggerRockets.ckir_BEFORE_RadioTowerRockets
+  EcruteakGymTriggerRockets.ckir_BEFORE_GoldenrodRockets
+  EcruteakGymTriggerRockets.ckir_BEFORE_RadioTowerRockets
+  FuchsiaGymTriggerRockets.ckir_BEFORE_GoldenrodRockets
+  FuchsiaGymTriggerRockets.ckir_BEFORE_RadioTowerRockets
+  GoldenrodGymTriggerRockets.ckir_BEFORE_GoldenrodRockets
+  GoldenrodGymTriggerRockets.ckir_BEFORE_RadioTowerRockets
+  MahoganyGymTriggerRockets.ckir_BEFORE_GoldenrodRockets
+  MahoganyGymTriggerRockets.ckir_BEFORE_RadioTowerRockets
+  OlivineGymTriggerRockets.ckir_BEFORE_GoldenrodRockets
+  OlivineGymTriggerRockets.ckir_BEFORE_RadioTowerRockets
+  PewterGymTriggerRockets.ckir_BEFORE_GoldenrodRockets
+  PewterGymTriggerRockets.ckir_BEFORE_RadioTowerRockets
+  SaffronGymTriggerRockets.ckir_BEFORE_GoldenrodRockets
+  SaffronGymTriggerRockets.ckir_BEFORE_RadioTowerRockets
+  SeafoamGymTriggerRockets.ckir_BEFORE_GoldenrodRockets
+  SeafoamGymTriggerRockets.ckir_BEFORE_RadioTowerRockets
+  VermilionGymTriggerRockets.ckir_BEFORE_GoldenrodRockets
+  VermilionGymTriggerRockets.ckir_BEFORE_RadioTowerRockets
+  VioletGymTriggerRockets.ckir_BEFORE_GoldenrodRockets
+  VioletGymTriggerRockets.ckir_BEFORE_RadioTowerRockets
+  ViridianGymTriggerRockets.ckir_BEFORE_GoldenrodRockets
+  ViridianGymTriggerRockets.ckir_BEFORE_RadioTowerRockets
 )
 
 ORIG_JSON = ENV.fetch("ORIG_JSON", "#{VERSION}-speedchoice-labels-label-details.json")
