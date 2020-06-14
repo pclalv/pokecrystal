@@ -97,6 +97,42 @@
     {
         "integer_values": {
             "new": [
+                33,
+                130
+            ],
+            "old": [
+                33,
+                130
+            ]
+        },
+        "address_range": {
+            "end": 1617645,
+            "begin": 1617643
+        },
+        "label": "Copycat.ckir_BEFORE_checkitem_LOST_ITEM"
+    },
+    {
+        "integer_values": {
+            "new": [
+                32,
+                130,
+                1
+            ],
+            "old": [
+                32,
+                130,
+                1
+            ]
+        },
+        "address_range": {
+            "end": 1617796,
+            "begin": 1617793
+        },
+        "label": "Copycat.ckir_BEFORE_takeitem_LOST_ITEM"
+    },
+    {
+        "integer_values": {
+            "new": [
                 49,
                 200,
                 4
@@ -1478,6 +1514,73 @@
             "begin": 478777
         },
         "label": "UnknownScript_0x74e20.ckir_BEFORE_ifequal_TUESDAY"
+    },
+    {
+        "integer_values": {
+            "new": [
+                81,
+                171,
+                174,
+                178,
+                179,
+                127,
+                184,
+                174,
+                180,
+                177,
+                127,
+                165,
+                160,
+                181,
+                174,
+                177,
+                168,
+                179,
+                164,
+                79,
+                84,
+                127,
+                131,
+                142,
+                139,
+                139,
+                232
+            ],
+            "old": [
+                81,
+                171,
+                174,
+                178,
+                179,
+                127,
+                184,
+                174,
+                180,
+                177,
+                127,
+                165,
+                160,
+                181,
+                174,
+                177,
+                168,
+                179,
+                164,
+                79,
+                84,
+                127,
+                131,
+                142,
+                139,
+                139,
+                232
+            ]
+        },
+        "address_range": {
+            "end": 1618121,
+            "begin": 1618094
+        },
+        "label": "UnknownText_0x18b064.ckir_BEFORE_para_lost_your_favorite_doll"
     },
     {
         "integer_values": {
