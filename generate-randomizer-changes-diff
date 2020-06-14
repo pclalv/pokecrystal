@@ -24,6 +24,12 @@ PATCHES = %w(
   Copycat.ckir_BEFORE_takeitem_LOST_ITEM
   Copycat.ckir_BEFORE_checkitem_LOST_ITEM
 
+  FuchsiaGym_MapEventHeader.ckir_BEFORE_person_event_SPRITE_FUCHSIA_GYM_1_at_7_5
+  FuchsiaGym_MapEventHeader.ckir_BEFORE_person_event_SPRITE_FUCHSIA_GYM_2_at_11_5
+  FuchsiaGym_MapEventHeader.ckir_BEFORE_person_event_SPRITE_FUCHSIA_GYM_3_at_4_9
+  FuchsiaGym_MapEventHeader.ckir_BEFORE_person_event_SPRITE_FUCHSIA_GYM_4_at_2_4
+  FuchsiaGym_MapEventHeader.ckir_BEFORE_person_event_SPRITE_JANINE_at_10_1
+
   AzaleaGymTriggerRockets.ckir_BEFORE_GoldenrodRockets
   AzaleaGymTriggerRockets.ckir_BEFORE_RadioTowerRockets
   BlackthornGymTriggerRockets.ckir_BEFORE_GoldenrodRockets
