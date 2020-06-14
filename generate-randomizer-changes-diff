@@ -15,6 +15,10 @@ BLACKLISTED_LABELS = %w(
 WHITELIST = %w(
   WhitneyScript_0x5400c.ckir_BEFORE_checkflag_ENGINE_PLAINBADGE
   BlackthornGymClairScript.ckir_BEFORE_checkflag_ENGINE_RISINGBADGE
+
+  UnknownText_0x18b064.ckir_BEFORE_para_lost_your_favorite_doll
+  Copycat.ckir_BEFORE_takeitem_LOST_ITEM
+  Copycat.ckir_BEFORE_checkitem_LOST_ITEM
 )
 
 ORIG_JSON = ENV.fetch("ORIG_JSON", "#{VERSION}-speedchoice-labels-label-details.json")
