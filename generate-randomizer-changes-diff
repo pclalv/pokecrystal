@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'json'
-require 'pry-byebug'
+# require 'pry-byebug'
 
 VERSION = "crystal-speedchoice"
 
@@ -14,7 +14,7 @@ BLACKLISTED_LABELS = %w(
 # non-diffs that should be included anyway. these are 'patches'; a
 # patch does not necessarily have a diff, but the randomizer can
 # generate a diff patch from it.
-WHITELIST = %w(
+PATCHES = %w(
   WhitneyScript_0x5400c.ckir_BEFORE_checkflag_ENGINE_PLAINBADGE
   BlackthornGymClairScript.ckir_BEFORE_checkflag_ENGINE_RISINGBADGE
 
@@ -59,32 +59,57 @@ WHITELIST = %w(
 ORIG_JSON = ENV.fetch("ORIG_JSON", "#{VERSION}-speedchoice-labels-label-details.json")
 MOD_JSON = ENV.fetch("MOD_JSON", "#{VERSION}-speedchoice-changes-label-details.json")
 
-speedchoice_labels_json  = JSON.load(File.read(ORIG_JSON)).
-  sort_by { |h| h['label'] }
-speedchoice_changes_json = JSON.load(File.read(MOD_JSON)).
-  sort_by { |h| h['label'] }
+def speedchoice_labels_json
+   JSON.load(File.read(ORIG_JSON)).
+    sort_by { |h| h['label'] }
+end
 
-diff = speedchoice_labels_json.
-  zip(speedchoice_changes_json).
-  filter do |rl, rc|
-    rl != rc || WHITELIST.include?(rl['label'])
-  end.
-  map do |rl, rc|
-    raise <<~EOF unless rl['label'] == rc['label'] && rl['address_range'] == rc['address_range']
-      #{rl['label']} != #{rc['label']}
-      #{rl['address_range']} != #{rc['address_range']}
-    EOF
+def speedchoice_changes_json
+  JSON.load(File.read(MOD_JSON)).
+    sort_by { |h| h['label'] }
+end
 
-    {
-    :label => rl['label'],
-    :address_range => rl['address_range'],
-      :integer_values => {
-        :old => rl['integer_values'].split(" ").map(&method(:Integer)),
-        :new => rc['integer_values'].split(" ").map(&method(:Integer)),
-      },
-    }
-  end.
-  reject { |d| BLACKLISTED_LABELS.include?(d['label']) }.
-  to_json
+def diff
+  speedchoice_labels_json.
+    zip(speedchoice_changes_json).
+    filter { |orig, modified| orig != modified }.
+    map do |orig, modified|
+      raise <<~EOF unless orig['label'] == modified['label'] && orig['address_range'] == modified['address_range']
+        #{orig['label']} != #{modified['label']}
+        #{orig['address_range']} != #{modified['address_range']}
+      EOF
 
-File.write("#{VERSION}-speedchoice-changes-diff.json", diff)
+      {
+        :label => orig['label'],
+        :address_range => orig['address_range'],
+        :integer_values => {
+          :old => orig['integer_values'].split(" ").map(&method(:Integer)),
+          :new => modified['integer_values'].split(" ").map(&method(:Integer)),
+        },
+      }
+    end.
+    reject { |d| BLACKLISTED_LABELS.include?(d['label']) }.
+    to_json
+end
+
+def patches
+  speedchoice_labels_json.
+    filter { |p| PATCHES.include?(p['label']) }.
+    map do |p|
+      {
+        :label => p['label'],
+        :address_range => p['address_range'],
+        :integer_values => {
+          :old => p['integer_values'].split(" ").map(&method(:Integer)),
+        },
+      }
+    end.
+    to_json
+end
+
+def main
+  File.write("#{VERSION}-speedchoice-changes-diff.json", diff)
+  File.write("#{VERSION}-patches.json", patches)
+end
+
+main
