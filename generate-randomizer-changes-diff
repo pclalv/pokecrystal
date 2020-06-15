@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'json'
-require 'pry-byebug'
+# require 'pry-byebug'
 
 VERSION = "crystal-speedchoice"
 
@@ -11,33 +11,193 @@ BLACKLISTED_LABELS = %w(
   FlyFunction.ckir_BEFORE_CHECK_STORMBADGE
 )
 
+# non-diffs that should be included anyway. these are 'patches'; a
+# patch does not necessarily have a diff, but the randomizer can
+# generate a diff patch from it.
+PATCHES = %w(
+  CeruleanGymHiddenMachinePart.ckir_BEFORE_dwb_EVENT_FOUND_MACHINE_PART_IN_CERULEAN_GYM_MACHINE_PART
+  CianwoodCityChucksWife.ckir_BEFORE_verbosegiveitem_HM_FLY
+  CianwoodPharmacist.ckir_BEFORE_giveitem_SECRETPOTION
+  Copycat.ckir_BEFORE_verbosegiveitem_PASS
+  DanceTheaterSurfGuy.ckir_BEFORE_verbosegiveitem_HM_SURF
+  EcruteakItemfinderGuy.ckir_BEFORE_verbosegiveitem_ITEMFINDER
+  ElmGiveTicketScript.ckir_BEFORE_verbosegiveitem_S_S_TICKET
+  GoldenrodBikeShopClerkScript.ckir_BEFORE_giveitem_BICYCLE
+  FlowerShopTeacherScript.ckir_BEFORE_verbosegiveitem_SQUIRTBOTTLE
+  IcePath1FHMWaterfall.ckir_BEFORE_itemball_HM_WATERFALL
+  IlexForestCharcoalMasterScript.ckir_BEFORE_verbosegiveitem_HM_CUT
+  Randomizer_RedGyaradosSpecies.ckir_BEFORE_giveitem_RED_SCALE
+  MrPokemonsHouse_MapScripts.ckir_BEFORE_giveitem_MYSTERY_EGG
+  OlivineCafeStrengthSailorScript.ckir_BEFORE_verbosegiveitem_HM_STRENGTH
+  GoodRodGuru.ckir_BEFORE_verbosegiveitem_GOOD_ROD
+  PewterCityGrampsScript.ckir_BEFORE_verbosegiveitem_SILVER_WING
+  PokemonFanClubClefairyGuyScript.ckir_BEFORE_giveitem_LOST_ITEM
+  Buena.ckir_BEFORE_verbosegiveitem_BLUE_CARD
+  FakeDirectorScript.ckir_BEFORE_verbosegiveitem_BASEMENT_KEY
+  RadioTower5FRocketBossScene.ckir_BEFORE_verbosegiveitem_CLEAR_BELL
+  Route12SuperRodHouseFishingGuruScript.ckir_BEFORE_verbosegiveitem_SUPER_ROD
+  Route32Pokecenter1FFishingGuruScript.ckir_BEFORE_verbosegiveitem_OLD_ROD
+  SageLiScript.ckir_BEFORE_verbosegiveitem_HM_FLASH
+  RocketBaseElectrodeScript.ckir_BEFORE_verbosegiveitem_HM_WHIRLPOOL
+  GoldenrodUndergroundWarehouseDirectorScript.ckir_BEFORE_verbosegiveitem_CARD_KEY
+  GoldenrodUndergroundCoinCase.ckir_BEFORE_itemball_COIN_CASE
+
+  RocketlessLoRLanceScript2.ckir_BEFORE_verbosegiveitem_BASEMENT_KEY
+  RocketlessLoRLanceScript2.ckir_BEFORE_verbosegiveitem_CARD_KEY
+  RocketlessLoRLanceScript2.ckir_BEFORE_verbosegiveitem_CLEAR_BELL
+  RocketlessLoRLanceScript2.ckir_BEFORE_verbosegiveitem_HM_WHIRLPOOL
+
+  GoldenrodUndergroundWarehouseUltraBall.ckir_BEFORE_itemball_ULTRA_BALL
+
+  GoldenrodGymWhitneyScript.ckir_BEFORE_checkflag_ENGINE_PLAINBADGE
+  BlackthornGymClairScript.ckir_BEFORE_checkflag_ENGINE_RISINGBADGE
+
+  CopycatText_Male_2.ckir_BEFORE_para_lost_your_favorite_doll
+  Copycat.ckir_BEFORE_takeitem_LOST_ITEM
+  Copycat.ckir_BEFORE_checkitem_LOST_ITEM
+
+  FuchsiaGym_MapEvents.ckir_BEFORE_person_event_SPRITE_FUCHSIA_GYM_1_at_7_5
+  FuchsiaGym_MapEvents.ckir_BEFORE_person_event_SPRITE_FUCHSIA_GYM_2_at_11_5
+  FuchsiaGym_MapEvents.ckir_BEFORE_person_event_SPRITE_FUCHSIA_GYM_3_at_4_9
+  FuchsiaGym_MapEvents.ckir_BEFORE_person_event_SPRITE_FUCHSIA_GYM_4_at_2_4
+  FuchsiaGym_MapEvents.ckir_BEFORE_person_event_SPRITE_JANINE_at_10_1
+
+  ckir_BEFORE_giveitem_text_MrPokemonsHouse_GotEggText
+  ckir_BEFORE_giveitem_text_ReceivedSecretpotionText
+  ckir_BEFORE_giveitem_text_BorrowedABicycleText
+  ckir_BEFORE_giveitem_text_LakeOfRageGotRedScaleText
+  ckir_BEFORE_giveitem_text_PokemonFanClubPlayerReceivedDollText
+
+  ClairText_Lazy.ckir_BEFORE_text_RISINGBADGE
+  LeaderBlueWinText.ckir_BEFORE_text_EARTHBADGE
+  MistyWinLossText.ckir_BEFORE_text_CASCADEBADGE
+  SabrinaWinLossText.ckir_BEFORE_text_MARSHBADGE
+  LtSurgeWinLossText.ckir_BEFORE_text_THUNDERBADGE
+  JanineText_ToughOne.ckir_BEFORE_text_SOULBADGE
+  BlaineWinLossText.ckir_BEFORE_text_VOLCANOBADGE
+  WhitneyWhatDoYouWantText.ckir_BEFORE_text_PLAINBADGE
+  FalknerWinLossText.ckir_BEFORE_text_ZEPHYRBADGE
+  ErikaBeatenText.ckir_BEFORE_text_RAINBOWBADGE
+  ChuckLossText.ckir_BEFORE_text_STORMBADGE
+
+  FalknerZephyrBadgeText.ckir_BEFORE_text_ZEPHYRBADGE_unimportant
+  BugsyText_HiveBadgeSpeech.ckir_BEFORE_text_HIVEBADGE_unimportant
+  WhitneyPlainBadgeText.ckir_BEFORE_text_PLAINBADGE_unimportant
+  MortyText_FogBadgeSpeech.ckir_BEFORE_text_FOGBADGE_unimportant
+  ChuckExplainBadgeText.ckir_BEFORE_text_STORMBADGE_unimportant
+  Jasmine_BadgeSpeech.ckir_BEFORE_text_MINERALBADGE_unimportant
+  PryceText_GlacierBadgeSpeech.ckir_BEFORE_text_GLACIERBADGE_unimportant
+  BlackthornGymClairText_DescribeBadge.ckir_BEFORE_text_RISINGBADGE_unimportant
+  BrockBoulderBadgeText.ckir_BEFORE_text_BOULDERBADGE_unimportant
+  LtSurgeThunderBadgeText.ckir_BEFORE_text_THUNDERBADGE_unimportant
+  SabrinaMarshBadgeText.ckir_BEFORE_text_MARSHBADGE_unimportant
+
+  ReceivedZephyrBadgeText.ckir_BEFORE_text_ZEPHYRBADGE_received
+  Text_ReceivedHiveBadge.ckir_BEFORE_text_HIVEBADGE_received
+  PlayerReceivedPlainBadgeText.ckir_BEFORE_text_PLAINBADGE_received
+  Text_ReceivedFogBadge.ckir_BEFORE_text_FOGBADGE_received
+  GetStormBadgeText.ckir_BEFORE_text_STORMBADGE_received
+  Text_ReceivedMineralBadge.ckir_BEFORE_text_MINERALBADGE_received
+  Text_ReceivedGlacierBadge.ckir_BEFORE_text_GLACIERBADGE_received
+  ClairText_Lazy.ckir_BEFORE_text_RISINGBADGE_received
+  ReceivedBoulderBadgeText.ckir_BEFORE_text_BOULDERBADGE_received
+  ReceivedCascadeBadgeText.ckir_BEFORE_text_CASCADEBADGE_received
+  ReceivedThunderBadgeText.ckir_BEFORE_text_THUNDERBADGE_received
+  PlayerReceivedRainbowBadgeText.ckir_BEFORE_text_RAINBOWBADGE_received
+  Text_ReceivedSoulBadge.ckir_BEFORE_text_SOULBADGE_received
+  ReceivedMarshBadgeText.ckir_BEFORE_text_MARSHBADGE_received
+  ReceivedVolcanoBadgeText.ckir_BEFORE_text_VOLCANOBADGE_received
+  Text_ReceivedEarthBadge.ckir_BEFORE_text_EARTHBADGE_received
+
+  AzaleaGymActivateRockets.ckir_BEFORE_GoldenrodRockets
+  BlackthornGymActivateRockets.ckir_BEFORE_GoldenrodRockets
+  CeladonGymActivateRockets.ckir_BEFORE_GoldenrodRockets
+  CeruleanGymActivateRockets.ckir_BEFORE_GoldenrodRockets
+  CianwoodGymActivateRockets.ckir_BEFORE_GoldenrodRockets
+  EcruteakGymActivateRockets.ckir_BEFORE_GoldenrodRockets
+  FuchsiaGymActivateRockets.ckir_BEFORE_GoldenrodRockets
+  GoldenrodGymActivateRockets.ckir_BEFORE_GoldenrodRockets
+  MahoganyGymActivateRockets.ckir_BEFORE_GoldenrodRockets
+  OlivineGymActivateRockets.ckir_BEFORE_GoldenrodRockets
+  PewterGymActivateRockets.ckir_BEFORE_GoldenrodRockets
+  SaffronGymActivateRockets.ckir_BEFORE_GoldenrodRockets
+  SeafoamGymActivateRockets.ckir_BEFORE_GoldenrodRockets
+  VermilionGymActivateRockets.ckir_BEFORE_GoldenrodRockets
+  VioletGymActivateRockets.ckir_BEFORE_GoldenrodRockets
+  ViridianGymActivateRockets.ckir_BEFORE_GoldenrodRockets
+
+  AzaleaGymActivateRockets.ckir_BEFORE_RadioTowerRockets
+  BlackthornGymActivateRockets.ckir_BEFORE_RadioTowerRockets
+  CeladonGymActivateRockets.ckir_BEFORE_RadioTowerRockets
+  CeruleanGymActivateRockets.ckir_BEFORE_RadioTowerRockets
+  CianwoodGymActivateRockets.ckir_BEFORE_RadioTowerRockets
+  EcruteakGymActivateRockets.ckir_BEFORE_RadioTowerRockets
+  FuchsiaGymActivateRockets.ckir_BEFORE_RadioTowerRockets
+  GoldenrodGymActivateRockets.ckir_BEFORE_RadioTowerRockets
+  MahoganyGymActivateRockets.ckir_BEFORE_RadioTowerRockets
+  OlivineGymActivateRockets.ckir_BEFORE_RadioTowerRockets
+  PewterGymActivateRockets.ckir_BEFORE_RadioTowerRockets
+  SaffronGymActivateRockets.ckir_BEFORE_RadioTowerRockets
+  SeafoamGymActivateRockets.ckir_BEFORE_RadioTowerRockets
+  VermilionGymActivateRockets.ckir_BEFORE_RadioTowerRockets
+  VioletGymActivateRockets.ckir_BEFORE_RadioTowerRockets
+  ViridianGymActivateRockets.ckir_BEFORE_RadioTowerRockets
+)
+
 ORIG_JSON = ENV.fetch("ORIG_JSON", "#{VERSION}-speedchoice-labels-v7-label-details.json")
 MOD_JSON = ENV.fetch("MOD_JSON", "#{VERSION}-speedchoice-changes-v7-label-details.json")
 
-speedchoice_labels_json  = JSON.load(File.read(ORIG_JSON)).
-  sort_by { |h| h['label'] }
-speedchoice_changes_json = JSON.load(File.read(MOD_JSON)).
-  sort_by { |h| h['label'] }
+def speedchoice_labels_json
+   JSON.load(File.read(ORIG_JSON)).
+    sort_by { |h| h['label'] }
+end
 
-diff = speedchoice_labels_json.
-  zip(speedchoice_changes_json).
-  filter { |rl, rc| rl != rc }.
-  map do |rl, rc|
-    raise <<~EOF unless rl['label'] == rc['label'] && rl['address_range'] == rc['address_range']
-      #{rl['label']} != #{rc['label']}
-      #{rl['address_range']} != #{rc['address_range']}
-    EOF
+def speedchoice_changes_json
+  JSON.load(File.read(MOD_JSON)).
+    sort_by { |h| h['label'] }
+end
 
-    {
-    :label => rl['label'],
-    :address_range => rl['address_range'],
-      :integer_values => {
-        :old => rl['integer_values'].split(" ").map(&method(:Integer)),
-        :new => rc['integer_values'].split(" ").map(&method(:Integer)),
-      },
-    }
-  end.
-  reject { |d| BLACKLISTED_LABELS.include?(d['label']) }.
-  to_json
+def diff
+  speedchoice_labels_json.
+    zip(speedchoice_changes_json).
+    filter { |orig, modified| orig != modified }.
+    map do |orig, modified|
+      raise <<~EOF unless orig['label'] == modified['label'] && orig['address_range'] == modified['address_range']
+        #{orig['label']} != #{modified['label']}
+        #{orig['address_range']} != #{modified['address_range']}
+      EOF
 
-File.write("#{VERSION}-speedchoice-changes-diff.json", diff)
+      {
+        :label => orig['label'],
+        :address_range => orig['address_range'],
+        :integer_values => {
+          :old => orig['integer_values'].split(" ").map(&method(:Integer)),
+          :new => modified['integer_values'].split(" ").map(&method(:Integer)),
+        },
+      }
+    end.
+    reject { |d| BLACKLISTED_LABELS.include?(d['label']) }.
+    to_json
+end
+
+def patches
+  speedchoice_labels_json.
+    filter { |p| PATCHES.include?(p['label']) }.
+    map do |p|
+      {
+        :label => p['label'],
+        :address_range => p['address_range'],
+        :integer_values => {
+          :old => p['integer_values'].split(" ").map(&method(:Integer)),
+        },
+      }
+    end.
+    to_json
+end
+
+def main
+  File.write("#{VERSION}-speedchoice-changes-diff.json", diff)
+  File.write("#{VERSION}-patches.json", patches)
+end
+
+main
