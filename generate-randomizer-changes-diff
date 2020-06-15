@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'json'
+require 'set'
 # require 'pry-byebug'
 
 VERSION = "crystal-speedchoice"
@@ -181,7 +182,7 @@ def diff
 end
 
 def patches
-  speedchoice_labels_json.
+  patches = speedchoice_labels_json.
     filter { |p| PATCHES.include?(p['label']) }.
     map do |p|
       {
@@ -191,8 +192,13 @@ def patches
           :old => p['integer_values'].split(" ").map(&method(:Integer)),
         },
       }
-    end.
-    to_json
+    end
+
+  if patches.length != PATCHES.length
+    raise "Missing the following patches: #{Set.new(PATCHES) - Set.new(patches.map { |p| p[:label] })}"
+  end    
+
+  patches.to_json
 end
 
 def main
