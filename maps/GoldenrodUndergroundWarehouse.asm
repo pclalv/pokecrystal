@@ -95,9 +95,9 @@ GoldenrodUndergroundWarehouseTMSleepTalk:
 	itemball TM_SLEEP_TALK
 
 GoldenrodUndergroundWarehouseUltraBall:
-.ckir_BEFORE_itemball_ULTRABALL:
+.ckir_BEFORE_itemball_ULTRA_BALL:
 	itemball ULTRA_BALL
-.ckir_AFTER_itemball_ULTRABALL:
+.ckir_AFTER_itemball_ULTRA_BALL:
 
 GruntM24SeenText:
 	text "How did you get"
