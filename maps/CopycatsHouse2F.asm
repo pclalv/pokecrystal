@@ -318,6 +318,7 @@ CopycatText_Female_1:
 	done
 
 CopycatText_Female_2:
+        ;; ckir TODO: fix this text... male and female have separate texts.
 	text "<PLAYER>: Hi. Did"
 	line "you really lose"
 	cont "your # DOLL?"
