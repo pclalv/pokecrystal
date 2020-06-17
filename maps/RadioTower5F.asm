@@ -47,7 +47,11 @@ FakeDirectorScript:
 	verbosegiveitem BASEMENT_KEY
 .ckir_AFTER_verbosegiveitem_BASEMENT_KEY:
 	closetext
+        ;; so we can definitely change SCENE_RADIOTOWER5F_ROCKET_BOSS to SCENE_DEFAULT.
+        ;; however, the effect of this might be that the player will have to fight this Fake Director any time they reach 5F.
+.ckir_BEFORE_setscene_SCENE_RADIOTOWER5F_ROCKET_BOSS::
 	setscene SCENE_RADIOTOWER5F_ROCKET_BOSS
+.ckir_AFTER_setscene_SCENE_RADIOTOWER5F_ROCKET_BOSS::
 	setevent EVENT_BEAT_ROCKET_EXECUTIVEM_3
 	end
 
@@ -437,6 +441,15 @@ RadioTower5F_MapEvents:
 
 	db 2 ; coord events
 	coord_event  0,  3, SCENE_DEFAULT, FakeDirectorScript
+        ;; okay, what can we do here?
+        ;; first thought is to change SCENE_RADIOTOWER5F_ROCKET_BOSS to SCENE_DEFAULT...
+        ;; but that would have the effect of making the boss _unbattleable_ in the case where the player does left-side first.
+        ;; unless we also never advance the scene?
+        ;; let's go with that i guess.
+
+        ;; TODO: how will the game react if there are two active coord_events?
+        ;; even without testing, i'm gonna assume that it'll be bad; either the game will crash, or the player will have to fight both directors back-to-back.
+        ;; i don't want either of those things.
 .ckir_BEFORE_coord_event_RadioTower5FRocketBossScene::
 	coord_event 16,  5, SCENE_RADIOTOWER5F_ROCKET_BOSS, RadioTower5FRocketBossScene
 .ckir_AFTER_coord_event_RadioTower5FRocketBossScene::
