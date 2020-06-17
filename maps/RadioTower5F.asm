@@ -360,10 +360,11 @@ RadioTower5FRocketBossAfterText:
 ;;; fix this text so that it says something about the boss dropping the clear bell
 RadioTower5FDirectorThankYouText:
 .ckir_BEFORE_RadioTower5FDirectorThankYouText::
-	text "DIRECTOR: <PLAY_G>,"
-	line "thank you!"
+	text "Huh? The boss must"
+	line "have dropped this."
+	done
 
-	para "Your courageous"
+	db 0                    ; padding
 	line "actions have saved"
 
 	para "#MON nation-"
