@@ -340,7 +340,9 @@ RadioTower5FRocketBossAfterText:
 	para "Farewell."
 	done
 
+;;; fix this text so that it says something about the boss dropping the clear bell
 RadioTower5FDirectorThankYouText:
+.ckir_BEFORE_RadioTower5FDirectorThankYouText::
 	text "DIRECTOR: <PLAY_G>,"
 	line "thank you!"
 
@@ -354,6 +356,7 @@ RadioTower5FDirectorThankYouText:
 	line "much, but please"
 	cont "take this."
 	done
+.ckir_AFTER_RadioTower5FDirectorThankYouText::
 
 RadioTower5FDirectorDescribeClearBellText:
 	text "There used to be a"
