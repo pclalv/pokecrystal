@@ -130,9 +130,9 @@ ckir_AFTER_RadioTower5FRocketBossScene_NPC_0::
 	opentext
 	writetext RadioTower5FDirectorThankYouText
 	promptbutton
-.ckir_BEFORE_verbosegiveitem_CLEAR_BELL:
+ckir_BEFORE_verbosegiveitem_CLEAR_BELL:
 	verbosegiveitem CLEAR_BELL
-.ckir_AFTER_verbosegiveitem_CLEAR_BELL:
+ckir_AFTER_verbosegiveitem_CLEAR_BELL:
 ckir_BEFORE_RadioTower5FRocketBossScene_NPC_1::
 	writetext RadioTower5FDirectorDescribeClearBellText
 	waitbutton
