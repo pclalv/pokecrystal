@@ -2790,20 +2790,6 @@
     {
         "integer_values": {
             "old": [
-                158,
-                70,
-                1
-            ]
-        },
-        "address_range": {
-            "end": 393437,
-            "begin": 393434
-        },
-        "label": "RadioTower5FRocketBossScene.ckir_BEFORE_verbosegiveitem_CLEAR_BELL"
-    },
-    {
-        "integer_values": {
-            "old": [
                 31,
                 66,
                 1
@@ -4135,5 +4121,19 @@
             "begin": 647257
         },
         "label": "ckir_BEFORE_giveitem_text_ReceivedSecretpotionText"
+    },
+    {
+        "integer_values": {
+            "old": [
+                158,
+                70,
+                1
+            ]
+        },
+        "address_range": {
+            "end": 393437,
+            "begin": 393434
+        },
+        "label": "ckir_BEFORE_verbosegiveitem_CLEAR_BELL"
     }
 ]
