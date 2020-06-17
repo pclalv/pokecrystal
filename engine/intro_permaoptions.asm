@@ -1,5 +1,7 @@
 VersionNumberText::
+ckir_BEFORE_VersionNumberText::
     db "v6.0@"
+ckir_AFTER_VersionNumberText::
 
 IntroPermaOptions::
 	xor a
