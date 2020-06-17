@@ -3949,6 +3949,22 @@
     {
         "integer_values": {
             "old": [
+                181,
+                253,
+                232,
+                246,
+                80
+            ]
+        },
+        "address_range": {
+            "end": 1998853,
+            "begin": 1998848
+        },
+        "label": "ckir_BEFORE_VersionNumberText"
+    },
+    {
+        "integer_values": {
+            "old": [
                 0,
                 82,
                 127,
