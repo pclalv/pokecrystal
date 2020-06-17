@@ -204,7 +204,10 @@ def patches
 end
 
 def main
+  # json representation of the differences between the ROMs generated
+  # by the speedchoice-labels and speedchoice-changes branches
   File.write("#{VERSION}-speedchoice-changes-diff.json", diff)
+  # json representation of important labels, their ranges and byte values
   File.write("#{VERSION}-patches.json", patches)
 end
 
