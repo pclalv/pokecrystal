@@ -83,7 +83,10 @@ TrainerExecutivef1:
 	end
 
 RadioTower5FRocketBossScene:
+.ckir_BEFORE_applymovement_PLAYER_RadioTower5FPlayerTwoStepsLeftMovement::
 	applymovement PLAYER, RadioTower5FPlayerTwoStepsLeftMovement
+.ckir_AFTER_applymovement_PLAYER_RadioTower5FPlayerTwoStepsLeftMovement::
+ckir_BEFORE_RadioTower5FRocketBossScene_NPC_0::
 	playmusic MUSIC_ROCKET_ENCOUNTER
 	turnobject RADIOTOWER5F_ROCKET, RIGHT
 	opentext
@@ -123,12 +126,14 @@ RadioTower5FRocketBossScene:
 	appear RADIOTOWER5F_DIRECTOR
 	applymovement RADIOTOWER5F_DIRECTOR, RadioTower5FDirectorWalksIn
 	turnobject PLAYER, RIGHT
+ckir_AFTER_RadioTower5FRocketBossScene_NPC_0::
 	opentext
 	writetext RadioTower5FDirectorThankYouText
 	promptbutton
 .ckir_BEFORE_verbosegiveitem_CLEAR_BELL:
 	verbosegiveitem CLEAR_BELL
 .ckir_AFTER_verbosegiveitem_CLEAR_BELL:
+ckir_BEFORE_RadioTower5FRocketBossScene_NPC_1::
 	writetext RadioTower5FDirectorDescribeClearBellText
 	waitbutton
 	closetext
@@ -136,6 +141,7 @@ RadioTower5FRocketBossScene:
 	setmapscene ECRUTEAK_TIN_TOWER_ENTRANCE, SCENE_DEFAULT
 	setevent EVENT_GOT_CLEAR_BELL
 	setevent EVENT_TEAM_ROCKET_DISBANDED
+ckir_AFTER_RadioTower5FRocketBossScene_NPC_1::
 	checkpermaoptions EARLY_KANTO
 	iffalse .skip_boat_and_train
 ; setup for boat
@@ -465,7 +471,9 @@ RadioTower5F_MapEvents:
 	object_event  3,  6, SPRITE_GENTLEMAN, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Director, -1
         ;; how hard would it be to turn this ObjectEvent into a regular old NPC?
         ;; and then how hard would it be to dummy out the SCENE_RADIOTOWER5F_ROCKET_BOSS coord_event?
+.ckir_BEFORE_object_event_ObjectEvent_RocketBoss::
 	object_event 13,  5, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_RADIO_TOWER_ROCKET_TAKEOVER
+.ckir_AFTER_object_event_ObjectEvent_RocketBoss::
 	object_event 17,  2, SPRITE_ROCKET_GIRL, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerExecutivef1, EVENT_RADIO_TOWER_ROCKET_TAKEOVER
 	object_event 13,  5, SPRITE_ROCKER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, Ben, EVENT_RADIO_TOWER_CIVILIANS_AFTER
         ;; this can be the back up for the CARD_KEY item!
