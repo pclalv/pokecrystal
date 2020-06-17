@@ -84,11 +84,20 @@ TrainerExecutivef1:
 
 RadioTower5FRocketBossScene:
 .ckir_BEFORE_applymovement_PLAYER_RadioTower5FPlayerTwoStepsLeftMovement::
-	applymovement PLAYER, RadioTower5FPlayerTwoStepsLeftMovement
+        ;; dummy out this scene.
+        ;; applymovement was 4 bytes??
+        end
+        end
+        end
+        end
 .ckir_AFTER_applymovement_PLAYER_RadioTower5FPlayerTwoStepsLeftMovement::
 ckir_BEFORE_RadioTower5FRocketBossScene_NPC_0::
+        ;; turn the rest of the scene code into something that'll work as an NPC script.
+        ;; the goal here is to make it so that the player can do the right side without doing the left side.
+
+        ;; turnobject call was 3 bytes
+        ;; faceplayer ; it'd be nice to have this NPC face the player, but it causes offset issue.
 	playmusic MUSIC_ROCKET_ENCOUNTER
-	turnobject RADIOTOWER5F_ROCKET, RIGHT
 	opentext
 	writetext RadioTower5FRocketBossBeforeText
 	waitbutton
@@ -121,11 +130,13 @@ ckir_BEFORE_RadioTower5FRocketBossScene_NPC_0::
 	setevent EVENT_BLACKTHORN_CITY_SUPER_NERD_BLOCKS_GYM
 	clearevent EVENT_BLACKTHORN_CITY_SUPER_NERD_DOES_NOT_BLOCK_GYM
 	special PlayMapMusic
-	disappear RADIOTOWER5F_DIRECTOR
-	moveobject RADIOTOWER5F_DIRECTOR, 12, 0
-	appear RADIOTOWER5F_DIRECTOR
-	applymovement RADIOTOWER5F_DIRECTOR, RadioTower5FDirectorWalksIn
-	turnobject PLAYER, RIGHT
+        ;; these are no-ops. they perfectly fill the space left by the code that i removed.
+        callasm ret_2f3e
+        callasm ret_2f3e
+        callasm ret_2f3e
+        callasm ret_2f3e
+        ;; let the player pick up the left-side key item right away.
+	appear RADIOTOWER5F_POKE_BALL
 ckir_AFTER_RadioTower5FRocketBossScene_NPC_0::
 	opentext
 	writetext RadioTower5FDirectorThankYouText
@@ -134,14 +145,20 @@ ckir_BEFORE_verbosegiveitem_CLEAR_BELL:
 	verbosegiveitem CLEAR_BELL
 ckir_AFTER_verbosegiveitem_CLEAR_BELL:
 ckir_BEFORE_RadioTower5FRocketBossScene_NPC_1::
-	writetext RadioTower5FDirectorDescribeClearBellText
-	waitbutton
 	closetext
 	setscene SCENE_RADIOTOWER5F_NOTHING
 	setmapscene ECRUTEAK_TIN_TOWER_ENTRANCE, SCENE_DEFAULT
 	setevent EVENT_GOT_CLEAR_BELL
 	setevent EVENT_TEAM_ROCKET_DISBANDED
+        ;; end prematurely; CKIR doesn't support early kanto, and we
+	;; don't need to make the Director disappear because he never
+	;; appeared.
+	end
+        end
+        end
+        end
 ckir_AFTER_RadioTower5FRocketBossScene_NPC_1::
+
 	checkpermaoptions EARLY_KANTO
 	iffalse .skip_boat_and_train
 ; setup for boat
@@ -475,7 +492,7 @@ RadioTower5F_MapEvents:
         ;; how hard would it be to turn this ObjectEvent into a regular old NPC?
         ;; and then how hard would it be to dummy out the SCENE_RADIOTOWER5F_ROCKET_BOSS coord_event?
 .ckir_BEFORE_object_event_ObjectEvent_RocketBoss::
-	object_event 13,  5, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_RADIO_TOWER_ROCKET_TAKEOVER
+	object_event 13,  5, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ckir_BEFORE_RadioTower5FRocketBossScene_NPC_0, EVENT_RADIO_TOWER_ROCKET_TAKEOVER
 .ckir_AFTER_object_event_ObjectEvent_RocketBoss::
 	object_event 17,  2, SPRITE_ROCKET_GIRL, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerExecutivef1, EVENT_RADIO_TOWER_ROCKET_TAKEOVER
 	object_event 13,  5, SPRITE_ROCKER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, Ben, EVENT_RADIO_TOWER_CIVILIANS_AFTER
@@ -483,5 +500,6 @@ RadioTower5F_MapEvents:
         ;; okay, so imagine the player does right-side first; rockets disappear, how can the player get the left-side item?
         ;; this itemball can be moved to the left-side and made to contain that item, just like we do with the director's item in the basement!
 .ckir_BEFORE_object_event_EVENT_RADIO_TOWER_5F_ULTRA_BALL::
-	object_event  8,  5, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RadioTower5FUltraBall, EVENT_RADIO_TOWER_5F_ULTRA_BALL
+        ;; the player can potentially collect the same key item twice, but there's nothing to be gained by doing so, so we won't stop them.
+	object_event  8,  5, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RadioTower5FUltraBall, EVENT_BLACKTHORN_CITY_SUPER_NERD_DOES_NOT_BLOCK_GYM
 .ckir_AFTER_object_event_EVENT_RADIO_TOWER_5F_ULTRA_BALL::
