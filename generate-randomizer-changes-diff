@@ -37,7 +37,7 @@ PATCHES = %w(
   PokemonFanClubClefairyGuyScript.ckir_BEFORE_giveitem_LOST_ITEM
   Buena.ckir_BEFORE_verbosegiveitem_BLUE_CARD
   FakeDirectorScript.ckir_BEFORE_verbosegiveitem_BASEMENT_KEY
-  RadioTower5FRocketBossScene.ckir_BEFORE_verbosegiveitem_CLEAR_BELL
+  ckir_BEFORE_verbosegiveitem_CLEAR_BELL
   Route12SuperRodHouseFishingGuruScript.ckir_BEFORE_verbosegiveitem_SUPER_ROD
   Route32Pokecenter1FFishingGuruScript.ckir_BEFORE_verbosegiveitem_OLD_ROD
   SageLiScript.ckir_BEFORE_verbosegiveitem_HM_FLASH
