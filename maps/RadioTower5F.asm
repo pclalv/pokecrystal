@@ -437,7 +437,9 @@ RadioTower5F_MapEvents:
 
 	db 2 ; coord events
 	coord_event  0,  3, SCENE_DEFAULT, FakeDirectorScript
+.ckir_BEFORE_coord_event_RadioTower5FRocketBossScene::
 	coord_event 16,  5, SCENE_RADIOTOWER5F_ROCKET_BOSS, RadioTower5FRocketBossScene
+.ckir_AFTER_coord_event_RadioTower5FRocketBossScene::
 
 	db 5 ; bg events
 	bg_event  3,  0, BGEVENT_READ, RadioTower5FDirectorsOfficeSign
@@ -451,4 +453,9 @@ RadioTower5F_MapEvents:
 	object_event 13,  5, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_RADIO_TOWER_ROCKET_TAKEOVER
 	object_event 17,  2, SPRITE_ROCKET_GIRL, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerExecutivef1, EVENT_RADIO_TOWER_ROCKET_TAKEOVER
 	object_event 13,  5, SPRITE_ROCKER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, Ben, EVENT_RADIO_TOWER_CIVILIANS_AFTER
+        ;; this can be the back up for the CARD_KEY item!
+        ;; okay, so imagine the player does right-side first; rockets disappear, how can the player get the left-side item?
+        ;; this itemball can be moved to the left-side and made to contain that item, just like we do with the director's item in the basement!
+.ckir_BEFORE_object_event_EVENT_RADIO_TOWER_5F_ULTRA_BALL::
 	object_event  8,  5, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RadioTower5FUltraBall, EVENT_RADIO_TOWER_5F_ULTRA_BALL
+.ckir_AFTER_object_event_EVENT_RADIO_TOWER_5F_ULTRA_BALL::
