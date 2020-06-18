@@ -125,7 +125,9 @@ BetaPokecenter_Blocks:
 	INCBIN "maps/unused/BetaPokecenter.blk"
 
 Route30_Blocks:
+.ckir_BEFORE_Route30_Blocks::
 	INCBIN "maps/Route30.blk"
+.ckir_AFTER_Route30_Blocks::
 
 Route26_Blocks:
 	INCBIN "maps/Route26.blk"
