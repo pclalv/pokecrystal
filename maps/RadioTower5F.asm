@@ -127,8 +127,8 @@ ckir_BEFORE_RadioTower5FRocketBossScene_NPC_0::
 	moveperson RADIOTOWER5F_DIRECTOR, $c, $0
 	appear RADIOTOWER5F_DIRECTOR
 	applymovement RADIOTOWER5F_DIRECTOR, RadioTower5FDirectorWalksIn
-ckir_AFTER_RadioTower5FRocketBossScene_NPC_0::
 	spriteface PLAYER, RIGHT
+ckir_AFTER_RadioTower5FRocketBossScene_NPC_0::
 	opentext
 	writetext RadioTower5FDirectorThankYouText
 	buttonsound
