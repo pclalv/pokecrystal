@@ -90,7 +90,6 @@ RadioTower5FRocketBossTrigger:
 .ckir_AFTER_applymovement_PLAYER_RadioTower5FPlayerTwoStepsLeftMovement::
 ckir_BEFORE_RadioTower5FRocketBossScene_NPC_0::
 	playmusic MUSIC_ROCKET_ENCOUNTER
-	spriteface RADIOTOWER5F_ROCKET, RIGHT
 	opentext
 	writetext RadioTower5FRocketBossBeforeText
 	waitbutton
@@ -123,11 +122,11 @@ ckir_BEFORE_RadioTower5FRocketBossScene_NPC_0::
 	setevent EVENT_BLACKTHORN_CITY_SUPER_NERD_BLOCKS_GYM
 	clearevent EVENT_BLACKTHORN_CITY_SUPER_NERD_DOES_NOT_BLOCK_GYM
 	special PlayMapMusic
-	disappear RADIOTOWER5F_DIRECTOR
-	moveperson RADIOTOWER5F_DIRECTOR, $c, $0
-	appear RADIOTOWER5F_DIRECTOR
-	applymovement RADIOTOWER5F_DIRECTOR, RadioTower5FDirectorWalksIn
-	spriteface PLAYER, RIGHT
+        callasm ret_2f3e
+        callasm ret_2f3e
+        callasm ret_2f3e
+        callasm ret_2f3e
+        appear RADIOTOWER5F_POKE_BALL
 ckir_AFTER_RadioTower5FRocketBossScene_NPC_0::
 	opentext
 	writetext RadioTower5FDirectorThankYouText
@@ -136,13 +135,15 @@ ckir_BEFORE_verbosegiveitem_CLEAR_BELL:
 	verbosegiveitem CLEAR_BELL
 ckir_AFTER_verbosegiveitem_CLEAR_BELL:
 ckir_BEFORE_RadioTower5FRocketBossScene_NPC_1::
-	writetext RadioTower5FDirectorDescribeClearBellText
-	waitbutton
 	closetext
 	dotrigger $2
 	domaptrigger ECRUTEAK_HOUSE, $0
 	setevent EVENT_GOT_CLEAR_BELL
 	setevent EVENT_TEAM_ROCKET_DISBANDED
+        end
+        end
+        end
+        end
 ckir_AFTER_RadioTower5FRocketBossScene_NPC_1::
 	check_permaoptions EARLY_KANTO
 	iffalse .skip_boat_and_train
@@ -344,10 +345,12 @@ RadioTower5FRocketBossAfterText:
 
 RadioTower5FDirectorThankYouText:
 .ckir_BEFORE_RadioTower5FDirectorThankYouText::
-	text "DIRECTOR: <PLAY_G>,"
-	line "thank you!"
+        text "Huh? The boss must"
+	line "have dropped this."
+	done
 
-	para "Your courageous"
+        db 0                    ; padding
+
 	line "actions have saved"
 
 	para "#MON nation-"
@@ -470,10 +473,10 @@ RadioTower5F_MapEventHeader:
 	db 5
 	person_event SPRITE_GENTLEMAN, 6, 3, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, PERSONTYPE_SCRIPT, 0, Director, -1
 .ckir_BEFORE_object_event_ObjectEvent_RocketBoss::
-	person_event SPRITE_ROCKET, 5, 13, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, PERSONTYPE_SCRIPT, 0, ObjectEvent, EVENT_RADIO_TOWER_ROCKET_TAKEOVER
+	person_event SPRITE_ROCKET, 5, 13, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, PERSONTYPE_SCRIPT, 0, ckir_BEFORE_RadioTower5FRocketBossScene_NPC_0, EVENT_RADIO_TOWER_ROCKET_TAKEOVER
 .ckir_AFTER_object_event_ObjectEvent_RocketBoss::
 	person_event SPRITE_ROCKET_GIRL, 2, 17, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, (1 << 3) | PAL_OW_RED, PERSONTYPE_TRAINER, 1, TrainerExecutivef1, EVENT_RADIO_TOWER_ROCKET_TAKEOVER
 	person_event SPRITE_ROCKER, 5, 13, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, (1 << 3) | PAL_OW_RED, PERSONTYPE_SCRIPT, 0, Ben, EVENT_RADIO_TOWER_CIVILIANS_AFTER
 .ckir_BEFORE_object_event_EVENT_RADIO_TOWER_5F_ULTRA_BALL::
-	person_event SPRITE_POKE_BALL, 5, 8, SPRITEMOVEDATA_ITEM_TREE, 0, 0, -1, -1, 0, PERSONTYPE_ITEMBALL, 0, RadioTower5FUltraBall, EVENT_RADIO_TOWER_5F_ULTRA_BALL
+	person_event SPRITE_POKE_BALL, 5, 8, SPRITEMOVEDATA_ITEM_TREE, 0, 0, -1, -1, 0, PERSONTYPE_ITEMBALL, 0, RadioTower5FUltraBall, EVENT_BLACKTHORN_CITY_SUPER_NERD_DOES_NOT_BLOCK_GYM
 .ckir_AFTER_object_event_EVENT_RADIO_TOWER_5F_ULTRA_BALL::
