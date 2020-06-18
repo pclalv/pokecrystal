@@ -123,7 +123,9 @@ BetaPokecenterMainHouse_BlockData:
 	INCBIN "maps/BetaPokecenterMainHouse.blk"
 
 Route30_BlockData:
+.ckir_BEFORE_Route30_BlockData::
 	INCBIN "maps/Route30.blk"
+.ckir_AFTER_Route30_BlockData::
 
 Route26_BlockData:
 	INCBIN "maps/Route26.blk"

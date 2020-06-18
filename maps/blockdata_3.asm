@@ -8,7 +8,9 @@ SlowpokeWellB2F_BlockData:
 	INCBIN "maps/SlowpokeWellB2F.blk"
 
 IlexForest_BlockData:
+.ckir_BEFORE_IlexForest_BlockData::
 	INCBIN "maps/IlexForest.blk"
+.ckir_AFTER_IlexForest_BlockData::
 
 DarkCaveVioletEntrance_BlockData:
 	INCBIN "maps/DarkCaveVioletEntrance.blk"

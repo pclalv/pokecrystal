@@ -10,10 +10,6 @@ ROM_FILE_BASENAME = File.basename(ROM_FILE, File.extname(ROM_FILE))
 SYM_FILE = "#{ROM_FILE_BASENAME}.sym"
 OUT_FILE = "#{ROM_FILE_BASENAME}-label-details.json"
 
-# there's no ASM-level label for this, so we have to handle it
-# specially.
-ILEX_FOREST_TREE = 721295
-
 def rom
   @rom ||= IO.binread(ROM_FILE)
 end
@@ -43,17 +39,6 @@ def rom_bytes_to_integers(rom_bytes)
   rom_bytes.split('').map(&:bytes).flatten.join(" ")
 end
 
-def ilex_forest_diff
-  {
-    "integer_values" => rom_bytes_to_integers(rom[ILEX_FOREST_TREE]),
-    "address_range" => {
-      "begin" => ILEX_FOREST_TREE,
-      "end" => ILEX_FOREST_TREE + 1,
-    },
-    "label" => "Remove cuttable tree in Ilex Forest",
-  }
-end
-
 def main
   label_address_ranges =
     label_addresses
@@ -74,8 +59,6 @@ def main
         "hex_values" => rom[address_range].each_char.map(&method(:byte_to_string)).join(" "),
       }
   end.sort_by { |details| details["label"] }
-
-  label_details << ilex_forest_diff
 
   File.write(OUT_FILE, label_details.to_json)
 
