@@ -36,7 +36,7 @@ PATCHES = %w(
   UnknownScript_0x191844.ckir_BEFORE_giveitem_LOST_ITEM
   UnknownScript_0x5d800.ckir_BEFORE_verbosegiveitem_BLUE_CARD
   FakeDirectorScript.ckir_BEFORE_verbosegiveitem_BASEMENT_KEY
-  RadioTower5FRocketBossTrigger.ckir_BEFORE_verbosegiveitem_CLEAR_BELL
+  ckir_BEFORE_verbosegiveitem_CLEAR_BELL
   FishingGuruScript_0x7f484.ckir_BEFORE_verbosegiveitem_SUPER_ROD
   FishingGuruScript_0x69b55.ckir_BEFORE_verbosegiveitem_OLD_ROD
   SageLiScript.ckir_BEFORE_verbosegiveitem_HM_FLASH

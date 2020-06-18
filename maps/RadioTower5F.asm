@@ -51,7 +51,9 @@ FakeDirectorScript:
 	verbosegiveitem BASEMENT_KEY
 .ckir_AFTER_verbosegiveitem_BASEMENT_KEY:
 	closetext
+.ckir_BEFORE_setscene_SCENE_RADIOTOWER5F_ROCKET_BOSS::
 	dotrigger $1
+.ckir_AFTER_setscene_SCENE_RADIOTOWER5F_ROCKET_BOSS::
 	setevent EVENT_BEAT_ROCKET_EXECUTIVEM_3
 	end
 
@@ -83,7 +85,10 @@ Executivef1Script:
 	end
 
 RadioTower5FRocketBossTrigger:
+.ckir_BEFORE_applymovement_PLAYER_RadioTower5FPlayerTwoStepsLeftMovement::
 	applymovement PLAYER, MovementData_0x60125
+.ckir_AFTER_applymovement_PLAYER_RadioTower5FPlayerTwoStepsLeftMovement::
+ckir_BEFORE_RadioTower5FRocketBossScene_NPC_0::
 	playmusic MUSIC_ROCKET_ENCOUNTER
 	spriteface RADIOTOWER5F_ROCKET, RIGHT
 	opentext
@@ -122,13 +127,15 @@ RadioTower5FRocketBossTrigger:
 	moveperson RADIOTOWER5F_DIRECTOR, $c, $0
 	appear RADIOTOWER5F_DIRECTOR
 	applymovement RADIOTOWER5F_DIRECTOR, RadioTower5FDirectorWalksIn
+ckir_AFTER_RadioTower5FRocketBossScene_NPC_0::
 	spriteface PLAYER, RIGHT
 	opentext
 	writetext RadioTower5FDirectorThankYouText
 	buttonsound
-.ckir_BEFORE_verbosegiveitem_CLEAR_BELL:
+ckir_BEFORE_verbosegiveitem_CLEAR_BELL:
 	verbosegiveitem CLEAR_BELL
-.ckir_AFTER_verbosegiveitem_CLEAR_BELL:
+ckir_AFTER_verbosegiveitem_CLEAR_BELL:
+ckir_BEFORE_RadioTower5FRocketBossScene_NPC_1::
 	writetext RadioTower5FDirectorDescribeClearBellText
 	waitbutton
 	closetext
@@ -136,6 +143,7 @@ RadioTower5FRocketBossTrigger:
 	domaptrigger ECRUTEAK_HOUSE, $0
 	setevent EVENT_GOT_CLEAR_BELL
 	setevent EVENT_TEAM_ROCKET_DISBANDED
+ckir_AFTER_RadioTower5FRocketBossScene_NPC_1::
 	check_permaoptions EARLY_KANTO
 	iffalse .skip_boat_and_train
 	; setup for boat
@@ -335,6 +343,7 @@ RadioTower5FRocketBossAfterText:
 	done
 
 RadioTower5FDirectorThankYouText:
+.ckir_BEFORE_RadioTower5FDirectorThankYouText::
 	text "DIRECTOR: <PLAY_G>,"
 	line "thank you!"
 
@@ -348,6 +357,7 @@ RadioTower5FDirectorThankYouText:
 	line "much, but please"
 	cont "take this."
 	done
+.ckir_AFTER_RadioTower5FDirectorThankYouText::
 
 RadioTower5FDirectorDescribeClearBellText:
 	text "There used to be a"
@@ -444,7 +454,9 @@ RadioTower5F_MapEventHeader:
 .XYTriggers:
 	db 2
 	xy_trigger 0, $3, $0, $0, FakeDirectorScript, $0, $0
+.ckir_BEFORE_coord_event_RadioTower5FRocketBossScene::
 	xy_trigger 1, $5, $10, $0, RadioTower5FRocketBossTrigger, $0, $0
+.ckir_AFTER_coord_event_RadioTower5FRocketBossScene::
 
 .Signposts:
 	db 5
@@ -457,7 +469,11 @@ RadioTower5F_MapEventHeader:
 .PersonEvents:
 	db 5
 	person_event SPRITE_GENTLEMAN, 6, 3, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, PERSONTYPE_SCRIPT, 0, Director, -1
+.ckir_BEFORE_object_event_ObjectEvent_RocketBoss::
 	person_event SPRITE_ROCKET, 5, 13, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, PERSONTYPE_SCRIPT, 0, ObjectEvent, EVENT_RADIO_TOWER_ROCKET_TAKEOVER
+.ckir_AFTER_object_event_ObjectEvent_RocketBoss::
 	person_event SPRITE_ROCKET_GIRL, 2, 17, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, (1 << 3) | PAL_OW_RED, PERSONTYPE_TRAINER, 1, TrainerExecutivef1, EVENT_RADIO_TOWER_ROCKET_TAKEOVER
 	person_event SPRITE_ROCKER, 5, 13, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, (1 << 3) | PAL_OW_RED, PERSONTYPE_SCRIPT, 0, Ben, EVENT_RADIO_TOWER_CIVILIANS_AFTER
+.ckir_BEFORE_object_event_EVENT_RADIO_TOWER_5F_ULTRA_BALL::
 	person_event SPRITE_POKE_BALL, 5, 8, SPRITEMOVEDATA_ITEM_TREE, 0, 0, -1, -1, 0, PERSONTYPE_ITEMBALL, 0, RadioTower5FUltraBall, EVENT_RADIO_TOWER_5F_ULTRA_BALL
+.ckir_AFTER_object_event_EVENT_RADIO_TOWER_5F_ULTRA_BALL::
